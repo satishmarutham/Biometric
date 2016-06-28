@@ -1,0 +1,39 @@
+/* VIew Table */
+/* Table */
+table.view {
+	border-collapse: collapse;
+	border: 1px solid #2C5D00;
+	margin: 5px 0 0 0;
+	width: 100%;
+	font-family: Segoe UI;
+	font-size: 12px;
+	background: #fff;
+	
+}
+
+table.view th,table.view td {
+	padding: 3px 13px;
+	border: 1px solid #2C5D00;
+}
+
+table.view th {
+	text-align: center;
+	font-weight: bold;
+	background: #C8C8C8;
+}
+
+table.view td {
+	text-align: center;
+}
+
+.view_heading {
+	text-align: center;
+	font-family: Segoe UI;
+	font-size: 13px;
+	font-weight: bold;
+	font-style: italic;
+	font-family: Segoe UI;
+}
+.ui-corner-all {
+  font-size: 12px;
+}

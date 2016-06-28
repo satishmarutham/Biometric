@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+
+<!-- This is a blank Tiles definition file with a commented example. -->
+
+<tiles-definitions>
+
+	<!-- sample tiles definitions <definition name=".mainLayout" path="/common/layouts/classicLayout.jsp"> 
+		<put name="title" value="Sample Page Title" /> <put name="header" value="/common/header.jsp" 
+		/> <put name="menu" value=".mainMenu" /> <put name="footer" value="/common/footer.jsp" 
+		/> <put name="body" value=".portal.body" /> </definition> <definition name=".mainMenu" 
+		path="/common/layouts/vboxLayout.jsp" > <putList name="list" > <add value=".menu.links" 
+		/> <add value=".menu.taglib.references" /> <add value=".menu.printer.friendly" 
+		/> <add value=".menu.old.documents" /> </putList> </definition> <definition 
+		name="aPage" extends=".mainLayout"> <put name="title" value="Another Title" 
+		/> <put name="body" value=".aPage.body" /> </definition> end samples -->
+
+	<definition name="${YOUR_DEFINITION_HERE}">
+	</definition>
+
+
+
+
+	<definition name="mainLayout" path="/LAYOUT/baseLayout.jsp">
+		<put name="title" value="e-AttendencePro" />
+		<put name="header" value="" />
+		
+		<put name="body" value="" />
+		<put name="leftmenu" value=""></put>
+		<put name="footer" value="" />
+	</definition>
+
+	<definition name="admin" extends="mainLayout">
+		<put name="title" value="e-AttendencePro" />
+		<put name="header" value="/LAYOUT/admin_header.jsp" />
+
+		<put name="leftmenu" value="/LAYOUT/LeftMenu.jsp"></put>
+		<put name="body" value="/LAYOUT/Home_Page.jsp" />
+		<put name="footer" value="" />
+	</definition>
+
+	<definition name="forgetLayout" path="/LAYOUT/forgetpasswordLayout.jsp">
+		<put name="title" value="e-AttendencePro" />
+		<put name="header" value="" />
+		<put name="menu" value="" />
+		<put name="body" value="" />
+		<put name="footer" value="" />
+	</definition>
+
+	<definition name="forgetPasswordLayout" extends="forgetLayout">
+		<put name="title" value="e-AttendencePro" />
+		<put name="header" value="/LAYOUT/forgetPasswordHeader.jsp" />
+		<put name="body" value="" />
+		<put name="footer" value="" />
+	</definition>
+
+	<definition name="addEmployee" extends="admin">
+		<put name="body" value="/jsp/addEmployee.jsp" />
+	</definition>
+
+	<definition name="locationmaster" extends="admin">
+		<put name="body" value="/jsp/LocationMaster.jsp" />
+	</definition>
+
+	<!-- <definition name="DesignationMaster" extends="admin"> <put name="body" 
+		value="/jsp/AddDesignation.jsp" /> </definition> -->
+	<definition name="shiftmaster" extends="admin">
+		<put name="body" value="/jsp/ShiftMaster.jsp" />
+	</definition>
+	<definition name="dayreport" extends="admin">
+		<put name="body" value="/jsp/Dayreport.jsp" />
+	</definition>
+	<definition name="grouplocationmap" extends="admin">
+		<put name="body" value="/jsp/GroupLocationMapping.jsp" />
+	</definition>
+	<definition name="groupmaster" extends="admin">
+		<put name="body" value="/jsp/GroupMaster.jsp" />
+	</definition>
+	<definition name="usermaster" extends="admin">
+		<put name="body" value="/jsp/UserMaster.jsp" />
+	</definition>
+	<!-- <definition name="DepMaster" extends="admin"> <put name="body" value="/jsp/DepartmentMaster.jsp" 
+		/> </definition> -->
+	<definition name="roleMaster" extends="admin">
+		<put name="body" value="/jsp/RoleMaster.jsp" />
+	</definition>
+	<definition name="employeeGroup" extends="admin">
+		<put name="body" value="/jsp/employeeGroup.jsp" />
+	</definition>
+	<definition name="modifyEmployee" extends="admin">
+		<put name="body" value="/jsp/ModifyEmployeeDetails.jsp" />
+	</definition>
+
+	<definition name="reportreconcil" extends="admin">
+		<put name="body" value="/jsp/reportReconciliation.jsp" />
+	</definition>
+	<definition name="userRolePermission" extends="admin">
+		<put name="body" value="/jsp/UserRolePermission.jsp" />
+	</definition>
+	<definition name="removeEmployee" extends="admin">
+		<put name="body" value="/jsp/removeEmployee.jsp" />
+	</definition>
+
+	<definition name="attendancereconcilation" extends="admin">
+		<put name="body" value="/jsp/Admin/AttendanceReconcilation.jsp" />
+	</definition>
+
+
+
+	<definition name="allEmployee" extends="admin">
+		<put name="body" value="/jsp/AllEmployee.jsp" />
+	</definition>
+	<definition name="consolidateDetailedMonthReport" extends="admin">
+		<put name="body" value="/jsp/ConsolidateDetailedMonthReport.jsp" />
+	</definition>
+	<!-- Getting WeekOff by Arul -->
+	<definition name="getEmployeeWeekoff" extends="admin">
+		<put name="body" value="/jsp/WeekOff.jsp" />
+	</definition>
+
+	<definition name="dayReport" extends="admin">
+		<put name="body" value="/jsp/DayReport.jsp" />
+	</definition>
+	<!-- Holidaymaster by seshu -->
+
+
+
+
+
+	<definition name="dayReport" extends="admin">
+		<put name="body" value="/jsp/DayReport.jsp" />
+	</definition>
+
+	<definition name="timesheet_report" extends="admin">
+		<put name="body" value="/jsp/TimeSheetReportAudit.jsp" />
+	</definition>
+
+
+
+	<definition name="latecommersreport" extends="admin">
+		<put name="body" value="/jsp/LateComersReport.jsp" />
+	</definition>
+
+	<definition name="monthlylagendreport" extends="admin">
+		<put name="body" value="/jsp/MonthlyLagendReport.jsp" />
+	</definition>
+	<definition name="earlytimeReport" extends="admin">
+		<put name="body" value="/jsp/EarlyTimeReport.jsp" />
+	</definition>
+	<definition name="adminlogreport" extends="admin">
+		<put name="body" value="/jsp/LogReport.jsp" />
+	</definition>
+	<definition name="lessthan8hrs" extends="admin">
+		<put name="body" value="/jsp/EmpWorkingLessthan8hrsReport.jsp" />
+	</definition>
+	<definition name="deactiveallEmployee" extends="admin">
+		<put name="body" value="/jsp/DeactiveEmployees.jsp" />
+	</definition>
+	<definition name="deactivelocatios" extends="admin">
+		<put name="body" value="/jsp/DeactiveLocatios.jsp" />
+	</definition>
+	<definition name="home" extends="admin">
+		<put name="body" value="/jsp/Employee/EmployeeDashboard.jsp" />
+	</definition>
+	<definition name="changePassword" extends="admin">
+		<put name="body" value="/jsp/changePassword.jsp" />
+	</definition>
+	<definition name="locationview" extends="admin">
+		<put name="body" value="/jsp/LocationView.jsp" />
+	</definition>
+	<definition name="todayReport" extends="admin">
+		<put name="body" value="/jsp/TodayReport.jsp" />
+	</definition>
+	<definition name="afterPasswordChange" extends="mainLayout">
+		<put name="body" value="/jsp/LoginAfterPasswordChange.jsp" />
+	</definition>
+	<definition name="locationvieweditlocation" extends="admin">
+		<put name="body" value="/jsp/LocationViewEdit.jsp" />
+	</definition>
+	<definition name="dailylogreport" extends="admin">
+		<put name="body" value="/jsp/DailyLogReport.jsp" />
+	</definition>
+	<definition name="yearlyReport" extends="admin">
+		<put name="body" value="/jsp/YearlyReport.jsp" />
+	</definition>
+	<definition name="locationUpdateReport" extends="admin">
+		<put name="body" value="/jsp/LocationUpdateReport.jsp" />
+	</definition>
+
+	<definition name="groupLogReport" extends="admin">
+		<put name="body" value="/jsp/GroupLogReport.jsp" />
+	</definition>
+	<definition name="incorrectPunchReport" extends="admin">
+		<put name="body" value="/jsp/IncorrectPunchReport.jsp" />
+	</definition>
+	<definition name="getRegistrationTime" extends="admin">
+		<put name="body" value="/jsp/RegistrationTimeReport.jsp" />
+	</definition>
+
+	<definition name="ContactUsMail" extends="admin">
+		<put name="body" value="/jsp/ContactUsMail.jsp" />
+	</definition>
+	<definition name="lastThreeAbsentReport" extends="admin">
+		<put name="body" value="/jsp/LastThreeAbsentReport.jsp" />
+	</definition>
+	<definition name="getManualAttendance" extends="admin">
+		<put name="body" value="/jsp/ManualAttendance.jsp" />
+	</definition>
+	<definition name="machineStatusReport" extends="admin">
+		<put name="body" value="/jsp/MachineStatusReport.jsp" />
+	</definition>
+
+	<definition name="orgSubModules" extends="admin">
+		<put name="body" value="/jsp/Menu/OrganizationStructure.jsp" />
+	</definition>
+	
+	
+	<definition name="menu" extends="admin">
+		<put name="body" value="/jsp/Menu.jsp" />
+	</definition>
+	
+	
+
+
+
+	<!-- For Tel India --><!-- For Tel India --><!-- For Tel India -->
+	<!-- Admin Start -->
+
+	<definition name="employee_creation" extends="admin">
+		<put name="body" value="/jsp/Admin/EmployeeCreation.jsp" />
+	</definition>
+	<definition name="employee_amendment" extends="admin">
+		<put name="body" value="/jsp/Admin/EmployeeAmendment.jsp" />
+	</definition>
+
+	<definition name="projectmanagerHome" extends="admin">
+		<put name="body" value="/jsp/Admin/ProjectManagerMapping.jsp" />
+	</definition>
+
+	<definition name="DesignationMaster" extends="admin">
+		<put name="body" value="/jsp/Admin/AddDesignation.jsp" />
+	</definition>
+
+	<definition name="DepMaster" extends="admin">
+		<put name="body" value="/jsp/Admin/DepartmentMaster.jsp" />
+	</definition>
+
+	<!-- for teleindia by seshu start -->
+
+	<definition name="projectmaster" extends="admin">
+		<put name="body" value="/jsp/Manager/ProjectCreationByManager.jsp" />
+	</definition>
+
+	<definition name="attendancetimesheetreport" extends="admin">
+		<put name="body" value="/jsp/Admin/TimesheetReport.jsp" />
+	</definition>
+
+	<definition name="leavedetails" extends="admin">
+		<put name="body" value="/jsp/Admin/LeaveDetailsReport.jsp" />
+	</definition>
+	<definition name="employeeDailyAllowance" extends="admin">
+		<put name="body" value="/jsp/Admin/EmployeeDailyAllowance.jsp" />
+	</definition>
+	<definition name="employessSalaryDetails" extends="admin">
+		<put name="body" value="/jsp/Admin/EmployeeSalaryDetails.jsp" />
+	</definition>
+
+	<definition name="getPayroll" extends="admin">
+		<put name="body" value="/jsp/Admin/EmployeePayroll.jsp" />
+	</definition>
+
+	<definition name="createpayslipfilter" extends="admin">
+		<put name="body" value="/jsp/Admin/CreatePayslipFilter.jsp" />
+	</definition>
+
+
+
+	<!-- for teleindia by seshu end -->
+
+	<definition name="holidaymaster" extends="admin">
+		<put name="body" value="/jsp/Admin/HolidayMasetr.jsp" />
+	</definition>
+	<definition name="addgroup" extends="admin">
+		<put name="body" value="/jsp/Admin/addGroupHolidays.jsp" />
+	</definition>
+
+	<definition name="managerHome" extends="admin">
+		<put name="body" value="/jsp/Admin/ManagerMaster.jsp" />
+	</definition>
+
+	<definition name="AttendanceDetails" extends="admin">
+		<put name="body" value="/jsp/Admin/AttendanceStatusType.jsp" />
+	</definition>
+
+
+	<definition name="adminmonthreport" extends="admin">
+		<put name="body" value="/jsp/Admin/AdminMonthReport.jsp" />
+	</definition>
+
+	<definition name="adminDayReport" extends="admin">
+		<put name="body" value="/jsp/Admin/AdminDayReport.jsp" />
+	</definition>
+
+	<definition name="advanceSalaryApproval" extends="admin">
+		<put name="body" value="/jsp/Admin/AdvanceSalaryApproval.jsp" />
+	</definition>
+
+	<definition name="departmentMap" extends="admin">
+		<put name="body" value="/jsp/Admin/DepartmentMapping.jsp" />
+	</definition>
+
+	<definition name="weekOffSetting" extends="admin">
+		<put name="body" value="/jsp/Admin/WeekoffSetting.jsp" />
+	</definition>
+
+	<definition name="clientMaster" extends="admin">
+		<put name="body" value="/jsp/Admin/ClientMaster.jsp" />
+	</definition>
+
+	<definition name="employeeMangerMap" extends="admin">
+		<put name="body" value="/jsp/Admin/EmployeeManagerMapping.jsp" />
+	</definition>
+
+	<definition name="getdailsallowances" extends="admin">
+		<put name="body" value="/jsp/Admin/GetDailyAllowancesNotApproved.jsp" />
+	</definition>
+
+	<definition name="usermanagement" extends="admin">
+		<put name="body" value="/jsp/Admin/UserManagement.jsp" />
+	</definition>
+
+	<definition name="gettravelbooking" extends="admin">
+		<put name="body" value="/jsp/Admin/ApproveTravelBooking.jsp" />
+	</definition>
+
+
+	<definition name="managerDirectorMapping" extends="admin">
+		<put name="body" value="/jsp/Admin/ManagerDrirectorMapping.jsp" />
+	</definition>
+
+	<definition name="getExpenseConsolidatedDetail_admin"
+		extends="admin">
+		<put name="body" value="/jsp/Admin/ExpenseApprovelByAdmin.jsp" />
+	</definition>
+
+
+	<definition name="deleteEmployeeAudit" extends="admin">
+		<put name="body" value="/jsp/Admin/DeleteEmployeeAudit.jsp" />
+	</definition>
+
+	<definition name="timesheetReconcil" extends="admin">
+		<put name="body" value="/jsp/Admin/TimesheetReconciliation.jsp" />
+	</definition>
+
+	<definition name="DisplayDeactiveEmployees" extends="admin">
+		<put name="body" value="/jsp/Admin/DisplayDeactiveEmpDetails.jsp" />
+	</definition>
+
+
+
+	<!-- Admin End -->
+	<!-- Manager Start by Arul -->
+
+	<definition name="manager" extends="mainLayout">
+		<put name="title" value="e-AttendencePro" />
+
+		<put name="header" value="/LAYOUT/manager_header.jsp" />
+		<put name="menu" value="/LAYOUT/manager_header_menu.jsp" />
+		<put name="body" value="/jsp/Manager/AllEmployeeDetails.jsp" />
+		<put name="footer" value="" />
+	</definition>
+
+	<!-- for Manager Home by Arul -->
+	<definition name="manager_home" extends="manager">
+		<put name="body" value="/jsp/Manager/AllEmployeeDetails.jsp" />
+	</definition>
+	<!-- for Manager Change Password by Arul -->
+	<definition name="manager_changePassword" extends="manager">
+		<put name="body" value="/jsp/Manager/changePassword.jsp" />
+	</definition>
+
+	<!-- for attendence aprrovel by seshu -->
+	<definition name="attendenceapprovel" extends="manager">
+		<put name="body" value="/jsp/Manager/AttendenceApprovel.jsp" />
+	</definition>
+
+	<definition name="attendenceapprovel_by_date" extends="manager">
+		<put name="body" value="/jsp/Manager/AttendanceApprovalByDate.jsp" />
+	</definition>
+
+	<!-- for Manager Forgot Password by Satish -->
+	<definition name="manager_forgetPassword" extends="manager">
+		<put name="body" value="/jsp/Manager/forgetPassword.jsp" />
+	</definition>
+
+	<!-- Manager ConfirmationLeave by Satish -->
+	<definition name="manager_leaveapproved" extends="manager">
+		<put name="body" value="/jsp/Manager/ManagerLeaveConfirmation.jsp" />
+	</definition>
+
+	<definition name="attendanceNotApproved" extends="manager">
+		<put name="body" value="/jsp/Manager/AttendanceNotApproved.jsp" />
+	</definition>
+	<definition name="empDailyAllowance" extends="manager">
+		<put name="body" value="/jsp/Manager/UploadDailyAllowanceByManager.jsp" />
+	</definition>
+	<definition name="getExpenseConsolidatedDetail" extends="manager">
+		<put name="body" value="/jsp/Manager/ExpenseConsilidatedReport.jsp" />
+	</definition>
+
+
+	<definition name="projectcreationByManager" extends="manager">
+		<put name="body" value="/jsp/Manager/ProjectCreationByManager.jsp" />
+	</definition>
+
+
+	<definition name="allEmployeesUnderManager" extends="manager">
+		<put name="body" value="/jsp/Manager/AllEmployeeDetails.jsp" />
+	</definition>
+
+
+
+	<definition name="employeeadvancesalarydetails" extends="manager">
+		<put name="body" value="/jsp/Manager/EmployeeAdvanceSalaryDetails.jsp" />
+	</definition>
+
+
+	<definition name="advanceSalaryRequest" extends="manager">
+		<put name="body" value="/jsp/Manager/AdvanceSalaryRequest.jsp" />
+	</definition>
+
+
+	<definition name="employeeDashboard" extends="manager">
+		<put name="body" value="/jsp/Manager/EmployeeDashboard.jsp" />
+	</definition>
+
+
+	<definition name="employeeDashboardinmgr" extends="manager">
+		<put name="body" value="/jsp/Manager/EmployeeDashboard.jsp" />
+	</definition>
+
+
+
+	<definition name="getAllEmployeeResume" extends="manager">
+		<put name="body" value="/jsp/Manager/GetEmployeeResume.jsp" />
+	</definition>
+
+
+	<definition name="employeeAllowanceClaimByManager" extends="manager">
+		<put name="body" value="/jsp/Manager/AllowancesClaim.jsp" />
+	</definition>
+
+	<definition name="claimedallowancesview" extends="manager">
+		<put name="body" value="/jsp/Manager/ClaimedAllowancesView.jsp" />
+	</definition>
+
+	<definition name="travelBookedDetails" extends="manager">
+		<put name="body" value="/jsp/Manager/TravelBookedDetails.jsp" />
+	</definition>
+
+	<definition name="dailyAllowanceViewInManager" extends="manager">
+		<put name="body" value="/jsp/Employee/DailyAllowancesView.jsp" />
+	</definition>
+
+	<definition name="manager_ContactUsMail" extends="manager">
+		<put name="body" value="/jsp/ContactUsMail.jsp" />
+	</definition>
+
+	<definition name="moreTravelAllowaceInManger" extends="manager">
+		<put name="body" value="/jsp/Employee/MoreTravelAllowanceDetails.jsp" />
+	</definition>
+	
+	
+     <definition name="viewMoreAllowances" extends="manager">
+		<put name="body" value="/jsp/Manager/ViewMoreAllowances.jsp" />
+	</definition>
+	
+	
+     <definition name="moreExpenseDetailsInManager" extends="manager">
+		<put name="body" value="/jsp/Manager/MoreExpenseDetails.jsp" />
+	</definition>
+
+
+	<!-- Manager End -->
+	<!-- Employee Start by Arul -->
+
+	<definition name="employee" extends="mainLayout">
+		<put name="title" value="e-AttendencePro" />
+		<put name="header" value="/LAYOUT/employee_header.jsp" />
+		<put name="menu" value="/LAYOUT/employee_header_menu.jsp" />
+		<put name="body" value="/jsp/Employee/EmployeeDashboard.jsp" />
+		<put name="footer" value="" />
+
+	</definition>
+	<!-- for Employee Home by Arul -->
+	<definition name="employee_home" extends="employee">
+		<put name="body" value="/jsp/Employee/EmployeeDashboard.jsp" />
+	</definition>
+	<definition name="employee_changePassword" extends="employee">
+		<put name="body" value="/jsp/Employee/changePassword.jsp" />
+	</definition>
+	<definition name="employee_postattendance" extends="employee">
+		<put name="body" value="/jsp/Employee/postAttendance.jsp" />
+	</definition>
+
+	<definition name="employeeforgotpasswordHome" extends="employee">
+		<put name="body" value="/jsp/Employee/forgotPassword.jsp" />
+	</definition>
+
+	<definition name="employeeLeaveRequestHome" extends="employee">
+		<put name="body" value="/jsp/Employee/LeaveRequest.jsp" />
+	</definition>
+
+
+	<definition name="employee_leavestatus" extends="employee">
+		<put name="body" value="/jsp/Employee/EmployeeLeaveStatus.jsp" />
+	</definition>
+	<definition name="employee_getPersonalDetails" extends="admin">
+		<put name="body" value="/jsp/Employee/EmployeePersonalDetails.jsp" />
+	</definition>
+	<definition name="getexpenseDetails" extends="employee">
+		<put name="body" value="/jsp/Employee/ExpenseDetails.jsp" />
+	</definition>
+
+	<definition name="leaveDetailsHome" extends="employee">
+		<put name="body" value="/jsp/Employee/LeaveDetailsHome.jsp" />
+	</definition>
+	<definition name="employeeResumeCreation" extends="employee">
+		<put name="body" value="/jsp/Employee/EmployeeResumeCreation.jsp" />
+	</definition>
+
+	<definition name="employeeDailyAllowancesView" extends="employee">
+		<put name="body" value="/jsp/Employee/DailyAllowancesView.jsp" />
+	</definition>
+
+	<definition name="employeedashboardadvancesalarydetails"
+		extends="employee">
+		<put name="body" value="/jsp/Employee/EmployeeAdvanceSalaryDetails.jsp" />
+	</definition>
+
+	<definition name="expencesView" extends="employee">
+		<put name="body" value="/jsp/Employee/EmployeeExpencesDetailsView.jsp" />
+	</definition>
+
+	<definition name="employee_ContactUsMail" extends="employee">
+		<put name="body" value="/jsp/ContactUsMail.jsp" />
+	</definition>
+
+	<definition name="letterHead" extends="employee">
+		<put name="body" value="/jsp/Employee/LetterHead.jsp" />
+	</definition>
+
+	<definition name="MoreattendanceDetails" extends="employee">
+		<put name="body" value="/jsp/Employee/MoreAttendanceDetails.jsp" />
+	</definition>
+
+	<definition name="MoreTravelallowanceDetails" extends="employee">
+		<put name="body" value="/jsp/Employee/MoreTravelAllowanceDetails.jsp" />
+	</definition>
+
+
+
+
+	<!-- Employee End -->
+
+
+
+
+	<definition name="forgetPasswordRequest" extends="forgetPasswordLayout">
+		<put name="body" value="/jsp/Login/forgetPasswordRequest.jsp" />
+	</definition>
+
+	<!-- For Tel India --><!-- For Tel India --><!-- For Tel India -->
+
+	<definition name="GetLeaves" extends="admin">
+		<put name="body" value="/jsp/Admin/LeaveBank.jsp" />
+	</definition>
+
+
+	<!-- priya all employee starts -->
+	<definition name="GetEmployee" extends="admin">
+		<put name="body" value="/jsp/Admin/AllEmployee.jsp" />
+	</definition>
+
+	<definition name="modify_employee" extends="admin">
+		<put name="body" value="/jsp/Admin/EmployeeAmendment.jsp" />
+	</definition>
+	<!-- priya all employee ends -->
+
+
+
+	<!-- For Director Menu Starting -->
+
+	<definition name="director" extends="mainLayout">
+		<put name="title" value="e-AttendencePro" />
+		<put name="header" value="/LAYOUT/director_header.jsp" />
+		<put name="menu" value="/LAYOUT/director_header_menu.jsp" />
+		<put name="body" value="/jsp/Director/director_Home.jsp" />
+		<put name="footer" value="" />
+	</definition>
+
+	<definition name="directorhome" extends="director">
+		<put name="body" value="/jsp/Director/director_Home.jsp" />
+	</definition>
+
+	<definition name="director_employee_creation" extends="director">
+		<put name="body" value="/jsp/Admin/EmployeeCreation.jsp" />
+	</definition>
+
+	<definition name="director_employee_amendment" extends="director">
+		<put name="body" value="/jsp/Admin/EmployeeAmendment.jsp" />
+	</definition>
+	<definition name="director_GetEmployee" extends="director">
+		<put name="body" value="/jsp/Admin/AllEmployee.jsp" />
+	</definition>
+	<definition name="director_employessSalaryDetails" extends="director">
+		<put name="body" value="/jsp/Admin/EmployeeSalaryDetails.jsp" />
+	</definition>
+	<definition name="director_projectmaster" extends="director">
+		<put name="body" value="/jsp/Manager/ProjectCreationByManager.jsp" />
+	</definition>
+	<definition name="director_clientMaster" extends="director">
+		<put name="body" value="/jsp/Admin/ClientMaster.jsp" />
+	</definition>
+	<definition name="director_DepMaster" extends="director">
+		<put name="body" value="/jsp/Admin/DepartmentMaster.jsp" />
+	</definition>
+	<definition name="director_DesignationMaster" extends="director">
+		<put name="body" value="/jsp/Admin/AddDesignation.jsp" />
+	</definition>
+	<definition name="director_holidaymaster" extends="director">
+		<put name="body" value="/jsp/Admin/HolidayMasetr.jsp" />
+	</definition>
+	<definition name="director_addgroup" extends="director">
+		<put name="body" value="/jsp/Admin/addGroupHolidays.jsp" />
+	</definition>
+	<definition name="director_roleMaster" extends="director">
+		<put name="body" value="/jsp/RoleMaster.jsp" />
+	</definition>
+	<definition name="director_GetLeaves" extends="director">
+		<put name="body" value="/jsp/Admin/LeaveBank.jsp" />
+	</definition>
+	<definition name="director_AttendanceDetails" extends="director">
+		<put name="body" value="/jsp/Admin/AttendanceStatusType.jsp" />
+	</definition>
+	<definition name="director_weekOffSetting" extends="director">
+		<put name="body" value="/jsp/Admin/WeekoffSetting.jsp" />
+	</definition>
+	<definition name="director_usermanagement" extends="director">
+		<put name="body" value="/jsp/Admin/UserManagement.jsp" />
+	</definition>
+	<definition name="director_employeeDashboardinmgr" extends="director">
+		<put name="body" value="/jsp/Manager/EmployeeDashboard.jsp" />
+	</definition>
+	<definition name="director_departmentMap" extends="director">
+		<put name="body" value="/jsp/Admin/DepartmentMapping.jsp" />
+	</definition>
+	<definition name="director_projectmanagerHome" extends="director">
+		<put name="body" value="/jsp/Admin/ProjectManagerMapping.jsp" />
+	</definition>
+	<definition name="director_userRolePermission" extends="director">
+		<put name="body" value="/jsp/UserRolePermission.jsp" />
+	</definition>
+	<definition name="director_advanceSalaryApproval" extends="director">
+		<put name="body" value="/jsp/Admin/AdvanceSalaryApproval.jsp" />
+	</definition>
+	<definition name="director_getdailsallowances" extends="director">
+		<put name="body" value="/jsp/Director/GetDailyAllowancesNotApproved.jsp" />
+	</definition>
+	<definition name="director_attendancetimesheetreport"
+		extends="director">
+		<put name="body" value="/jsp/Admin/TimesheetReport.jsp" />
+	</definition>
+	
+	
+	
+	
+	<definition name="getProductivity_attendancetimesheetreport"
+		extends="director">
+		<put name="body" value="/jsp/Director/ProductivityReport.jsp" />
+	</definition>
+	
+	
+	
+	
+	
+	
+	<definition name="director_adminmonthreport" extends="director">
+		<put name="body" value="/jsp/Admin/AdminMonthReport.jsp" />
+	</definition>
+	<definition name="director_admin_dayReport" extends="director">
+		<put name="body" value="/jsp/Admin/AdminDayReport.jsp" />
+	</definition>
+	<definition name="director_leavedetails" extends="director">
+		<put name="body" value="/jsp/Admin/LeaveDetailsReport.jsp" />
+	</definition>
+	<definition name="director_employeeDailyAllowance" extends="director">
+		<put name="body" value="/jsp/Admin/EmployeeDailyAllowance.jsp" />
+	</definition>
+	<definition name="director_getPayroll" extends="director">
+		<put name="body" value="/jsp/Admin/EmployeePayroll.jsp" />
+	</definition>
+	<definition name="director_createpayslipfilter" extends="director">
+		<put name="body" value="/jsp/Admin/CreatePayslipFilter.jsp" />
+	</definition>
+	<definition name="director_ContactUsMail" extends="director">
+		<put name="body" value="/jsp/ContactUsMail.jsp" />
+	</definition>
+	<definition name="director_changePassword" extends="director">
+		<put name="body" value="/jsp/changePassword.jsp" />
+	</definition>
+	<definition name="director_travelbooking" extends="director">
+		<put name="body" value="/jsp/Director/ApproveTravelBooking.jsp" />
+	</definition>
+
+	<definition name="getExpenseConsolidatedDetail_director"
+		extends="director">
+		<put name="body" value="/jsp/Director/ExpenseApprovelByDirector.jsp" />
+
+	</definition>
+	<definition name="advanceSalaryConsolidateReport" extends="director">
+		<put name="body" value="/jsp/Director/AdvanceSalaryConsolidateReport.jsp" />
+	
+    </definition>
+	
+	<definition name="employeeAllowanceReport"  extends="director">
+		<put name="body" value="/jsp/Director/EmployeeAllowanceReport.jsp" />
+	</definition>
+	
+	<definition name="getDeactiveEmployees" extends="admin">
+		<put name="body" value="/jsp/Admin/AllDeactiveEmployee.jsp" />
+	</definition>
+	
+	<definition name="travelAllowanceReport" extends="director">
+		<put name="body" value="/jsp/Director/TravelAllowancesReport.jsp" />
+	</definition>
+	
+	<definition name="expenseReport" extends="director">
+		<put name="body" value="/jsp/Director/ExpensesReport.jsp" />
+	</definition>
+	
+		<definition name="admin_attendenceapprovel_by_date" extends="director">
+		<put name="body" value="/jsp/Manager/AttendanceApprovalByDate.jsp" />
+	</definition>
+
+	<definition name="Adminattendenceapprovel" extends="director">
+		<put name="body" value="/jsp/Manager/AttendenceApprovel.jsp" />
+	</definition>
+	
+	<definition name="director_leaveapproved" extends="director">
+		<put name="body" value="/jsp/Manager/ManagerLeaveConfirmation.jsp" />
+	</definition>
+	
+	<definition name="directorlogreport" extends="director">
+		<put name="body" value="/jsp/LogReport.jsp" />
+	</definition>
+	
+	<definition name="director_employeeMangerMap" extends="director">
+		<put name="body" value="/jsp/Admin/EmployeeManagerMapping.jsp" />
+	</definition>
+	
+	<definition name="director_getDeactiveEmployees" extends="director">
+		<put name="body" value="/jsp/Admin/AllDeactiveEmployee.jsp" />
+	</definition>
+
+	<definition name="attendenceapprovel_by_director_date"
+		extends="director">
+		<put name="body" value="/jsp/Manager/AttendanceApprovalByDate.jsp" />
+	</definition>
+	
+	<definition name="DisplayDeactiveEmployeesInDirector" extends="director">
+		<put name="body" value="/jsp/Admin/DisplayDeactiveEmpDetails.jsp" />
+	</definition>
+	
+	<definition name="todaygraffreport" extends="admin">
+		<put name="body" value="/jsp/Director/TodayGraffReport.jsp" />
+	</definition>
+
+	<definition name="getProductivity_attendancetimesheetreport"
+		extends="admin">
+		<put name="body" value="/jsp/Director/ProductivityReport.jsp" />
+	</definition>
+</tiles-definitions>

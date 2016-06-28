@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/CENTRIS-HRMS/!svn/ver/110/CENTRIS-HRMS/src/com/centris/properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/properties/log4j.properties
+END
+CENTRIS-HRMS.properties
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/110/CENTRIS-HRMS/src/com/centris/properties/CENTRIS-HRMS.properties
+END

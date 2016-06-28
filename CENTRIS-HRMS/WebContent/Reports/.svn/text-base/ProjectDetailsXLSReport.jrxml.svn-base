@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jasper_report_template" pageWidth="3574" pageHeight="841" columnWidth="3574" leftMargin="0" rightMargin="0" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="ReportTitle" class="java.lang.String"/>
+	<parameter name="Author" class="java.lang.String"/>
+	<parameter name="AllowanceDate" class="java.lang.String"/>
+	<parameter name="endDate" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="projectname" class="java.lang.String">
+		<fieldDescription><![CDATA[projectname]]></fieldDescription>
+	</field>
+	<field name="clientname" class="java.lang.String">
+		<fieldDescription><![CDATA[clientname]]></fieldDescription>
+	</field>
+	<field name="linkfinancialyear" class="java.lang.String">
+		<fieldDescription><![CDATA[linkfinancialyear]]></fieldDescription>
+	</field>
+	<field name="approveddate" class="java.lang.String">
+		<fieldDescription><![CDATA[approveddate]]></fieldDescription>
+	</field>
+	<field name="closeddate" class="java.lang.String">
+		<fieldDescription><![CDATA[closeddate]]></fieldDescription>
+	</field>
+	<field name="projecttype" class="java.lang.String">
+		<fieldDescription><![CDATA[projecttype]]></fieldDescription>
+	</field>
+	<field name="projectcode" class="java.lang.String">
+		<fieldDescription><![CDATA[projectcode]]></fieldDescription>
+	</field>
+	<field name="endcustomer" class="java.lang.String">
+		<fieldDescription><![CDATA[endcustomer]]></fieldDescription>
+	</field>
+	<field name="closedby" class="java.lang.String">
+		<fieldDescription><![CDATA[closedby]]></fieldDescription>
+	</field>
+	<field name="createdby" class="java.lang.String">
+		<fieldDescription><![CDATA[createdby]]></fieldDescription>
+	</field>
+	<field name="projectstatus" class="java.lang.String">
+		<fieldDescription><![CDATA[projectstatus]]></fieldDescription>
+	</field>
+	<field name="projectRefCode" class="java.lang.String">
+		<fieldDescription><![CDATA[projectRefCode]]></fieldDescription>
+	</field>
+	<field name="projectHighLevelActivity" class="java.lang.String">
+		<fieldDescription><![CDATA[projectHighLevelActivity]]></fieldDescription>
+	</field>
+	<field name="createdate" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[createdate]]></fieldDescription>
+	</field>
+	<field name="ponumber" class="java.lang.String">
+		<fieldDescription><![CDATA[ponumber]]></fieldDescription>
+	</field>
+	<field name="projectActivityCat" class="java.lang.String">
+		<fieldDescription><![CDATA[projectActivityCat]]></fieldDescription>
+	</field>
+	<field name="approvedby" class="java.lang.String">
+		<fieldDescription><![CDATA[approvedby]]></fieldDescription>
+	</field>
+	<field name="projectlocation" class="java.lang.String">
+		<fieldDescription><![CDATA[projectlocation]]></fieldDescription>
+	</field>
+	<field name="forFuturExpan" class="java.lang.String">
+		<fieldDescription><![CDATA[forFuturExpan]]></fieldDescription>
+	</field>
+	<field name="sno" class="java.lang.Integer">
+		<fieldDescription><![CDATA[sno]]></fieldDescription>
+	</field>
+	<title>
+		<band height="88" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="2001" height="19" forecolor="#003333"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Project Details Statement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="33" width="3574" height="20"/>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="33" width="47" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[S No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2571" y="33" width="142" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Created Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2977" y="33" width="169" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Approved Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2118" y="33" width="124" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[LinkFinancial Year]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1888" y="33" width="113" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[For FuturePlan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="707" y="33" width="203" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Location]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1587" y="33" width="142" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[End Customer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1442" y="33" width="145" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Project Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2001" y="33" width="117" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ProjectActivity Categ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="47" y="33" width="332" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Project Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3456" y="33" width="118" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Closed Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1729" y="33" width="159" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Project HighLevel Activity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="379" y="33" width="328" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Project Ref Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="910" y="33" width="145" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Project Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1055" y="33" width="233" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[PO Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3146" y="33" width="310" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Closed By]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2242" y="33" width="329" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Created By]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1288" y="33" width="154" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Client Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2713" y="33" width="264" height="19" forecolor="#333333" backcolor="#CCE5F2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ApprovedBy]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="19" width="3574" height="14"/>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="707" y="0" width="203" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{projectlocation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="47" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="47" y="0" width="332" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{projectname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="910" y="0" width="145" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{projectstatus}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1288" y="0" width="153" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{clientname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1586" y="0" width="142" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{endcustomer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="379" y="0" width="328" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{projectRefCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1441" y="0" width="145" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{projecttype}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1887" y="0" width="113" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forFuturExpan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2000" y="0" width="117" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{projectActivityCat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2242" y="0" width="329" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{createdby}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MM-yyyy">
+				<reportElement x="2571" y="0" width="141" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{createdate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3146" y="0" width="310" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{closedby}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2117" y="0" width="125" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{linkfinancialyear}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1728" y="0" width="159" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{projectHighLevelActivity}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00">
+				<reportElement x="2977" y="0" width="169" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{approveddate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2712" y="0" width="265" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{approvedby}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00">
+				<reportElement x="3456" y="0" width="118" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{closeddate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1055" y="0" width="233" height="23" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ponumber}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

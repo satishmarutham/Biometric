@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/CENTRIS-HRMS/!svn/ver/95/CENTRIS-HRMS/WebContent/jsp/Employee
+END
+postAttendance.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Employee/postAttendance.jsp
+END
+LeaveDetailsHome.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Employee/LeaveDetailsHome.jsp
+END
+ExpenseDetails.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/60/CENTRIS-HRMS/WebContent/jsp/Employee/ExpenseDetails.jsp
+END
+changePassword.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/60/CENTRIS-HRMS/WebContent/jsp/Employee/changePassword.jsp
+END
+EmployeeExpencesDetailsView.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/CENTRIS-HRMS/!svn/ver/60/CENTRIS-HRMS/WebContent/jsp/Employee/EmployeeExpencesDetailsView.jsp
+END
+Home_Page.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Employee/Home_Page.jsp
+END
+EmployeePersonalDetails.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/95/CENTRIS-HRMS/WebContent/jsp/Employee/EmployeePersonalDetails.jsp
+END
+LeaveRequest.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Employee/LeaveRequest.jsp
+END
+DailyAllowancesView.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Employee/DailyAllowancesView.jsp
+END
+MoreTravelAllowanceDetails.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CENTRIS-HRMS/!svn/ver/60/CENTRIS-HRMS/WebContent/jsp/Employee/MoreTravelAllowanceDetails.jsp
+END
+EmployeeResumeCreation.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Employee/EmployeeResumeCreation.jsp
+END
+EmployeeLeaveStatus.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Employee/EmployeeLeaveStatus.jsp
+END
+forgotPassword.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Employee/forgotPassword.jsp
+END
+MoreAttendanceDetails.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Employee/MoreAttendanceDetails.jsp
+END
+EmployeeAdvanceSalaryDetails.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CENTRIS-HRMS/!svn/ver/60/CENTRIS-HRMS/WebContent/jsp/Employee/EmployeeAdvanceSalaryDetails.jsp
+END
+EmployeeDashboard.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CENTRIS-HRMS/!svn/ver/91/CENTRIS-HRMS/WebContent/jsp/Employee/EmployeeDashboard.jsp
+END
+LetterHead.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/CENTRIS-HRMS/!svn/ver/60/CENTRIS-HRMS/WebContent/jsp/Employee/LetterHead.jsp
+END

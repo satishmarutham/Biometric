@@ -1,0 +1,38 @@
+@CHARSET "ISO-8859-1";
+
+table#salaryRequest tr {
+	padding: 1px;
+}
+
+table#salaryRequest td {
+	font-family: "Segoe UI Semibold","Segoe UI";
+	/* background-color: #BCD1E1; */
+	color: black;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: justify;
+	margin: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	border: 1px solid #BDC3C7;
+}
+
+table#salaryRequest th {
+	font-family: "Segoe UI Semibold","Segoe UI";
+	background-color: grey;
+	color: #FFFFFF;
+}
+
+table#salaryRequest label {
+	font-family: "Segoe UI Semibold","Segoe UI";
+	color: #003D52;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	font-family: "Segoe UI Semibold","Segoe UI";
+}
+
+table#salaryRequest textarea {
+	
+	width: 80%;
+}

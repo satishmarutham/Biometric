@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/CENTRIS-HRMS/!svn/ver/60/CENTRIS-HRMS/WebContent/jsp/Manager
+END
+forgetPassword.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Manager/forgetPassword.jsp
+END
+changePassword.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Manager/changePassword.jsp
+END
+ExpenseConsilidatedReport.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Manager/ExpenseConsilidatedReport.jsp
+END
+Home_Page.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Manager/Home_Page.jsp
+END
+GetEmployeeResume.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CENTRIS-HRMS/!svn/ver/60/CENTRIS-HRMS/WebContent/jsp/Manager/GetEmployeeResume.jsp
+END
+AttendanceApprovalByDate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/60/CENTRIS-HRMS/WebContent/jsp/Manager/AttendanceApprovalByDate.jsp
+END
+AllEmployeeDetails.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Manager/AllEmployeeDetails.jsp
+END
+ViewMoreAllowances.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Manager/ViewMoreAllowances.jsp
+END
+UploadDailyAllowanceByManager.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Manager/UploadDailyAllowanceByManager.jsp
+END
+ClaimedAllowancesView.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Manager/ClaimedAllowancesView.jsp
+END
+ProjectCreationByManager.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/60/CENTRIS-HRMS/WebContent/jsp/Manager/ProjectCreationByManager.jsp
+END
+MoreExpenseDetails.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Manager/MoreExpenseDetails.jsp
+END
+ManagerLeaveConfirmation.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Manager/ManagerLeaveConfirmation.jsp
+END
+TravelBookedDetails.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Manager/TravelBookedDetails.jsp
+END
+AttendanceNotApproved.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Manager/AttendanceNotApproved.jsp
+END
+AllowancesClaim.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Manager/AllowancesClaim.jsp
+END
+AdvanceSalaryRequest.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/60/CENTRIS-HRMS/WebContent/jsp/Manager/AdvanceSalaryRequest.jsp
+END
+EmployeeAdvanceSalaryDetails.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/CENTRIS-HRMS/!svn/ver/60/CENTRIS-HRMS/WebContent/jsp/Manager/EmployeeAdvanceSalaryDetails.jsp
+END
+AttendenceApprovel.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Manager/AttendenceApprovel.jsp
+END
+EmployeeDashboard.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/jsp/Manager/EmployeeDashboard.jsp
+END

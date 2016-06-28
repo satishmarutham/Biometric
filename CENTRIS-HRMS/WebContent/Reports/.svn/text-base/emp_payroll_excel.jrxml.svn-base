@@ -1,0 +1,1411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="emp_payroll_xl" pageWidth="2893" pageHeight="595" orientation="Landscape" columnWidth="2853" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="Image" class="java.lang.String"/>
+	<parameter name="Month" class="java.lang.String"/>
+	<parameter name="Year" class="java.lang.String"/>
+	<parameter name="ClientName" class="java.lang.String"/>
+	<parameter name="AddressLine1" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="eesiempr_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[eesiempr_actual]]></fieldDescription>
+	</field>
+	<field name="pfempy_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[pfempy_actual]]></fieldDescription>
+	</field>
+	<field name="special_allowances_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[special_allowances_actual]]></fieldDescription>
+	</field>
+	<field name="empId" class="java.lang.String">
+		<fieldDescription><![CDATA[empId]]></fieldDescription>
+	</field>
+	<field name="ptax_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[ptax_earned]]></fieldDescription>
+	</field>
+	<field name="pf" class="java.lang.Double">
+		<fieldDescription><![CDATA[pf]]></fieldDescription>
+	</field>
+	<field name="esi" class="java.lang.Double">
+		<fieldDescription><![CDATA[esi]]></fieldDescription>
+	</field>
+	<field name="cca_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[cca_earned]]></fieldDescription>
+	</field>
+	<field name="incometax_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[incometax_actual]]></fieldDescription>
+	</field>
+	<field name="epfNo" class="java.lang.String">
+		<fieldDescription><![CDATA[epfNo]]></fieldDescription>
+	</field>
+	<field name="totdeduction_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[totdeduction_earned]]></fieldDescription>
+	</field>
+	<field name="late_deduction" class="java.lang.String">
+		<fieldDescription><![CDATA[late_deduction]]></fieldDescription>
+	</field>
+	<field name="advance_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[advance_actual]]></fieldDescription>
+	</field>
+	<field name="totpayabbla_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[totpayabbla_actual]]></fieldDescription>
+	</field>
+	<field name="esiempy_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[esiempy_earned]]></fieldDescription>
+	</field>
+	<field name="no_of_actual_days" class="java.lang.Integer">
+		<fieldDescription><![CDATA[no_of_actual_days]]></fieldDescription>
+	</field>
+	<field name="payable_days" class="java.lang.Integer">
+		<fieldDescription><![CDATA[payable_days]]></fieldDescription>
+	</field>
+	<field name="esicode" class="java.lang.String">
+		<fieldDescription><![CDATA[esicode]]></fieldDescription>
+	</field>
+	<field name="empName" class="java.lang.String">
+		<fieldDescription><![CDATA[empName]]></fieldDescription>
+	</field>
+	<field name="totdeduction_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[totdeduction_actual]]></fieldDescription>
+	</field>
+	<field name="hra_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[hra_earned]]></fieldDescription>
+	</field>
+	<field name="desid" class="java.lang.String">
+		<fieldDescription><![CDATA[desid]]></fieldDescription>
+	</field>
+	<field name="month" class="java.lang.Integer">
+		<fieldDescription><![CDATA[month]]></fieldDescription>
+	</field>
+	<field name="cca_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[cca_actual]]></fieldDescription>
+	</field>
+	<field name="esiempr_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[esiempr_actual]]></fieldDescription>
+	</field>
+	<field name="convinience_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[convinience_earned]]></fieldDescription>
+	</field>
+	<field name="totEarned_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[totEarned_earned]]></fieldDescription>
+	</field>
+	<field name="emp_dept" class="java.lang.String">
+		<fieldDescription><![CDATA[emp_dept]]></fieldDescription>
+	</field>
+	<field name="pfempr_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[pfempr_earned]]></fieldDescription>
+	</field>
+	<field name="salaryadvanced" class="java.lang.Double">
+		<fieldDescription><![CDATA[salaryadvanced]]></fieldDescription>
+	</field>
+	<field name="epfempr_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[epfempr_earned]]></fieldDescription>
+	</field>
+	<field name="totEarned_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[totEarned_actual]]></fieldDescription>
+	</field>
+	<field name="year" class="java.lang.Integer">
+		<fieldDescription><![CDATA[year]]></fieldDescription>
+	</field>
+	<field name="medical_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[medical_actual]]></fieldDescription>
+	</field>
+	<field name="deptid" class="java.lang.String">
+		<fieldDescription><![CDATA[deptid]]></fieldDescription>
+	</field>
+	<field name="ctc_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[ctc_earned]]></fieldDescription>
+	</field>
+	<field name="basicda_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[basicda_earned]]></fieldDescription>
+	</field>
+	<field name="netamount" class="java.lang.Double">
+		<fieldDescription><![CDATA[netamount]]></fieldDescription>
+	</field>
+	<field name="gross_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[gross_actual]]></fieldDescription>
+	</field>
+	<field name="takehome" class="java.lang.Double">
+		<fieldDescription><![CDATA[takehome]]></fieldDescription>
+	</field>
+	<field name="ctc_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[ctc_actual]]></fieldDescription>
+	</field>
+	<field name="createdby" class="java.lang.String">
+		<fieldDescription><![CDATA[createdby]]></fieldDescription>
+	</field>
+	<field name="incometax_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[incometax_earned]]></fieldDescription>
+	</field>
+	<field name="basicda_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[basicda_actual]]></fieldDescription>
+	</field>
+	<field name="convinience_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[convinience_actual]]></fieldDescription>
+	</field>
+	<field name="variablepay_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[variablepay_actual]]></fieldDescription>
+	</field>
+	<field name="pfempy_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[pfempy_earned]]></fieldDescription>
+	</field>
+	<field name="pendingsalary" class="java.lang.Double">
+		<fieldDescription><![CDATA[pendingsalary]]></fieldDescription>
+	</field>
+	<field name="sno" class="java.lang.Integer">
+		<fieldDescription><![CDATA[sno]]></fieldDescription>
+	</field>
+	<field name="medical_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[medical_earned]]></fieldDescription>
+	</field>
+	<field name="doj" class="java.lang.String">
+		<fieldDescription><![CDATA[doj]]></fieldDescription>
+	</field>
+	<field name="epfempr_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[epfempr_actual]]></fieldDescription>
+	</field>
+	<field name="emp_des" class="java.lang.String">
+		<fieldDescription><![CDATA[emp_des]]></fieldDescription>
+	</field>
+	<field name="esiempy_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[esiempy_actual]]></fieldDescription>
+	</field>
+	<field name="hra_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[hra_actual]]></fieldDescription>
+	</field>
+	<field name="leave_deduction" class="java.lang.Double">
+		<fieldDescription><![CDATA[leave_deduction]]></fieldDescription>
+	</field>
+	<field name="totpayabbla_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[totpayabbla_earned]]></fieldDescription>
+	</field>
+	<field name="advance_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[advance_earned]]></fieldDescription>
+	</field>
+	<field name="variablepay_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[variablepay_earned]]></fieldDescription>
+	</field>
+	<field name="special_allowances_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[special_allowances_earned]]></fieldDescription>
+	</field>
+	<field name="esiempr_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[esiempr_earned]]></fieldDescription>
+	</field>
+	<field name="ptax_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[ptax_actual]]></fieldDescription>
+	</field>
+	<field name="eesiempr_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[eesiempr_earned]]></fieldDescription>
+	</field>
+	<field name="pfempr_actual" class="java.lang.Double">
+		<fieldDescription><![CDATA[pfempr_actual]]></fieldDescription>
+	</field>
+	<field name="overtime_pay" class="java.lang.String">
+		<fieldDescription><![CDATA[overtime_pay]]></fieldDescription>
+	</field>
+	<field name="gross_earned" class="java.lang.Double">
+		<fieldDescription><![CDATA[gross_earned]]></fieldDescription>
+	</field>
+	<field name="createdate" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[createdate]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="81" splitType="Stretch">
+			<staticText>
+				<reportElement x="1103" y="3" width="384" height="38"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Payroll Report ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1180" y="47" width="84" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Month}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1398" y="47" width="85" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Year}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1110" y="47" width="69" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Month:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1333" y="47" width="65" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Year:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="91" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="274" y="11" width="75" height="80" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Employee Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="444" y="11" width="97" height="80" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Designation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="541" y="38" width="44" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No of Days]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="652" y="38" width="62" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hra]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="585" y="38" width="67" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Basic+Da]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="714" y="38" width="56" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Convey]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="886" y="38" width="73" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Spl Allowences]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1016" y="38" width="57" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1130" y="38" width="48" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No of days]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1812" y="38" width="79" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Empr Pf]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1891" y="38" width="78" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Empy Pf]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1969" y="38" width="86" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Empr esi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="40" y="12" width="77" height="79" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PF A/c]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="12" width="40" height="79" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SL No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="541" y="11" width="589" height="27" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Actual]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1130" y="12" width="682" height="26" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Earned]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1178" y="38" width="69" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Basic+Da]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1247" y="38" width="55" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hra]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1302" y="38" width="72" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Convey]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1490" y="38" width="75" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Spl Allowences]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1565" y="38" width="77" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VariablePay]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1717" y="38" width="95" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gross Salary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1812" y="12" width="692" height="26" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Deductions]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2055" y="38" width="87" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Empy esi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2230" y="38" width="87" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IncomeTax]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2317" y="38" width="88" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Advance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2580" y="11" width="93" height="79" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Salary Pending]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2673" y="12" width="91" height="79" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Advance Salary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2764" y="11" width="88" height="80" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Net Pay]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2142" y="38" width="88" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PTax]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1642" y="38" width="75" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="117" y="12" width="74" height="79" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EsiCode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="349" y="11" width="95" height="80" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Department]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="770" y="38" width="60" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Medical]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="830" y="38" width="56" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CCA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="959" y="38" width="57" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Variable Pay]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1073" y="38" width="57" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gross Salary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1374" y="38" width="60" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Medical]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1434" y="38" width="56" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CCA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2405" y="38" width="99" height="53" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Deductions]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2504" y="11" width="76" height="79" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Take Home]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="191" y="11" width="83" height="80" forecolor="#FFFFFF" backcolor="#6699FF"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[   Employee Id]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="40" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="0" width="77" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{epfNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="191" y="0" width="83" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{empId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="274" y="0" width="75" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{empName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="0" width="97" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emp_des}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="541" y="0" width="44" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{no_of_actual_days}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="585" y="0" width="66" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{basicda_actual}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="651" y="0" width="62" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hra_actual}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="713" y="0" width="57" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{convinience_actual}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="886" y="0" width="73" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{special_allowances_actual}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1016" y="0" width="57" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ctc_actual}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1131" y="0" width="47" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{payable_days}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1178" y="0" width="69" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{basicda_earned}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1247" y="0" width="55" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hra_earned}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1302" y="0" width="72" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{convinience_earned}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1565" y="0" width="77" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{variablepay_earned}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1717" y="0" width="95" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gross_earned}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1812" y="0" width="79" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{epfempr_earned}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1891" y="0" width="78" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pfempy_earned}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1969" y="0" width="86" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{esiempr_earned}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2055" y="0" width="87" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{esiempy_earned}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2230" y="0" width="87" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{incometax_earned}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2317" y="0" width="88" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{advance_earned}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2673" y="0" width="91" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{salaryadvanced}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2764" y="0" width="88" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{netamount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1490" y="0" width="75" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{special_allowances_earned}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2142" y="0" width="88" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ptax_earned}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1642" y="0" width="75" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ctc_earned}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="349" y="0" width="95" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emp_dept}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="770" y="0" width="60" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{medical_actual}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="830" y="0" width="56" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cca_actual}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="959" y="0" width="57" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{variablepay_actual}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1073" y="0" width="58" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gross_actual}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1374" y="0" width="60" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{medical_earned}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1434" y="0" width="56" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cca_earned}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2405" y="0" width="99" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totdeduction_earned}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2504" y="-1" width="76" height="31"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{takehome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2580" y="-1" width="93" height="31"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pendingsalary}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="0" width="74" height="31"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{esicode}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

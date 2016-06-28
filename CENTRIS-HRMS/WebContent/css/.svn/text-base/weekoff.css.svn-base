@@ -1,0 +1,16 @@
+table td#searchbox{
+	
+	text-align: center;
+	font-family: Segoe UI Semibold;
+	font-size: 13px;
+	font-style: normal;
+
+	
+}
+
+table .input {
+	
+	height: 22px;
+	width: 160px;
+	padding-left: 5px;
+}

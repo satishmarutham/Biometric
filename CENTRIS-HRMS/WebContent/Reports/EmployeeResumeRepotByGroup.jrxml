@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="EmployeeResumeRepotByGroup" pageWidth="607" pageHeight="842" columnWidth="567" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="131"/>
+	<parameter name="address" class="java.lang.String"/>
+	<parameter name="employeeName" class="java.lang.String"/>
+	<parameter name="email" class="java.lang.String"/>
+	<parameter name="mobileNo" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="experience" class="java.lang.String">
+		<fieldDescription><![CDATA[experience]]></fieldDescription>
+	</field>
+	<field name="phoneNo" class="java.lang.String">
+		<fieldDescription><![CDATA[phoneNo]]></fieldDescription>
+	</field>
+	<field name="employeeId" class="java.lang.String">
+		<fieldDescription><![CDATA[employeeId]]></fieldDescription>
+	</field>
+	<field name="carrerObjectiveCode" class="java.lang.String">
+		<fieldDescription><![CDATA[carrerObjectiveCode]]></fieldDescription>
+	</field>
+	<field name="hobbies" class="java.lang.String">
+		<fieldDescription><![CDATA[hobbies]]></fieldDescription>
+	</field>
+	<field name="sno" class="java.lang.String">
+		<fieldDescription><![CDATA[sno]]></fieldDescription>
+	</field>
+	<field name="hobbiesCode" class="java.lang.String">
+		<fieldDescription><![CDATA[hobbiesCode]]></fieldDescription>
+	</field>
+	<field name="employeeName" class="java.lang.String">
+		<fieldDescription><![CDATA[employeeName]]></fieldDescription>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<fieldDescription><![CDATA[gender]]></fieldDescription>
+	</field>
+	<field name="carrerObjective" class="java.lang.String">
+		<fieldDescription><![CDATA[carrerObjective]]></fieldDescription>
+	</field>
+	<field name="responsibilities" class="java.lang.String">
+		<fieldDescription><![CDATA[responsibilities]]></fieldDescription>
+	</field>
+	<field name="baseLocation" class="java.lang.String">
+		<fieldDescription><![CDATA[baseLocation]]></fieldDescription>
+	</field>
+	<field name="technicalSkillsSno" class="java.lang.String">
+		<fieldDescription><![CDATA[technicalSkillsSno]]></fieldDescription>
+	</field>
+	<field name="university" class="java.lang.String">
+		<fieldDescription><![CDATA[university]]></fieldDescription>
+	</field>
+	<field name="responsibilitiesCode" class="java.lang.String">
+		<fieldDescription><![CDATA[responsibilitiesCode]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[email]]></fieldDescription>
+	</field>
+	<field name="address" class="java.lang.String">
+		<fieldDescription><![CDATA[address]]></fieldDescription>
+	</field>
+	<field name="technicalSkillsCode" class="java.lang.String">
+		<fieldDescription><![CDATA[technicalSkillsCode]]></fieldDescription>
+	</field>
+	<field name="type" class="java.lang.String">
+		<fieldDescription><![CDATA[type]]></fieldDescription>
+	</field>
+	<field name="pursuitSno" class="java.lang.String">
+		<fieldDescription><![CDATA[pursuitSno]]></fieldDescription>
+	</field>
+	<field name="description" class="java.lang.String">
+		<fieldDescription><![CDATA[description]]></fieldDescription>
+	</field>
+	<field name="createdBy" class="java.lang.String">
+		<fieldDescription><![CDATA[createdBy]]></fieldDescription>
+	</field>
+	<field name="hobbiesSno" class="java.lang.String">
+		<fieldDescription><![CDATA[hobbiesSno]]></fieldDescription>
+	</field>
+	<field name="experienceCode" class="java.lang.String">
+		<fieldDescription><![CDATA[experienceCode]]></fieldDescription>
+	</field>
+	<field name="dob" class="java.lang.String">
+		<fieldDescription><![CDATA[dob]]></fieldDescription>
+	</field>
+	<field name="presentAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[presentAddress]]></fieldDescription>
+	</field>
+	<field name="martialStatus" class="java.lang.String">
+		<fieldDescription><![CDATA[martialStatus]]></fieldDescription>
+	</field>
+	<field name="pursuits" class="java.lang.String">
+		<fieldDescription><![CDATA[pursuits]]></fieldDescription>
+	</field>
+	<field name="technicalSkills" class="java.lang.String">
+		<fieldDescription><![CDATA[technicalSkills]]></fieldDescription>
+	</field>
+	<field name="responsibilitiesSno" class="java.lang.String">
+		<fieldDescription><![CDATA[responsibilitiesSno]]></fieldDescription>
+	</field>
+	<field name="yearofPassing" class="java.lang.String">
+		<fieldDescription><![CDATA[yearofPassing]]></fieldDescription>
+	</field>
+	<field name="pursuitsCode" class="java.lang.String">
+		<fieldDescription><![CDATA[pursuitsCode]]></fieldDescription>
+	</field>
+	<field name="majorQualification" class="java.lang.String">
+		<fieldDescription><![CDATA[majorQualification]]></fieldDescription>
+	</field>
+	<field name="collageInStitute" class="java.lang.String">
+		<fieldDescription><![CDATA[collageInStitute]]></fieldDescription>
+	</field>
+	<field name="experienceSno" class="java.lang.String">
+		<fieldDescription><![CDATA[experienceSno]]></fieldDescription>
+	</field>
+	<group name="Resume">
+		<groupExpression><![CDATA[$F{type}]]></groupExpression>
+		<groupHeader>
+			<band height="25">
+				<textField>
+					<reportElement mode="Opaque" x="0" y="4" width="567" height="18" forecolor="#696969" backcolor="#E3E3E3"/>
+					<textElement verticalAlignment="Top">
+						<font fontName="Segoe UI"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{type}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="95" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="567" height="30" forecolor="#CCCCCC" backcolor="#E3E3E3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Resume]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="57" width="335" height="33" forecolor="#333333"/>
+				<textElement>
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="403" y="32" width="164" height="18" forecolor="#333333"/>
+				<textElement>
+					<font fontName="Segoe UI" size="9" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{employeeName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="403" y="49" width="164" height="18" forecolor="#333333"/>
+				<textElement>
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mobileNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="40" width="109" height="18" forecolor="#333333"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Segoe UI" size="9" isBold="false" isUnderline="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="32" width="48" height="18" forecolor="#333333"/>
+				<textElement>
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Name         ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="49" width="48" height="18" forecolor="#333333"/>
+				<textElement>
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Mobile No]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="90" width="567" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="397" y="32" width="6" height="18" forecolor="#333333"/>
+				<textElement textAlignment="Center">
+					<font fontName="Segoe UI" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="397" y="49" width="6" height="18" forecolor="#333333"/>
+				<textElement textAlignment="Center">
+					<font fontName="Segoe UI" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="403" y="66" width="164" height="18" forecolor="#333333"/>
+				<textElement>
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{email}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="348" y="66" width="48" height="18" forecolor="#333333"/>
+				<textElement>
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="397" y="66" width="6" height="18" forecolor="#333333"/>
+				<textElement textAlignment="Center">
+					<font fontName="Segoe UI" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="59" y="1" width="508" height="27" forecolor="#333333"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Segoe UI" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="1" width="59" height="16" forecolor="#333333"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Segoe UI" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sno}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="66">
+			<staticText>
+				<reportElement x="0" y="9" width="564" height="18" forecolor="#333333"/>
+				<textElement textAlignment="Center">
+					<font fontName="Segoe UI" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[I hereby declare that the information submitted above is absolutely  true to the best of my knowledge .
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="30" width="26" height="18" forecolor="#333333"/>
+				<textElement>
+					<font fontName="Segoe UI" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Date ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="47" width="26" height="18" forecolor="#333333"/>
+				<textElement>
+					<font fontName="Segoe UI" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Place :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="464" y="43" width="97" height="18" forecolor="#333333"/>
+				<textElement>
+					<font fontName="Segoe UI" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{employeeName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="34" y="47" width="10" height="18" forecolor="#333333"/>
+				<textElement>
+					<font fontName="Segoe UI" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="34" y="30" width="10" height="18" forecolor="#333333"/>
+				<textElement>
+					<font fontName="Segoe UI" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

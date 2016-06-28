@@ -1,0 +1,33 @@
+@CHARSET "ISO-8859-1";
+
+.ui-dialog-titlebar{
+	
+	font-size: 12px !important;
+	background-color: #689EE6 !important; 
+}
+
+.ui-dialog-content{
+	
+	background-color: #689EE6 !important;
+}
+
+.ui-dialog-buttonset{
+	
+	font-family: Segoe Ui  !important;
+	font-size: 14 px  !important;
+}
+
+.ui-dialog-buttonpane {
+	
+/* 	background-color: #689EE6 !important; */
+}
+
+.buttonInDailog{
+	
+	background-color: #689EE6 !important;
+}
+ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable ui-dialog-buttons
+
+.highlightRow table thead tr th.cellintag {
+	background-color: red;
+}

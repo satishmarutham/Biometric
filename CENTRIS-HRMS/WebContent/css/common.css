@@ -1,0 +1,526 @@
+/* Css for Div Background Starting*/
+div.background {
+	border: white;
+
+	border-color: Black;
+	border-width: 1px;
+	padding-top: 10px;
+	background-color: #FFF;
+/* 	margin-top: -16px; */
+}
+
+div.backgroundDiv {
+	font-family: "Segoe UI Semibold","Segoe UI";
+	font-size: 15px;
+	/* background-color: #B2D1B2; */
+	color: black;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+
+.refresh {
+	cursor: pointer;
+
+}
+
+.refresh:hover {
+	cursor: pointer;
+	background-color: #BCD1E1;
+	
+}
+
+
+
+/* Css for Div Ending Starting*/
+/*-------------------------------------------------------------*/
+/* Css for Button and Submit  Starting*/
+.submitbutton {
+	cursor: pointer;
+	background-color: #336699;
+	color: #FFFFFF;
+	font-family: Segoe Ui !important;
+	font-size: 13px !important;
+	font-weight: 500;
+	padding: 3px 10px;
+	 border-radius: 3px;
+}
+
+.submitbutton:hover {
+	cursor: pointer;
+	background-color: #3366CC;
+	color: #FFFFFF;
+	font-family: Segoe Ui !important;
+	font-size: 13px !important;
+	font-weight: bold;
+	padding: 3px 10px;
+}
+/* Css for Button and Submit  Ending*/
+/*--------------------------------------------------------------------*/
+/* Css for Table View Purpose Starting*/
+.tablecss {
+	padding: 0px;
+}
+
+.tablecss th {
+	border-bottom: 1px solid #bbb;
+}
+
+.tablecss table {
+	width: 100%;
+	-webkit-box-shadow: 0 1px 1px -1px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 1px 1px -1px rgba(0, 0, 0, .1);
+	box-shadow: 0 1px 1px -1px rgba(0, 0, 0, .1);
+	border-collapse: separate;
+	border: 1px solid #bbb;
+	border-spacing: 0;
+	border-bottom: 0;
+	border-left: 0;
+	font-size: 12px;
+	font-family: Segoe Ui;
+}
+
+.tablecss table th,.tablecss table td {
+	border: 1px solid #bbb;
+	padding: 7px 5px;
+	font-family: Segoe Ui;
+}
+
+.tablecss table th {
+	font-family: Segoe Ui;
+	background-color: #F5F5F5;
+	vertical-align: top;
+	text-align: center;
+	font-size: 12px;
+	/* text-transform: capitalize; */
+	letter-spacing: 1px;
+	font-weight: 400;
+	border-right: 0;
+	border-top: 0;
+	color: #2975B6;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.tablecss table td {
+	line-height: normal;
+	border-right: 0;
+	border-top: 0;
+	color: #000;
+	font-family: Segoe Ui;
+	text-align: center;
+}
+
+.tablecss table tr:hover {
+	background: #71A4F2 !important;
+	font-family: Segoe Ui;
+}
+
+.tablecss table tr:nth-child(even) {
+	background-color: #F9F9F9;
+}
+
+.tablecss table tr:nth-child(odd) {
+	background-color: #fff;
+}
+
+.tablecss table thead tr th {
+	border-top: 1px solid #bbb;
+  font-weight: bold;
+  background: #C8C8C8;
+  color:black;
+}
+
+.tablecss .sftable-wrap {
+	border: 1px solid #bbb;
+	border-width: 1px 0;
+}
+/* Css for Table View Purpose Ending*/
+/*--------------------------------------------------------------------*/
+/* Css for Table Fields Starting*/
+table#biometric tr {
+	padding: 1px;
+}
+
+table#biometric td {
+	font-family: "Segoe UI Semibold","Segoe UI";
+	/* background-color: #BCD1E1; */
+	color: black;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: justify;
+	margin: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	border: 1px solid #BDC3C7;
+}
+
+table#biometric th {
+	font-family: "Segoe UI Semibold","Segoe UI";
+	/* background-color: gray; */
+	color: #FFFFFF;
+}
+
+table#biometric label {
+	font-family: "Segoe UI Semibold","Segoe UI";
+	color: #003D52;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	font-family: "Segoe UI Semibold","Segoe UI";
+}
+/* Css for Table Fields Ending*/
+/*--------------------------------------------------------------------*/
+/* Css for Fields Starting*/
+input[type="text"] {
+	padding-left: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: #333333;
+	/* border: 1px solid #999999;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999; */
+	background-color: #fff;
+	font-family: "Segoe UI Semibold","Segoe UI";
+	font-size: 12px;
+	width: 98%;
+}
+
+select {
+	padding: 5px;
+	color: #333333;
+	/*border: 1px solid #999999;
+	 border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;*/
+	background-color: #fff;
+	font-family: "Segoe UI Semibold","Segoe UI";
+	font-size: 12px;
+	 width:110px
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+}
+
+.shift_select {
+	padding: 5px;
+	color: #333333;
+	border: 1px solid #999999;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	background-color: #fff;
+	font-family: "Segoe UI Semibold","Segoe UI";
+	font-size: 12px;
+	width: 60px;
+	height: 30px;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	margin-left: 10px;
+}
+
+/* .shift_select option {
+	height: 150px;
+} */
+textarea {
+	padding: 5px;
+	color: #333333;
+	/* border: 1px solid #999999;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999; */
+	background-color: #fff;
+	font-family: "Segoe UI Semibold","Segoe UI";
+	font-size: 12px;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+}
+
+input[type="password"] {
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #333333;
+	border: 1px solid #999999;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	background-color: #fff;
+	font-family: "Segoe UI Semibold","Segoe UI";
+	font-size: 12px;
+	width: 90%;
+}
+/* Css for Fields Ending*/
+/*--------------------------------------------------------------------*/
+/* Css for Error Message Starting*/
+.error-box {
+	color: #000000;
+	border-radius: 12px;
+	font-family: "Segoe UI Semibold","Segoe UI";
+	font-size: 12px;
+	padding: 4px 12px;
+	margin: 5px;
+	color: red;
+	background: white;
+	border: 1px solid #f5aca6;
+	width: 30%;
+	height: 18px;
+}
+
+.error-box1 {
+	color: #000000;
+	border-radius: 12px;
+	font-family: "Segoe UI Semibold","Segoe UI";
+	font-size: 12px;
+	padding: 4px 12px;
+	margin: 5px;
+	color: red;
+	background: white;
+	border: 1px solid #f5aca6;
+	width: 30%;
+	height: 18px;
+}
+/* Css for Success Message in Green Color*/
+.success-box {
+	color: #000000;
+	border-radius: 12px;
+	font-family: "Segoe UI Semibold","Segoe UI";
+	font-size: 12px;
+	padding: 4px 12px;
+	margin: 5px;
+	color: green;
+	background: white;
+	border: 1px solid #f5aca6;
+	width: 30%;
+	height: 18px;
+}
+
+/* Css for Error Message Ending*/
+#accordionCss {
+	font-size: 16px;
+	font-weight: normal;
+	padding: 3px;
+	display: block;
+	text-align: left;
+	background: #5995F0;
+	color: white;
+	font-weight: 400;
+	cursor: pointer;
+	border: 1px solid;
+	border-color: black;
+	padding: 3px;
+}
+
+#expenseCss {
+	font-size: 16px;
+	width: 91%;
+	font-weight: normal;
+	padding: 3px;
+	display: block;
+	text-align: left;
+	background: #5995F0;
+	color: white;
+	font-weight: 400;
+	cursor: pointer;
+	border: 1px solid;
+	border-color: black;
+	font-weight: normal;
+}
+
+}
+#main input[type=text] {
+	width: 80% !important;
+	height: 13px !important;
+	border: 1px solid #999999;
+}
+
+#main select {
+	width: 93% !important;
+	height: 27px !important;
+	border: 1px solid #999999;
+}
+
+#main textarea {
+	width: 88% !important;
+	height: 35px !important;
+	border: 1px solid #999999;
+}
+
+span {
+	font-family: segoe UI;
+	font-size:12px;
+}
+
+button,p,input {
+	font-family: segoe UI !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: segoe UI !important;
+}
+
+input[readonly=readonly] {
+	background-color: #F2F0E7;
+	border: 1px solid #999999;
+}
+
+.login-span {
+	color: #4285f4 !important;
+}
+
+.login-span:HOVER {
+	color: #4285f4 !important;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+fieldset {
+	display: block;
+	clear: both;
+	/* background : url(../images/bac1.jpg) repeat; */
+	background-color: #F2F0E7;
+	margin: 10px 0 30px;
+	padding: 3px 15px 15px;
+}
+.fieldset td{
+	
+		font-size: 12px;
+}
+
+table#biometric_1 tr {
+	padding: 1px;
+}
+
+table#biometric_1 td {
+	font-family: "Segoe UI Semibold","Segoe UI";
+	color: black;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: justify;
+	margin: 1px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+table#biometric_1 td.name {
+	font-family: "Segoe UI Semibold","Segoe UI";
+	color: black;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: justify;
+	margin: 1px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	
+}
+
+table#biometric_1 label {
+	padding:10px;
+	font-family: "Segoe UI Semibold","Segoe UI";
+	color: #000000;
+	font-size: 12px;
+	text-align: center;
+	font-family: "Segoe UI Semibold","Segoe UI";
+}
+.head{
+	background-color:#D9D9D9;
+	  color: #AE1010;
+  font-size: 15px;
+  font-weight: 500;
+	font-size:15px;
+	cursor: pointer; 
+	cursor: hand;
+}
+
+
+.left{
+	text-allign:center;
+	background-color:#D9D9D9;
+	width:20%;
+     font-size:12px;
+}
+
+.right{
+	width:20%;
+	background-color:#fff;
+	  font-size:12px;
+}
+
+.left1{
+	
+	padding-left:30px;
+	background-color:#D9D9D9;
+	width:45%;
+     font-size:12px;
+    border: 0px !important;
+      height: 30px;
+  
+}
+
+
+.right1{
+	padding-left:20px;
+	width:55%;
+	background-color:#fff;
+	  font-size:12px;
+	  
+	   border: 0px !important;
+	   height: 30px;
+}
+
+.leftindialog{
+	
+	padding-left:30px;
+	background-color:#D9D9D9;
+	width:25%;
+     font-size:12px;
+  
+      height: 30px;
+  
+}
+
+
+.rightindialog{
+	padding-left:20px;
+	width:25%;
+	background-color:#FFF ;
+	  font-size:12px;
+	  
+	  
+	   height: 30px;
+}
+
+.head11{
+	  width: 100%;
+  background-color: #98AED0;
+  color: #010915;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+
+.ui-dialog-buttonset button{
+	
+	font-size: 12px !important;
+	
+}
+#holidayerrordiv1 {
+	font-size: 12px;
+	font-family: Segoe UI;
+	color: red;
+	font-weight: bold;
+}
+.holidayerror-box {
+	color: #000000;
+	border-radius: 12px;
+	font-family: "Segoe UI Semibold","Segoe UI";
+	font-size: 12px;
+	padding: 4px 12px;
+	margin: 5px;
+	color: red;
+	background: white;
+	border: 1px solid #f5aca6;
+	width: 30%;
+	height: 18px;
+}
+.ui-corner-all{
+	font-size:12px;
+}

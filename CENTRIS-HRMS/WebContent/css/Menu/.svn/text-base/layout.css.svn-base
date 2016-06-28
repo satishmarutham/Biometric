@@ -1,0 +1,25 @@
+@CHARSET "ISO-8859-1";
+
+ .tblBody{
+	
+	background-color: white;
+	width: 980px;
+} 
+
+table#layout {
+	
+	width: 100%;
+	height: 100%;
+}
+
+
+table#layout .header{
+	background-color: gainsboro;
+	height: 5% !important;
+}
+
+table#layout .menu{
+	
+	height: 5% !important;
+	
+}

@@ -1,0 +1,569 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/CENTRIS-HRMS/!svn/ver/112/CENTRIS-HRMS/src/com/centris/action
+END
+GeneratePayroll.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/GeneratePayroll.java
+END
+EmployeeExpenseDetailsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/EmployeeExpenseDetailsAction.java
+END
+TimesheetReconciliationAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/TimesheetReconciliationAction.java
+END
+ContactUsMailAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ContactUsMailAction.java
+END
+WeekOffSettingAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/WeekOffSettingAction.java
+END
+EmployeePersonalDetailsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/EmployeePersonalDetailsAction.java
+END
+KendoReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CENTRIS-HRMS/!svn/ver/4/CENTRIS-HRMS/src/com/centris/action/KendoReportAction.java
+END
+RemoveEmployeeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/RemoveEmployeeAction.java
+END
+UserRolePermissionAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/UserRolePermissionAction.java
+END
+EmployeeManagerMappingAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/EmployeeManagerMappingAction.java
+END
+ManagerMasterAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ManagerMasterAction.java
+END
+AddEmployeeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/AddEmployeeAction.java
+END
+DirectorAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/DirectorAction.java
+END
+GetDetailsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CENTRIS-HRMS/!svn/ver/111/CENTRIS-HRMS/src/com/centris/action/GetDetailsAction.java
+END
+ManagerForgotPasswordAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ManagerForgotPasswordAction.java
+END
+EmployeeSalaryDetailsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/EmployeeSalaryDetailsAction.java
+END
+ProjectCreationByMangerAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ProjectCreationByMangerAction.java
+END
+ModifyEmployeeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ModifyEmployeeAction.java
+END
+EmpWorkingLessThan8hrsReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/EmpWorkingLessThan8hrsReportAction.java
+END
+EmployeeDashboardAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/EmployeeDashboardAction.java
+END
+AdminDayReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/AdminDayReportAction.java
+END
+LoginCheckAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CENTRIS-HRMS/!svn/ver/27/CENTRIS-HRMS/src/com/centris/action/LoginCheckAction.java
+END
+AttendanceDetailaViewInEmployeeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/AttendanceDetailaViewInEmployeeAction.java
+END
+LeaveDetailsReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/LeaveDetailsReportAction.java
+END
+ProjectMasterAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ProjectMasterAction.java
+END
+WeekOffAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/WeekOffAction.java
+END
+RoleMasterAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/RoleMasterAction.java
+END
+ManagerExpenseDetailsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ManagerExpenseDetailsAction.java
+END
+LastThreeAbsentReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/LastThreeAbsentReportAction.java
+END
+LocationUpdateReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/LocationUpdateReportAction.java
+END
+productivityAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/112/CENTRIS-HRMS/src/com/centris/action/productivityAction.java
+END
+EmployeeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/EmployeeAction.java
+END
+EmployeeDailyAllowanceAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/EmployeeDailyAllowanceAction.java
+END
+ExpenseReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ExpenseReportAction.java
+END
+ManagerMenuAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ManagerMenuAction.java
+END
+LateCommersReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/LateCommersReportAction.java
+END
+GroupLocationMapAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/GroupLocationMapAction.java
+END
+LetterHeadAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/LetterHeadAction.java
+END
+EmployeeLeaveRequestAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/EmployeeLeaveRequestAction.java
+END
+TimeSheetReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/TimeSheetReportAction.java
+END
+AttendenceNotApprovedAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/AttendenceNotApprovedAction.java
+END
+EarlyTimeReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/EarlyTimeReportAction.java
+END
+RemoveErrorMessageAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/RemoveErrorMessageAction.java
+END
+AdvanceSalaryRequestAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/AdvanceSalaryRequestAction.java
+END
+EmployeeForgotPassAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/EmployeeForgotPassAction.java
+END
+ReportsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ReportsAction.java
+END
+DailyLogReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/DailyLogReportAction.java
+END
+EmployeeAllowanceReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/EmployeeAllowanceReportAction.java
+END
+DepartmentMappingAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/DepartmentMappingAction.java
+END
+EmpDashBoardInManagerAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/EmpDashBoardInManagerAction.java
+END
+ProjectManagerMappingAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ProjectManagerMappingAction.java
+END
+HolidayMasterAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/HolidayMasterAction.java
+END
+GetAllEmployeeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/GetAllEmployeeAction.java
+END
+LogReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/LogReportAction.java
+END
+LocationMasterAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/LocationMasterAction.java
+END
+AddDesignationAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/AddDesignationAction.java
+END
+UploadDailyAllowanceByManagerAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/UploadDailyAllowanceByManagerAction.java
+END
+ManagerDirectorMappingAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ManagerDirectorMappingAction.java
+END
+AllowancesClaimByManagerAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/AllowancesClaimByManagerAction.java
+END
+DepartmentMasterAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/DepartmentMasterAction.java
+END
+ApproveTravelBookingAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ApproveTravelBookingAction.java
+END
+EmployeeMenuAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CENTRIS-HRMS/!svn/ver/26/CENTRIS-HRMS/src/com/centris/action/EmployeeMenuAction.java
+END
+ChangePasswordAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ChangePasswordAction.java
+END
+MonthlyLagendReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/MonthlyLagendReportAction.java
+END
+TravelAllowancesReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/TravelAllowancesReportAction.java
+END
+HolidayMasterAddAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/HolidayMasterAddAction.java
+END
+AttendenceApprovelAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/AttendenceApprovelAction.java
+END
+ShiftMasterAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ShiftMasterAction.java
+END
+ManagerLeaveConfirmationAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ManagerLeaveConfirmationAction.java
+END
+IncorrectPunchReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/IncorrectPunchReportAction.java
+END
+LocationViewAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/LocationViewAction.java
+END
+RegistrationTimeReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/RegistrationTimeReportAction.java
+END
+EmployeeResumeCreationAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/EmployeeResumeCreationAction.java
+END
+TodayReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/TodayReportAction.java
+END
+AttendanceStatusTypeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/AttendanceStatusTypeAction.java
+END
+AttendanceReConcilationAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/AttendanceReConcilationAction.java
+END
+TimeSheetReportAuditAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/TimeSheetReportAuditAction.java
+END
+LeaveBankAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/LeaveBankAction.java
+END
+EmpAllowAprroveByDirectorAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/EmpAllowAprroveByDirectorAction.java
+END
+AttendanceApprovalByDateAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/AttendanceApprovalByDateAction.java
+END
+DayReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/DayReportAction.java
+END
+ManualAttendanceAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ManualAttendanceAction.java
+END
+UserManagementAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/UserManagementAction.java
+END
+ClientMasterAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ClientMasterAction.java
+END
+UserMasterAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/UserMasterAction.java
+END
+CreatepayslipAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/CreatepayslipAction.java
+END
+EmployeeAttendancePostingAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/EmployeeAttendancePostingAction.java
+END
+DisplayDeactiveEmployeeDetailsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/DisplayDeactiveEmployeeDetailsAction.java
+END
+AdminMonthReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/AdminMonthReportAction.java
+END
+GroupMasterAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/GroupMasterAction.java
+END
+TravelBookedDetailsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/TravelBookedDetailsAction.java
+END
+YearlyReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/YearlyReportAction.java
+END
+EmployeeLeaveStatusAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/EmployeeLeaveStatusAction.java
+END
+ConsolidateDetailedMonthReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/action/ConsolidateDetailedMonthReportAction.java
+END

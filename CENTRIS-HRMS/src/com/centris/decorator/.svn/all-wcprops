@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator
+END
+EmployeeAttendancePostingDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/EmployeeAttendancePostingDecorator.java
+END
+ClientMasterDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/ClientMasterDecorator.java
+END
+UserMasterDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/UserMasterDecorator.java
+END
+ManualAttendanceDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/ManualAttendanceDecorator.java
+END
+AllEmployeeDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/AllEmployeeDecorator.java
+END
+AdvanceSalaryApprovalDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/AdvanceSalaryApprovalDecorator.java
+END
+GeneratePayrollDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/GeneratePayrollDecorator.java
+END
+DayReportDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/DayReportDecorator.java
+END
+TimeSheetDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/TimeSheetDecorator.java
+END
+EmployeeDetailsDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/EmployeeDetailsDecorator.java
+END
+TimesheetReconciliationDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/TimesheetReconciliationDecorator.java
+END
+AddDesignationDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/AddDesignationDecorator.java
+END
+ManagerExpenseDetailsDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/ManagerExpenseDetailsDecorator.java
+END
+LocationMasterDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/LocationMasterDecorator.java
+END
+LogReportDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/LogReportDecorator.java
+END
+RoleMasterDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/RoleMasterDecorator.java
+END
+HolidayMasterDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/HolidayMasterDecorator.java
+END
+EmployeeResumeCreationDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/EmployeeResumeCreationDecorator.java
+END
+EmployeeLeaveStatusDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/EmployeeLeaveStatusDecorator.java
+END
+ProjectCreationByMangDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/ProjectCreationByMangDecorator.java
+END
+AttApprovedByDateDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/AttApprovedByDateDecorator.java
+END
+ManagerLeaveConfirmationDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/ManagerLeaveConfirmationDecorator.java
+END
+AttendenceNotApprovedDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/AttendenceNotApprovedDecorator.java
+END
+UploadDailyAllowanceByManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/UploadDailyAllowanceByManager.java
+END
+AttendanceApprovelDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/decorator/AttendanceApprovelDecorator.java
+END

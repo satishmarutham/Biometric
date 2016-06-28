@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AllEployeePersonalDetailsTele" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="usercode" class="java.lang.String"/>
+	<parameter name="EMPLOYEE_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[$R{ROOT_DIR}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TELEINDIA_LOG" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[$R{ROOT_DIR}]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select emp.EMPID,emp.First_Name, emp.DOB, emp.DOJ, emp.Personal_Email_ID, emp.Official_Email_ID, emp.Mobile_Number, emp.Present_Address, emp.Employee_image,prj.Project_Name, prj.Location,concat(man.FirstName,' ',man.LastName) as ProjectManager, des.designationName, dep.DEPT_NAME, emp.EmpType
+from hrms_employee emp, hrms_project prj,hrms_manager man, hrms_designation des, hrms_department dep
+where emp.ProjectCode = prj.ProjectCode and emp.ManagerCode = man.ManagerCode and emp.DesignationCode = des.DesignationCode and emp.DEPT_ID = dep.DEPT_ID  and userCode=$P{usercode}
+order by length(emp.EMPID),emp.EMPID asc]]>
+	</queryString>
+	<field name="EMPID" class="java.lang.String"/>
+	<field name="First_Name" class="java.lang.String"/>
+	<field name="DOB" class="java.sql.Date"/>
+	<field name="DOJ" class="java.sql.Date"/>
+	<field name="Personal_Email_ID" class="java.lang.String"/>
+	<field name="Official_Email_ID" class="java.lang.String"/>
+	<field name="Mobile_Number" class="java.lang.String"/>
+	<field name="Present_Address" class="java.lang.String"/>
+	<field name="Employee_image" class="java.lang.String"/>
+	<field name="Project_Name" class="java.lang.String"/>
+	<field name="Location" class="java.lang.String"/>
+	<field name="ProjectManager" class="java.lang.String"/>
+	<field name="designationName" class="java.lang.String"/>
+	<field name="DEPT_NAME" class="java.lang.String"/>
+	<field name="EmpType" class="java.lang.String"/>
+	<variable name="Sno" class="java.lang.Integer" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{EMPID}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="52" splitType="Stretch">
+			<line>
+				<reportElement x="-21" y="46" width="596" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="114" y="22" width="349" height="24" forecolor="#3366FF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="14" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[All Employee Personal Details]]></text>
+			</staticText>
+			<image>
+				<reportElement x="8" y="1" width="80" height="44"/>
+				<imageExpression><![CDATA[$P{TELEINDIA_LOG}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="169" splitType="Stretch">
+		
+			<textField>
+				<reportElement x="0" y="3" width="21" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{Sno}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="35" y="19" width="80" height="18" backcolor="#3366FF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Employee ID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="142" y="19" width="100" height="18" forecolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EMPID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="35" y="36" width="80" height="18"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Employee Name]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="142" y="36" width="100" height="18" forecolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{First_Name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="35" y="53" width="80" height="18" backcolor="#3366FF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date Of Birth]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="142" y="53" width="100" height="18" forecolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DOB}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="35" y="70" width="80" height="18" backcolor="#3366FF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date Of Join]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="142" y="70" width="100" height="18" forecolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DOJ}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="35" y="87" width="80" height="18" backcolor="#3366FF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Personal Email ID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="142" y="87" width="113" height="18" forecolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Personal_Email_ID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="35" y="104" width="80" height="18"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Official Email ID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="142" y="104" width="113" height="18" forecolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Official_Email_ID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="35" y="121" width="80" height="18" backcolor="#3366FF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Mobile Number]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="142" y="121" width="100" height="18" forecolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Mobile_Number}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="270" y="104" width="80" height="18"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Present Address]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="377" y="108" width="153" height="53" forecolor="#666666"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Present_Address}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="270" y="19" width="80" height="18"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Project Name]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="377" y="19" width="100" height="18" forecolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Project_Name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="270" y="36" width="80" height="18" backcolor="#3366FF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Location]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="377" y="36" width="100" height="18" forecolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Location}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="270" y="53" width="80" height="18"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Project Manager]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="377" y="53" width="100" height="18" forecolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ProjectManager}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="270" y="70" width="80" height="18" backcolor="#3366FF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[DesignationName]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="377" y="70" width="100" height="18" forecolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{designationName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="270" y="87" width="80" height="18"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Department Name]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="377" y="87" width="100" height="18" forecolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DEPT_NAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="35" y="138" width="80" height="18" backcolor="#3366FF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Employee Type]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="142" y="138" width="100" height="18" forecolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EmpType}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="114" y="19" width="29" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="36" width="29" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="53" width="29" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="70" width="29" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="87" width="29" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="104" width="29" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="121" width="29" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="138" width="29" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="349" y="104" width="29" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="349" y="19" width="29" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="349" y="36" width="29" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="349" y="53" width="29" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="349" y="70" width="29" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="349" y="87" width="29" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="163" width="555" height="1" forecolor="#CCCCCC"/>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="32">
+			<line>
+				<reportElement x="-21" y="11" width="596" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="12" width="148" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Generated by : Centris Infotech]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="524" y="12" width="30" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="489" y="12" width="41" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Page No .]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

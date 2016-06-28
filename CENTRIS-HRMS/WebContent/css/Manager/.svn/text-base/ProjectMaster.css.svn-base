@@ -1,0 +1,96 @@
+@CHARSET "ISO-8859-1";
+
+table#regenerete tr {
+	padding: 1px;
+}
+
+table#regenerete td {
+	font-family: "Segoe UI Semibold","Segoe UI";
+	/* background-color: #BCD1E1; */
+	color: black;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: justify;
+/* 	margin: 1px; */
+	padding-top: 6px;
+	padding-bottom: 6px;
+	border: 1px solid #BDC3C7;
+}
+
+table#regenerete th {
+	font-family: "Segoe UI Semibold","Segoe UI";
+	/* background-color: gray; */
+	color: #FFFFFF;
+}
+
+table#regenerete label {
+	font-family: "Segoe UI Semibold","Segoe UI";
+	color: #003D52;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	font-family: "Segoe UI Semibold","Segoe UI";
+}
+
+
+table#biometric1 tr {
+	padding: 1px;
+}
+
+table#biometric1 td {
+	font-family: "Segoe UI Semibold","Segoe UI";
+	/* background-color: #BCD1E1; */
+	color: black;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: justify;
+/* 	margin: 1px; */
+	padding-top: 6px;
+	padding-bottom: 6px;
+	border: 1px solid #BDC3C7;
+}
+
+table#biometric1 th {
+	font-family: "Segoe UI Semibold","Segoe UI";
+	/* background-color: gray; */
+	color: #FFFFFF;
+}
+
+table#biometric1 label {
+	font-family: "Segoe UI Semibold","Segoe UI";
+	color: #003D52;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	font-family: "Segoe UI Semibold","Segoe UI";
+}
+
+.pagebanner{
+	
+	 width: 100%;
+  background-color: #98AED0;
+  color: #010915;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 10px;
+	
+	
+} 
+.pagelinks{
+  width: 100%;
+  background-color: #98AED0;
+  color: #010915;
+  font-size: 14px;
+  font-weight: 500;
+  
+   padding-right: 10px;
+}
+
+
+.helptext{
+	
+	font-family: "Segoe UI Semibold","Segoe UI";
+	color: #003D52;
+	font-size: 11px;
+	
+}

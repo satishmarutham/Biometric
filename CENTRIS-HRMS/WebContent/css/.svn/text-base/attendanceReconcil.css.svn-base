@@ -1,0 +1,18 @@
+div#successmsg{
+	padding: 4px 13px;
+	margin: 5px;
+	background: white;
+	border: 1px solid #f5aca6;
+	width: 30%;
+	height: 18px;
+	border-radius: 13px;
+	
+}
+div#successmsg span{
+	color: green; 
+	font-family: Segoe UI Semibold;
+	font-size:13px;
+	font-weight:bold;
+
+	
+}

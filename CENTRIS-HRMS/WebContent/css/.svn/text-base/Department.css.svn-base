@@ -1,0 +1,54 @@
+.ui-dialog-titlebar{
+	
+	height: 20px;
+	font-size: 17px;
+	font-family: Segoe UI Semibold;
+	
+}
+
+#insertDep{
+	
+	background-color: #689EE6;
+	font-family: Segoe UI Semibold;
+	font-size: 15px;
+}
+.ui-dialog-buttonset{
+	
+	
+	cursor: pointer;
+	background-color: #1267E9;
+	color: #FFFFFF;
+	font-family: Segoe Ui !important;
+	font-size: 14px !important;
+	font-weight: bold;
+	padding: 3px 18px;
+}
+
+.ui-dialog-buttonset:hover {
+	cursor: pointer;
+	background-color: #5E30F6;
+	color: #FFFFFF;
+	font-family: Segoe Ui !important;
+	font-size: 14px !important;
+	font-weight: bold;
+	padding: 3px 18px;
+}
+
+div#successmsg{
+	padding: 4px 13px;
+	margin: 5px;
+	background: white;
+	border: 1px solid #f5aca6;
+	width: 50%;
+	height: 18px;
+	border-radius: 13px;
+	
+}
+div#successmsg span{
+	color: red; 
+	font-family: Segoe UI Semibold;
+	font-size:13px;
+
+
+	
+}

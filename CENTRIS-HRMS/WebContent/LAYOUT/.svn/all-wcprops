@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/CENTRIS-HRMS/!svn/ver/94/CENTRIS-HRMS/WebContent/LAYOUT
+END
+header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/LAYOUT/header.jsp
+END
+Home_Page.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/CENTRIS-HRMS/!svn/ver/80/CENTRIS-HRMS/WebContent/LAYOUT/Home_Page.jsp
+END
+header_menu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/LAYOUT/header_menu.jsp
+END
+forgetpasswordLayout.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/LAYOUT/forgetpasswordLayout.jsp
+END
+forgetPasswordHeader.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/LAYOUT/forgetPasswordHeader.jsp
+END
+footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/LAYOUT/footer.jsp
+END
+baseLayout.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/CENTRIS-HRMS/!svn/ver/67/CENTRIS-HRMS/WebContent/LAYOUT/baseLayout.jsp
+END
+admin_header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CENTRIS-HRMS/!svn/ver/94/CENTRIS-HRMS/WebContent/LAYOUT/admin_header.jsp
+END
+employee_header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/LAYOUT/employee_header.jsp
+END
+director_header_menu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/56/CENTRIS-HRMS/WebContent/LAYOUT/director_header_menu.jsp
+END
+admin_Home_Page.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/CENTRIS-HRMS/!svn/ver/67/CENTRIS-HRMS/WebContent/LAYOUT/admin_Home_Page.jsp
+END
+manager_header_menu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/LAYOUT/manager_header_menu.jsp
+END
+manager_header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/LAYOUT/manager_header.jsp
+END
+employee_header_menu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/LAYOUT/employee_header_menu.jsp
+END
+director_header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/LAYOUT/director_header.jsp
+END
+admin_header_menu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/WebContent/LAYOUT/admin_header_menu.jsp
+END
+LeftMenu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/CENTRIS-HRMS/!svn/ver/70/CENTRIS-HRMS/WebContent/LAYOUT/LeftMenu.jsp
+END

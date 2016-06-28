@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/CENTRIS-HRMS/!svn/ver/19/CENTRIS-HRMS/src/com/centris/POJO
+END
+TimesheetReconcilationPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/TimesheetReconcilationPojo.java
+END
+EmployeeSalaryDetailsPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/EmployeeSalaryDetailsPojo.java
+END
+TravelAllowancesReportPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/TravelAllowancesReportPojo.java
+END
+EmpWorkingLessThan8hrsReportPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/EmpWorkingLessThan8hrsReportPojo.java
+END
+LetterHeadPOJO.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/LetterHeadPOJO.java
+END
+DepartMentReportPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/DepartMentReportPojo.java
+END
+AttendenceApprovelPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/AttendenceApprovelPojo.java
+END
+EmployeeReportPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/EmployeeReportPojo.java
+END
+GroupMasterPOJO.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/GroupMasterPOJO.java
+END
+AdminDayReportPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/AdminDayReportPojo.java
+END
+TravelBookedDetailsPOJO.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/TravelBookedDetailsPOJO.java
+END
+ManagerLeaveConfirmationPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/ManagerLeaveConfirmationPojo.java
+END
+ProjectMasterPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/ProjectMasterPojo.java
+END
+EmployeeResumeCreationPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/EmployeeResumeCreationPojo.java
+END
+GroupLogReportPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/GroupLogReportPojo.java
+END
+RoleMasterPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/RoleMasterPojo.java
+END
+AllowancesClaimByManagerPOJO.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/AllowancesClaimByManagerPOJO.java
+END
+AttendanceStatusTypePojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/AttendanceStatusTypePojo.java
+END
+LeaveBankPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/LeaveBankPojo.java
+END
+EmpAllowAprroveByDirectorPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/EmpAllowAprroveByDirectorPojo.java
+END
+DayReportPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/DayReportPojo.java
+END
+ClientMasterPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/ClientMasterPojo.java
+END
+UserMasterPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/UserMasterPojo.java
+END
+ExpenseReportPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/ExpenseReportPojo.java
+END
+DesignationReportPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/DesignationReportPojo.java
+END
+LateCommersReportPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/LateCommersReportPojo.java
+END
+ShiftMasterPOJO.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/ShiftMasterPOJO.java
+END
+ManagerReportPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/ManagerReportPojo.java
+END
+YearlyReportPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/YearlyReportPojo.java
+END
+EmployeeAllowanceReportPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/EmployeeAllowanceReportPojo.java
+END
+AttendanceTimeSheetReportPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/AttendanceTimeSheetReportPojo.java
+END
+EmployeeLeaveStatusPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/EmployeeLeaveStatusPojo.java
+END
+HolidayMasterPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/HolidayMasterPojo.java
+END
+EmployeeExpenseDetailsPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/EmployeeExpenseDetailsPojo.java
+END
+LocationMasterPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/LocationMasterPojo.java
+END
+AddDesignationPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/AddDesignationPojo.java
+END
+EmployeePersonalDetailsPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CENTRIS-HRMS/!svn/ver/19/CENTRIS-HRMS/src/com/centris/POJO/EmployeePersonalDetailsPojo.java
+END
+DepartmentMasterPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/DepartmentMasterPojo.java
+END
+ApproveTravekBookingPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/ApproveTravekBookingPojo.java
+END
+ManagerMasterPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/ManagerMasterPojo.java
+END
+AddEmployeePojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/AddEmployeePojo.java
+END
+ProjectReportPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/POJO/ProjectReportPojo.java
+END

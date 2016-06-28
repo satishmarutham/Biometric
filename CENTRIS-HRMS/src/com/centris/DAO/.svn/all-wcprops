@@ -1,0 +1,485 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/CENTRIS-HRMS/!svn/ver/113/CENTRIS-HRMS/src/com/centris/DAO
+END
+Daoconnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/Daoconnection.java
+END
+AttendenceApprovelDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/AttendenceApprovelDao.java
+END
+ShiftMasterDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/ShiftMasterDao.java
+END
+AttendenceNotApprovedDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/AttendenceNotApprovedDAO.java
+END
+TimesheetReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/TimesheetReportDao.java
+END
+EmployeeDashboardDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/EmployeeDashboardDao.java
+END
+EmployeeAttendancePostingDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/EmployeeAttendancePostingDao.java
+END
+DisplayDeactiveEmployeeDetailsDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/DisplayDeactiveEmployeeDetailsDao.java
+END
+EmployeeDailyAllowanceDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/EmployeeDailyAllowanceDAO.java
+END
+AdminForgotPasswordDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/AdminForgotPasswordDAO.java
+END
+ManualAttendanceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/ManualAttendanceDao.java
+END
+ProductivityDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CENTRIS-HRMS/!svn/ver/98/CENTRIS-HRMS/src/com/centris/DAO/ProductivityDAO.java
+END
+LeaveBankDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/LeaveBankDao.java
+END
+DepartmentMasterDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/DepartmentMasterDAO.java
+END
+LastThreeAbsentReportDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/LastThreeAbsentReportDAO.java
+END
+LogReportDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/LogReportDAO.java
+END
+EmpDashBoardInManagerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/EmpDashBoardInManagerDao.java
+END
+DepartmentMappingDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/DepartmentMappingDao.java
+END
+YearlyReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/YearlyReportDao.java
+END
+ManagerLeaveConfirmationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/ManagerLeaveConfirmationDao.java
+END
+AdminDayReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/AdminDayReportDao.java
+END
+GroupLocationMapDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/GroupLocationMapDao.java
+END
+LateCommersReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/LateCommersReportDao.java
+END
+ChangePasswordDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/ChangePasswordDao.java
+END
+ExpenseReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/ExpenseReportDao.java
+END
+MachineStatusReportDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/MachineStatusReportDAO.java
+END
+UserManagementDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/UserManagementDao.java
+END
+AjaxReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/AjaxReportDao.java
+END
+ManagerForgetPasswordDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/ManagerForgetPasswordDao.java
+END
+WeekOffSettingDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/WeekOffSettingDao.java
+END
+TimesheetReconciliationDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/TimesheetReconciliationDAO.java
+END
+LocationMasterDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/LocationMasterDao.java
+END
+RoleMasterDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/RoleMasterDao.java
+END
+RegistrationTimeReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/RegistrationTimeReportDao.java
+END
+EmployeeResumeCreationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/EmployeeResumeCreationDao.java
+END
+DailyLogReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/DailyLogReportDao.java
+END
+GroupMasterDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/GroupMasterDao.java
+END
+AdvanceSalaryRequestDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/AdvanceSalaryRequestDao.java
+END
+EmpWorkingLessThan8hrsReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/EmpWorkingLessThan8hrsReportDao.java
+END
+ModifyEmployeeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/ModifyEmployeeDao.java
+END
+DirectorForgotPasswordDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/DirectorForgotPasswordDAO.java
+END
+UserMasterDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/UserMasterDao.java
+END
+ClientMasterDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/ClientMasterDao.java
+END
+UserRolePermissionDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/UserRolePermissionDAO.java
+END
+EmpAllowAprroveByDirectorDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/EmpAllowAprroveByDirectorDao.java
+END
+ApproveTravelBookingDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/ApproveTravelBookingDao.java
+END
+MonthReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/MonthReportDao.java
+END
+EmployeePersonalDetailsDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/EmployeePersonalDetailsDao.java
+END
+AttendanceStatusTypeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/AttendanceStatusTypeDao.java
+END
+TodayReportDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/TodayReportDAO.java
+END
+AddDesignationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/AddDesignationDao.java
+END
+UploadDailyAllowanceByManagerDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/UploadDailyAllowanceByManagerDAO.java
+END
+ManagerExpenseDetailsDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/ManagerExpenseDetailsDao.java
+END
+EmployeeExpenseDetailsDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/EmployeeExpenseDetailsDao.java
+END
+ProjectManagerMappingDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/ProjectManagerMappingDao.java
+END
+HolidayMasterDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/HolidayMasterDAO.java
+END
+DBService.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/DBService.java
+END
+ProjectMasterDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/ProjectMasterDao.java
+END
+IncorrectPunchReportDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/IncorrectPunchReportDAO.java
+END
+EmployeeAllowanceReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/EmployeeAllowanceReportDao.java
+END
+AttendanceDetailaViewInEmployeeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/AttendanceDetailaViewInEmployeeDao.java
+END
+TravelBookedDetailsDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/TravelBookedDetailsDao.java
+END
+LetterHeadDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/LetterHeadDao.java
+END
+EmployeeLeaveRequestDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/EmployeeLeaveRequestDao.java
+END
+AbstractConnectionFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/AbstractConnectionFactory.java
+END
+TravelAllowancesReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/TravelAllowancesReportDao.java
+END
+LoginDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/CENTRIS-HRMS/!svn/ver/25/CENTRIS-HRMS/src/com/centris/DAO/LoginDAO.java
+END
+EmployeeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/EmployeeDAO.java
+END
+ManagerMasterDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/ManagerMasterDao.java
+END
+EmployeeManagerMappingDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/EmployeeManagerMappingDao.java
+END
+AddEmployeeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/AddEmployeeDao.java
+END
+DayReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/DayReportDao.java
+END
+GeneratePayrollDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/GeneratePayrollDAO.java
+END
+LocationUpdateReportDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/LocationUpdateReportDAO.java
+END
+KendoReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/CENTRIS-HRMS/!svn/ver/5/CENTRIS-HRMS/src/com/centris/DAO/KendoReportDao.java
+END
+AttendanceReconcilationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/AttendanceReconcilationDao.java
+END
+ManagerDirectorMappingDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/ManagerDirectorMappingDAO.java
+END
+AllowancesClaimByManagerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/AllowancesClaimByManagerDao.java
+END
+GetAllEmployeeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/GetAllEmployeeDao.java
+END
+ConsolidateDetailedMonthReportDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/DAO/ConsolidateDetailedMonthReportDAO.java
+END

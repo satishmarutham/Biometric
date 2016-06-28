@@ -1,0 +1,36 @@
+.timeSheettablecss {
+	padding: 0px;
+}
+.timeSheettablecss table {
+	width: 75%;
+	border: 1px solid #bbb;
+	border-spacing: 0;
+	font-size: 13px;
+}
+.timeSheettablecss table th {
+		font-family : Segoe Ui;
+		color : sky blue;
+}
+
+.timeSheettablecss table th, td {
+	border: 1px solid #bbb;
+	padding: 10px;
+}
+.timeSheettablecss table td 
+{
+	line-height: normal;
+	border-top: 0;
+	color: #000;
+	font-family: Segoe Ui;
+}
+.timeSheettablecss table tr {
+	background-color: #F9F9F9;
+}
+.timeSheettablecss table tr th {
+	border-top: 1px solid #bbb;
+	background-color: #f9f9f9 !important;
+	color: #2975B6;
+	font-size: 13px;
+	font-family: Segoe Ui;
+	text-transform: uppercase;
+}

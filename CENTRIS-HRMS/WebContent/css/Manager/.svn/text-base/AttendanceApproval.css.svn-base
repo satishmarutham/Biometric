@@ -1,0 +1,12 @@
+.Approved .updatefunction{
+ 
+ background-color: #1267E9;
+ color: white;
+ }
+ 
+ .Approve .updatefunction{
+ 
+ background-color: #f9f9f9 ;
+ color: black;
+ 
+ }

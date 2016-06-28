@@ -1,0 +1,50 @@
+table.view {
+	border-collapse: collapse;
+	border: 1px solid #2C5D00;
+	margin: 5px 0 0 0;
+	width: 100%;
+	font-family: Segoe UI Semibold;
+	font-size: 12px;
+}
+
+table.view th,table.view td {
+	padding: 3px 13px;
+	border: 1px solid #2C5D00;
+}
+
+table.view th {
+	text-align: center;
+	font-weight: bold;
+	background: #C8C8C8;
+}
+
+table.view td {
+	text-align: center;
+}
+
+.view_heading {
+	text-align: center;
+	font-family: Segoe UI Semibold;
+	font-size: 13px;
+	font-weight: bold;
+	font-style: italic;
+	font-family: Segoe UI Semibold;
+}
+.decorator {
+  display: inline-block;
+  padding: 2px 10px;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 4px;
+}

@@ -1,0 +1,26 @@
+
+.ui-dialog-titlebar{
+	font-size:12px;
+	padding: .2em 1em;
+}
+
+.update-dialog{
+	
+ cursor: pointer;
+ background-color: #689EE6;;
+ color: #FFFFFF;
+ font-family: Segoe Ui;
+ font-size: 14px;
+ font-weight: bold;
+ padding: 3px 18px;
+}
+.ui-dialog-buttonset button{
+	
+ cursor: pointer;
+ background-color: #689EE6;
+ color: #FFFFFF;
+ font-family: Segoe Ui;
+ font-size: 14px;
+ font-weight: bold;
+ padding: 3px 18px;
+}

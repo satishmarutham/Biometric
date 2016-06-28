@@ -1,0 +1,18 @@
+@CHARSET "ISO-8859-1";
+
+
+div.notification:after {
+  content: attr(data-count);
+  font-size: 12px;
+  background: #cc0001;
+  border-radius: 3px;
+  color: #fff;
+  z-index: 99999;
+  font-weight: 200;
+  padding: 3px 5px;
+  box-shadow: -1px 2px 3px rgba(0,0,0,.3), inset 0 2px 5px rgba(225,225,225,.3);
+  position: relative;
+  top: -38px;
+  left: 20px;
+  font-family: Segoe UI Semibold; 
+}

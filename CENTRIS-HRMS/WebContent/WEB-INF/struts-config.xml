@@ -1,0 +1,1442 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+  "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+
+<struts-config>
+
+	<form-beans>
+		<form-bean name="LoginForm" type="com.centris.form.LoginForm" />
+		
+				<form-bean name="productivityForm" type="com.centris.form.ProductivityForm" />
+		
+		
+
+		<form-bean name="GetDetailsForm" type="com.centris.form.GetDetailsForm" />
+		<form-bean name="SaveAttendenceForm" type="com.centris.form.SaveAttendenceForm" />
+		<form-bean name="BioIndiForm" type="com.centris.form.BioIndiForm" />
+		<form-bean name="AddEmployeeForm" type="com.centris.form.AddEmployeeForm" />
+		<form-bean name="ModifyEmployeeForm" type="com.centris.form.ModifyEmployeeForm" />
+		<form-bean name="RemoveEmployeeForm" type="com.centris.form.RemoveEmployeeForm" />
+		<form-bean name="RetrieveDetailsForm" type="com.centris.form.RetrieveDetailsForm" />
+		<form-bean name="ModifyAttendenceForm" type="com.centris.form.ModifyAttendenceForm" />
+		<form-bean name="RemoveIdForm" type="com.centris.form.RemoveGetIdForm" />
+		<form-bean name="GetReportNameForm" type="com.centris.form.GetReportNameForm" />
+		<form-bean name="ModifyEmployeeGetDateForm" type="com.centris.form.ModifyEmployeeGetDateForm"></form-bean>
+		<form-bean name="MonthlyAttendenceForm" type="com.centris.form.MonthlyAttendenceForm"></form-bean>
+		<form-bean name="reportReconciliationform" type="com.centris.form.ReportReconcilationForm"></form-bean>
+		<form-bean name="payrollGenForm" type="com.centris.form.PayrollGenForm"></form-bean>
+		<form-bean name="testform" type="com.centris.form.testform"></form-bean>
+		<!-- <form-bean name="departmentMaster" type="com.centris.form.DepartmentMasterForm"></form-bean> -->
+		<!--Rajesh bean -->
+		<form-bean name="biofilterform" type="com.centris.form.BioFilterForm"></form-bean>
+		<form-bean name="monthreportform" type="com.centris.form.BioMonthReportForm"></form-bean>
+		<form-bean name="monthreport" type="com.centris.form.EmployeeBioMonthReport"></form-bean>
+
+		<form-bean name="batchProcess" type="com.centris.form.BioProcessForm"></form-bean>
+		<form-bean name="todaysReport" type="com.centris.form.TodaysReportForm"></form-bean>
+		<form-bean name="holidayMaster" type="com.centris.form.HolidayMasterForm"></form-bean>
+		<form-bean name="weekoffmaster" type="com.centris.form.WeekOffForm"></form-bean>
+		<form-bean name="paySlipForm" type="com.centris.VO.PaySlipVO"></form-bean>
+
+		<form-bean name="latecomersreportform" type="com.centris.form.LateComersReportForm"></form-bean>
+
+		<form-bean name="auditreport" type="com.centris.form.AuditReportForm"></form-bean>
+		<form-bean name="ProductivityReportdata" type="com.centris.form.ProductivityReportForm"></form-bean>
+		<!-- <form-bean name="adddesignation" type="com.centris.form.AddDesignation"></form-bean> -->
+		<form-bean name="timesheetReportForm" type="com.centris.form.TimeSheetReportForm"></form-bean>
+		<form-bean name="shiftAmendmentForm" type="com.centris.form.ShiftAmendmentForm"></form-bean>
+		<form-bean name="uploadEmpXSLForm" type="com.centris.form.UploadEmpXSLForm"></form-bean>
+		<form-bean name="location" type="com.centris.form.LocationMasterForm"></form-bean>
+		<form-bean name="ContactUsMailForm" type="com.centris.form.ContactUsMailForm"></form-bean>
+		<form-bean name="roleMasterForm" type="com.centris.form.RoleMasterForm"></form-bean>
+		<form-bean name="UserRolePermissionForm" type="com.centris.form.UserRolePermissionForm"></form-bean>
+		<form-bean name="TimesheetReconciliationForm"
+			type="com.centris.form.TimesheetReconciliationForm"></form-bean>
+
+
+		<form-bean name="ConsolidateDetailedMonthReportForm"
+			type="com.centris.form.ConsolidateDetailedMonthReportForm"></form-bean>
+		<form-bean name="DayReportForm" type="com.centris.form.DayReportForm"></form-bean>
+		<form-bean name="LateCommersReportForm" type="com.centris.form.LateCommersReportForm"></form-bean>
+		<form-bean name="EmpWorkingLessThan8hrsReportForm"
+			type="com.centris.form.EmpWorkingLessThan8hrsReportForm"></form-bean>
+
+		<form-bean name="monthlylagentreportform" type="com.centris.form.MonthlyLagendReportForm"></form-bean>
+		<form-bean name="LogReportForm" type="com.centris.form.LogReportForm"></form-bean>
+		<form-bean name="TodayReportForm" type="com.centris.form.TodayReportForm"></form-bean>
+		<form-bean name="dailylogreportform" type="com.centris.form.DailyLogReportForm"></form-bean>
+		<form-bean name="YearlyReportForm" type="com.centris.form.YearlyReportForm"></form-bean>
+		<form-bean name="LocationUpdateReportForm" type="com.centris.form.LocationUpdateReportForm"></form-bean>
+		<form-bean name="IncorrectPunchReportForm" type="com.centris.form.IncorrectPunchReportForm"></form-bean>
+		<form-bean name="LastThreeAbsentReportForm" type="com.centris.form.LastThreeAbsentReportForm"></form-bean>
+		<form-bean name="RegistrationReportDetails"
+			type="com.centris.form.RegistrationTimeReportForm"></form-bean>
+		<form-bean name="manualAttendanceform" type="com.centris.form.ManualAttendanceForm"></form-bean>
+		<form-bean name="MachineStatusReportform" type="com.centris.form.MachineStatusReportForm"></form-bean>
+
+
+		<!-- For Tel India --><!-- For Tel India --><!-- For Tel India -->
+		<form-bean name="EmployeeForm" type="com.centris.form.EmployeeForm"></form-bean>
+		<form-bean name="ManagerMenuForm" type="com.centris.form.ManagerMenuForm"></form-bean>
+		<form-bean name="EmployeeMenuForm" type="com.centris.form.EmployeeMenuForm"></form-bean>
+		<form-bean name="adddesignation" type="com.centris.form.AddDesignation"></form-bean>
+		<form-bean name="departmentMaster" type="com.centris.form.DepartmentMasterForm"></form-bean>
+		<form-bean name="projectmasterform" type="com.centris.form.ProjectMasterForm"></form-bean>
+		<form-bean name="ChangePasswordForm" type="com.centris.form.ChangePasswordForm" />
+
+		<form-bean name="GetLeavesform" type="com.centris.form.GetLeavesform" />
+
+		<form-bean name="managerMasterForm" type="com.centris.form.ManagerMasterForm" />
+		<form-bean name="attendenceapprovelform" type="com.centris.form.AttendenceApprovelForm" />
+		<form-bean name="employeeleaverequestForm" type="com.centris.form.EmployeeLeaveRequestForm" />
+		<form-bean name="EmployeeAttendancePostingForm"
+			type="com.centris.form.EmployeeAttendancePostingForm" />
+		<form-bean name="employeesalarydetailsform" type="com.centris.form.EmployeeSalaryDetailsForm"></form-bean>
+
+		<!-- chiru Attendance status Time -->
+
+		<form-bean name="AttendanceStatusForm" type="com.centris.form.AttendanceStatusTypeForm"></form-bean>
+		<!-- chiru Attendance status Time -->
+		<form-bean name="attendanceapprovalbydate"
+			type="com.centris.form.AttendanceApprovalByDateForm" />
+		<form-bean name="attendancetimesheetreport"
+			type="com.centris.form.AttendanceTimeSheetReportForm" />
+
+
+
+		<form-bean name="adminMonthReportForm" type="com.centris.form.AdminMonthReportForm" />
+		<form-bean name="GetEmployeeForm" type="com.centris.form.GetEmployeeForm" />
+		<form-bean name="EmployeePersonalDetailsForm"
+			type="com.centris.form.EmployeePersonalDetailsForm" />
+
+		<form-bean name="AdminDayReportForm" type="com.centris.form.AdminDayReportForm" />
+		<form-bean name="leavedetailsform" type="com.centris.form.LeaveDetailsReportForm" />
+		<form-bean name="EmployeeDailyAllowanceForm"
+			type="com.centris.form.EmployeeDailyAllowanceForm" />
+		<form-bean name="UploadDailyAllowanceByManagerForm"
+			type="com.centris.form.UploadDailyAllowanceByManagerForm" />
+		<form-bean name="ExpenseDetailsForm"
+			type="com.centris.form.EmployeeExpenseDetailsForm" />
+		<form-bean name="ManagerExpenseDetailsForm" type="com.centris.form.ManagerExpenseDetailsForm" />
+		<form-bean name="payrollform" type="com.centris.form.GeneratePayrollForm"></form-bean>
+		<form-bean name="payslipform" type="com.centris.form.CreatepayslipForm"></form-bean>
+		<form-bean name="weekoffSettingForm" type="com.centris.form.WeekoffSettingForm"></form-bean>
+		<form-bean name="clientMasterForm" type="com.centris.form.ClientMasterForm"></form-bean>
+		<form-bean name="allowanceApproveform"
+			type="com.centris.form.EmpAllowAprroveByDirectorForm"></form-bean>
+		<form-bean name="travelBookedform" type="com.centris.form.TravelBookedDetailsForm"></form-bean>
+
+		<form-bean name="usermangementform" type="com.centris.form.UserManagementForm"></form-bean>
+		<form-bean name="approveTravelBookedform" type="com.centris.form.ApproveTravelBookingForm"></form-bean>
+		
+		
+		<form-bean name="employeeDashBoardform" type="com.centris.form.EmployeeDashBoardForm"></form-bean>
+
+         <form-bean name="empAlloeanceReportform" type="com.centris.form.EmployeeAllowanceReportForm"></form-bean>
+          <form-bean name="travelAllowanceReportform" type="com.centris.form.TravelAllowancesReportForm"></form-bean>
+          <form-bean name="advanceSalaryConsolidateReportForm" type="com.centris.form.AdvanceSalaryConsolidateReportForm"></form-bean>
+          <form-bean name="expenseReportform" type="com.centris.form.ExpenseReportForm"></form-bean>
+          <form-bean name="letterheadform" type="com.centris.form.LetterHeadForm"></form-bean>
+          <form-bean name="AttendanceDetailaViewInEmployeeForm" type="com.centris.form.AttendanceDetailaViewInEmployeeForm"></form-bean>
+
+
+	</form-beans>
+
+	<global-exceptions>
+
+	</global-exceptions>
+
+	<global-forwards>
+
+	</global-forwards>
+
+
+	<action-mappings>
+
+
+		<action input="/jsp/login.jsp" name="LoginForm" path="/Login"
+			scope="session" type="com.centris.action.LoginAction">
+			<forward name="success" path="admin" />
+			<forward name="failure" path="/jsp/login.jsp" />
+		</action>
+
+
+		<!-- Director Login Details -->
+
+		<action path="/directorMenu" parameter="parameter"
+			type="com.centris.action.DirectorAction">
+			<forward name="directorhome" path="directorhome" />
+			<forward name="director_employee_creation" path="director_employee_creation" />
+			<forward name="director_employee_amendment" path="director_employee_amendment" />
+			<forward name="director_GetEmployee" path="director_GetEmployee" />
+
+
+
+
+
+		</action>
+
+		<action path="/GetDetails" name="GetDetailsForm" parameter="parameter"
+			input="jsp/Home_Page.jsp" type="com.centris.action.GetDetailsAction"
+			scope="session">
+			<forward name="report" path="/jsp/report.jsp"></forward>
+			<forward name="attendencesheet" path="/jsp/TodayAttendence.jsp"></forward>
+			<forward name="addEmployee" path="addEmployee"></forward>
+			<forward name="consolidatepayrollprocess" path="/jsp/ConsolidatedPayRoll.jsp"></forward>
+
+			<forward name="removeEmployee" path="removeEmployee"></forward>
+
+			<forward name="modifyEmployee" path="modifyEmployee"></forward>
+
+			<forward name="modifyAttendence" path="/jsp/ModifyAttendenceGetDate.jsp"></forward>
+			<forward name="monthlyReport" path="/jsp/monthlyattendence.jsp"></forward>
+			<forward name="home" path="home"></forward>
+			<forward name="help" path="/jsp/help.jsp"></forward>
+			<forward name="changePassword" path="changePassword"></forward>
+			<forward name="shiftmaster" path="shiftmaster"></forward>
+			<forward name="bioIndiReport" path="/jsp/bioIndividual.jsp"></forward>
+			<forward name="bioMonthReport" path="/jsp/bioMonthly.jsp"></forward>
+			<forward name="bioprocess" path="/jsp/bioProcess.jsp"></forward>
+			<forward name="payroll" path="/jsp/payrollMonthYearSelection.jsp"></forward>
+			<forward name="payrollprocess" path="/jsp/PayRollProcess.jsp"></forward>
+
+			<forward name="allEmployee" path="allEmployee" />
+			<forward name="allEmployeeMod" path="/jsp/AllEmployee.jsp"></forward>
+			<forward name="today" path="/jsp/TodayReport.jsp"></forward>
+			<forward name="breakupmaster" path="/jsp/BreakupMaster.jsp" />
+			<forward name="shiftAmendment" path="/jsp/ShiftAmendment.jsp" />
+			<forward name="usermaster" path="usermaster"></forward>
+
+
+
+			<forward name="permissionmaster" path="/jsp/Permissions.jsp"></forward>
+			<forward name="ContactUsMail" path="ContactUsMail" />
+			<forward name="roleMaster" path="roleMaster"></forward>
+			<forward name="userRolePermission" path="userRolePermission" />
+			<forward name="consolidateDetailedMonthReport" path="consolidateDetailedMonthReport" />
+			<!-- For Employee WeekOff -->
+			<forward name="getEmployeeWeekoff" path="getEmployeeWeekoff" />
+
+
+			<forward name="dayReport" path="dayReport" />
+			<forward name="latecommersreport" path="latecommersreport" />
+			<forward name="monthlylagendreport" path="monthlylagendreport" />
+			<forward name="earlytimeReport" path="earlytimeReport" />
+			<forward name="adminlogreport" path="adminlogreport" />
+			<forward name="directorlogreport" path="directorlogreport" />
+			<forward name="lessthan8hrs" path="lessthan8hrs" />
+			<forward name="deactiveallEmployee" path="deactiveallEmployee" />
+			<forward name="todayReport" path="todayReport" />
+			<forward name="dailylogreport" path="dailylogreport" />
+			<forward name="yearlyReport" path="yearlyReport" />
+			<forward name="locationUpdateReport" path="locationUpdateReport" />
+			<forward name="groupLogReport" path="groupLogReport" />
+			<forward name="incorrectPunchReport" path="incorrectPunchReport" />
+			<forward name="HOMEPAGE" path="/jsp/Login/login.jsp"></forward>
+			<forward name="lastThreeAbsentReport" path="lastThreeAbsentReport" />
+			<forward name="getRegistrationTime" path="getRegistrationTime"></forward>
+			<forward name="getManualAttendance" path="getManualAttendance"></forward>
+			<forward name="machineStatusReport" path="machineStatusReport"></forward>
+			
+
+
+			<!-- For Tel India --><!-- For Tel India --><!-- For Tel India -->
+
+
+			<forward name="employee_creation" path="employee_creation"></forward>
+			<forward name="employee_amendment" path="employee_amendment"></forward>
+			<forward name="projectmaster" path="projectmaster"></forward>
+			<forward name="attendenceapprovel" path="attendenceapprovel"></forward>
+			<forward name="AttendanceDetails" path="AttendanceDetails"></forward>
+			<forward name="attendenceapprovel_by_date" path="attendenceapprovel_by_date" />
+			<forward name="attendenceapprovel_by_director_date" path="attendenceapprovel_by_director_date"></forward>
+			<forward name="attendancetimesheetreport" path="attendancetimesheetreport" />
+			<forward name="leavedetails" path="leavedetails" />
+			<forward name="employeeDailyAllowance" path="employeeDailyAllowance" />
+			<forward name="employessSalaryDetails" path="employessSalaryDetails"></forward>
+			<forward name="getPayroll" path="getPayroll"></forward>
+			<forward name="projectcreationByManager" path="projectcreationByManager"></forward>
+
+			<forward name="advanceSalaryApproval" path="advanceSalaryApproval"></forward>
+
+			<!-- <forward name="admin_dayReport" path="admin_dayReport" /> -->
+			<forward name="GetEmployee" path="GetEmployee"></forward>
+			<forward name="weekOffSetting" path="weekOffSetting"></forward>
+
+			<forward name="clientMaster" path="clientMaster"></forward>
+
+			<forward name="getdailsallowances" path="getdailsallowances"></forward>
+			<forward name="usermanagement" path="usermanagement"></forward>
+			<forward name="gettravelbooking" path="gettravelbooking"></forward>
+			
+
+			<forward name="director_employee_creation" path="director_employee_creation" />
+			<forward name="director_employee_amendment" path="director_employee_amendment" />
+			<forward name="director_GetEmployee" path="director_GetEmployee" />
+			<forward name="director_projectmaster" path="director_projectmaster" />
+			<forward name="director_employessSalaryDetails" path="director_employessSalaryDetails" />
+			<forward name="director_clientMaster" path="director_clientMaster"></forward>
+			<forward name="director_roleMaster" path="director_roleMaster"></forward>
+			<forward name="director_AttendanceDetails" path="director_AttendanceDetails"></forward>
+			<forward name="director_weekOffSetting" path="director_weekOffSetting"></forward>
+			<forward name="director_usermanagement" path="director_usermanagement"></forward>
+			<forward name="director_userRolePermission" path="director_userRolePermission" />
+			<forward name="director_advanceSalaryApproval" path="director_advanceSalaryApproval" />
+			<forward name="director_getdailsallowances" path="director_getdailsallowances" />
+			<forward name="director_attendancetimesheetreport" path="director_attendancetimesheetreport" />
+			
+					
+					
+						<forward name="getProductivityReporttimesheetreport" path="getProductivity_attendancetimesheetreport" />
+			
+			
+			
+			<forward name="director_leavedetails" path="director_leavedetails" />
+			<forward name="director_employeeDailyAllowance" path="director_employeeDailyAllowance" />
+			<forward name="director_getPayroll" path="director_getPayroll" />
+			<forward name="director_ContactUsMail" path="director_ContactUsMail" />
+			<forward name="director_changePassword" path="director_changePassword" />
+			<forward name="director_travelbooking" path="director_travelbooking"></forward>
+            <forward name="deleteEmployeeAudit" path="deleteEmployeeAudit"></forward>
+           <forward name="advanceSalaryConsolidateReport" path="advanceSalaryConsolidateReport"></forward>
+           <forward name="employeeadvancesalarydetails" path="employeeadvancesalarydetails"></forward>
+          <forward name="employeedashboardadvancesalarydetails" path="employeedashboardadvancesalarydetails"></forward>
+          <forward name="expencesView" path="expencesView"></forward>
+              <forward name="manager_ContactUsMail" path="manager_ContactUsMail"></forward>
+              <forward name="employee_ContactUsMail" path="employee_ContactUsMail"></forward>
+              <forward name="admin_attendenceapprovel_by_date" path="admin_attendenceapprovel_by_date"></forward>
+			<forward name="Adminattendenceapprovel" path="Adminattendenceapprovel"></forward>
+			<forward name="attendenceapprovel_by_director_date" path="attendenceapprovel_by_director_date"></forward>
+			<forward name="MoreattendanceDetails" path="MoreattendanceDetails"></forward>
+			<forward name="MoreTravelallowanceDetails" path="MoreTravelallowanceDetails"></forward>
+			<forward name="moreTravelAllowaceInManger" path="moreTravelAllowaceInManger"></forward>
+		
+<forward name="todaygraffreport" path="todaygraffreport"></forward>
+			<forward name="orgSubModules" path="orgSubModules"></forward>
+			<forward name="menu" path="menu"></forward>
+			
+		</action>
+
+
+		<action path="/overtime" name="monthreportform" parameter="method"
+			scope="request" type="com.centris.action.OverTimeReportAction">
+			<forward name="empinfo" path="/jsp/overtimeempinfo.jsp"></forward>
+			<forward name="overtime" path="/jsp/OvertimedisplayDay.jsp"></forward>
+			<forward name="failure" path="/jsp/failure.jsp" />
+		</action>
+
+
+
+
+
+
+		<action input="jsp/bioIndividual.jsp" name="BioIndiForm" path="/bioinddividual"
+			scope="session" type="com.centris.action.BioIndiAction">
+			<forward name="success" path="/jsp/Home_Page.jsp"></forward>
+		</action>
+
+
+
+		<action name="AddEmployeeForm" path="/modifyEmployee"
+			type="com.centris.action.ModifyEmployeeAction" scope="session"
+			parameter="parameter">
+			<forward name="modifyEmployee" path="modifyEmployee"></forward>
+		
+			<!-- <forward name="exit" path="/jsp/employeeAlreadyExist.jsp"></forward> 
+				<forward name="modifyEmployeeDetails" path="/jsp/ModifyGetDetails.jsp"></forward> -->
+		</action>
+
+
+
+
+
+		<action input="jsp/TodayAttendence.jsp" name="SaveAttendenceForm"
+			path="/SaveAttendence" type="com.centris.action.SaveAttendenceAction"
+			scope="session">
+			<forward name="loaded" path="/jsp/Attendenceloaded.jsp"></forward>
+		</action>
+
+		<action name="RetrieveDetailsForm" path="/retrieveData"
+			type="com.centris.action.RetrieveDetailsAction" scope="session">
+			<forward name="modifyEmployeeDetails" path="/jsp/ModifyGetDetails.jsp"></forward>
+
+		</action>
+
+		<action name="ModifyEmployeeGetDateForm" path="/ModifyGetDate"
+			scope="session" type="com.centris.action.ModifyEmployeeGetDateAction">
+			<forward name="modifyAttendence" path="/jsp/modifyAttendence.jsp"></forward>
+		</action>
+
+		<action name="ModifyAttendenceForm" path="/ModifyAttendence"
+			type="com.centris.action.ModifyAttendenceAction" scope="session">
+			<forward name="attendenceModified" path="/jsp/employeeModified.jsp"></forward>
+		</action>
+
+
+		<!-- <action name="RemoveEmployeeForm" path="/removeEmployee" type="com.centris.action.RemoveEmployeeAction" 
+			scope="session"> <forward name="removeEmployee" path="/jsp/EmployeeRemoved.jsp"></forward> 
+			</action> -->
+		<!-- <action name="RemoveIdForm" path="/RemoveGetId" type="com.centris.action.RemoveGetIdAction" 
+			scope="session"> <forward name="GetID" path="/jsp/removeEmployee.jsp"></forward> 
+			</action> -->
+		<action input="jsp/report_jsp.jsp" name="GetReportNameForm"
+			path="/ReportGetName" scope="session" type="com.centris.action.GetReportNameAction">
+			<forward name="finalreport" path="/jsp/FinalReport.jsp"></forward>
+		</action>
+
+
+
+		<action name="MonthlyAttendenceForm" path="/monthlyat" scope="session"
+			type="com.centris.action.MonthlyAttendenceAction">
+			<forward name="monthreport" path="/jsp/finalMonthReport.jsp"></forward>
+		</action>
+		<action path="/removeInterview" scope="session"
+			type="com.centris.action.RemoveInterviewAction">
+			<forward name="success" path="/jsp/Interview_modifydisplay.jsp"></forward>
+		</action>
+
+		<action path="/shiftload" input="/jsp/shiftcreation.jsp"
+			type="com.centris.action.ShiftLoadAction">
+			<forward name="shiftcreation" path="shiftcreation"></forward>
+		</action>
+
+
+
+		<!-- <action path="/reportReconciliation" type="com.centris.action.ReportReconciliationAction"> 
+			<forward name="reconciliationDetails" path="/jsp/reportReconciliationDetails.jsp"/> 
+			</action> -->
+
+		<action path="/reconciliationPost"
+			type="com.centris.action.ReportReconciliationPostAction" name="ReportReconciliationPostForm">
+			<forward name="sucessreconciliation" path="/jsp/successReconciliation.jsp"></forward>
+		</action>
+
+		<action path="/payrollGenerator" type="com.centris.action.PayrollGeneratorAction"
+			name="payrollGenForm">
+			<forward name="dataProcess" path="/jsp/biodisplay.jsp"></forward>
+		</action>
+		<action name="testform" path="/test" scope="session"
+			type="com.centris.action.testAction"></action>
+
+
+		<!-- Rajesh actions mappings -->
+
+
+
+		<action path="/empinfo" type="com.centris.action.GetInfoAction"
+			scope="request">
+			<forward name="empinfo" path="/jsp/empinfo.jsp"></forward>
+		</action>
+
+		<action input="/jsp/bioreport.jsp" name="biofilterform" scope="session"
+			path="/bioreport" type="com.centris.action.BioFilterReportAction">
+			<forward name="dayreport" path="dayreport"></forward>
+
+			<forward name="success" path="/jsp/bioreportdisplay.jsp"></forward>
+			<forward name="overtime" path="/jsp/OvertimedisplayDay.jsp"></forward>
+		</action>
+
+		<action input="/jsp/biomonthreport.jsp" name="monthreportform"
+			scope="session" path="/biomonthreport" type="com.centris.action.BioMonthReportAction">
+			<forward name="success" path="/jsp/biomonthdisplay.jsp"></forward>
+			<forward name="names" path="/jsp/BioMonthReportAllNames.jsp"></forward>
+			<forward name="overtime" path="/jsp/Overtimedisplay.jsp"></forward>
+		</action>
+		<action path="/GetBatchData" input="/jsp/bioProcess.jsp" name="batchProcess"
+			scope="session" type="com.centris.action.BioBatchDataProcessAction">
+			<forward name="dataProcess" path="/jsp/biodisplay.jsp"></forward>
+		</action>
+		<action path="/GetBatchProcess" type="com.centris.action.BioBatchProcessAction">
+			<forward name="success" path="/jsp/bioProcess.jsp"></forward>
+		</action>
+
+		<action path="/GetBatchdisplay" type="com.centris.action.BIODisplayAction">
+			<forward name="success" path="/jsp/biodisplay.jsp"></forward>
+		</action>
+		<action path="/employeeRegistration" type="com.centris.action.EmployeeInformationAction"
+			parameter="method" scope="request" validate="true">
+			<forward name="success" path="/jsp/remoteLogin.jsp"></forward>
+		</action>
+
+		<action input="/jsp/TodayReport.jsp" path="/todayReport"
+			type="com.centris.action.TodaysReportFromAccessAction" name="todaysReport"
+			parameter="method" scope="request">
+			<forward name="today" path="/jsp/TodayReport.jsp"></forward>
+
+		</action>
+
+
+		<action path="/AddEmployee" type="com.centris.action.AddEmployeeAction"
+			input="jsp/addEmployee.jsp" name="AddEmployeeForm" scope="session"
+			parameter="parameter">
+			<forward name="addEmployee" path="addEmployee"></forward>
+		</action>
+		<!-- For Employee WeekOff -->
+		<action path="/weekoff" name="weekoffmaster" parameter="parameter"
+			type="com.centris.action.WeekOffAction">
+			<forward name="showWeekOff" path="getEmployeeWeekoff" />
+		</action>
+		<action path="/monthlyReport" input="/jsp/EmployeeMonthReport.jsp"
+			type="com.centris.action.EmployeeMonthlyReportAction" name="monthreport"
+			parameter="method" scope="session">
+			<forward name="success" path="/jsp/EmployeeMonthReport.jsp"></forward>
+			<!-- <forward name="monthrepo" path="/jsp/biomonthreport.jsp"></forward> 
+				<forward name="overtimereport" path="/jsp/OvertimeReport.jsp"></forward> -->
+		</action>
+		<action path="/groupMaster" parameter="method"
+			type="com.centris.action.EmployeeGroupMasterAction" scope="request">
+			<forward name="success" path="/jsp/employeeGroup.jsp"></forward>
+		</action>
+		<action input="/jsp/groupDepartmentMapping.jsp" path="/groupDepartment"
+			parameter="method" type="com.centris.action.GroupDepartmentMappingAction"
+			scope="request">
+			<forward name="success" path="/jsp/groupDepartmentMapping.jsp"></forward>
+		</action>
+
+		<action path="/holidayMasterdetails" parameter="method"
+			type="com.centris.action.HolidayMasterAction" input="/jsp/addGroupHolidays.jsp"
+			name="holidayMaster" scope="session">
+			<forward name="success" path="/jsp/holidayMasterHome.jsp"></forward>
+
+			<!-- <forward name="insertDepartments" redirect="true" path="departmentMaster.do?parameter=getDepRecords"></forward> 
+				<forward name="deleteDepartments" redirect="true" path="departmentMaster.do?parameter=getDepRecords"></forward> -->
+		</action>
+		<action path="/holidayMasterdetails" parameter="method"
+			type="com.centris.action.HolidayMasterAction" input="/jsp/addGroupHolidays.jsp"
+			scope="session">
+			<forward name="success" path="/jsp/holidayMasterHome.jsp"></forward>
+			<forward name="addgroup" path="/jsp/addGroupHolidays.jsp"></forward>
+			<!-- <forward name="insertDepartments" redirect="true" path="departmentMaster.do?parameter=getDepRecords"></forward> 
+				<forward name="deleteDepartments" redirect="true" path="departmentMaster.do?parameter=getDepRecords"></forward> -->
+		</action>
+		<action path="/holidayMasterderadd" input="/jsp/addGroupHolidays.jsp"
+			type="com.centris.action.HolidayMasterAddAction" name="holidayMaster"
+			scope="session">
+			<forward name="success" path="/jsp/holidayMasterHome.jsp"></forward>
+		</action>
+		<!-- <action path="/departmentMaster" name="departmentMaster" parameter="parameter" 
+			type="com.centris.action.DepartmentMasterAction" scope="session"> <forward 
+			name="veiwDepartments" path="DepMaster"></forward> <forward name="insertDepartments" 
+			path="DepMaster"></forward> <forward name="deleteDepartments" path="DepMaster"></forward> 
+			</action> -->
+
+
+		<!-- <action path="/removeemp" name="RemoveEmployeeForm" parameter="parameter" 
+			type="com.centris.action.RemoveEmployeeAction" scope="session" > <forward 
+			name="removeEmployee" path="/jsp/removeEmployee.jsp"></forward> </action> -->
+
+
+
+		<action path="/groupmonthreport" input="/jsp/EmpolyeeGroupMonthReport.jsp"
+			parameter="parameter" type="com.centris.action.EmployeeGroupMonthlyReportAction"
+			scope="request">
+			<forward name="success" path="/jsp/EmpolyeeGroupMonthReport.jsp"></forward>
+		</action>
+
+		<action path="/payRollProcess" name="paySlipForm" parameter="method"
+			type="com.centris.action.PayRollProcessAction" scope="request">
+			<forward name="success" path="/jsp/PayRollProcess.jsp"></forward>
+			<forward name="paySlip" path="/jsp/PaySlip.jsp"></forward>
+			<forward name="sendPaySlip" path="payRollProcess.do?method=getPaySlip"
+				redirect="true"></forward>
+			<forward name="sendHourlyPaySlip" path="payRollProcess.do?method=getHourlyPaySlip"
+				redirect="true"></forward>
+			<forward name="hourlypaySlip" path="/jsp/HourlyPaySlip.jsp"></forward>
+
+
+		</action>
+		<action path="/consolidatedpayRoll" name="paySlipForm"
+			parameter="method" type="com.centris.action.ConsolidatedPayRollAction"
+			scope="request">
+
+			<forward name="success" path="/jsp/ConsolidatedPayRoll.jsp"></forward>
+		</action>
+		<action path="/latecomers" name="LateCommersReportForm"
+			parameter="parameter" type="com.centris.action.LateCommersReportAction"
+			scope="request">
+
+			<forward name="latecommersreport" path="latecommersreport"></forward>
+
+		</action>
+
+		<action path="/lessthen8hrsinfo" name="EmpWorkingLessThan8hrsReportForm"
+			parameter="parameter" type="com.centris.action.EmpWorkingLessThan8hrsReportAction"
+			scope="request">
+
+			<forward name="lessthan8hrs" path="lessthan8hrs"></forward>
+
+		</action>
+
+		<action path="/auditreport" name="auditreport" parameter="parameter"
+			type="com.centris.action.AuditReportAction" scope="request">
+
+			<forward name="audireport" path="/jsp/AuditReport.jsp"></forward>
+			<forward name="auditReconciliationReport" path="/jsp/AuditReconciliationReport.jsp"></forward>
+
+
+		</action>
+
+		<action path="/earlytimereport" name="latecomersreportform"
+			parameter="parameter" type="com.centris.action.EarlyTimeReportAction"
+			scope="request">
+
+			<forward name="earlytime" path="/jsp/EarlyTimeReport.jsp"></forward>
+
+		</action>
+
+		
+
+
+		<action path="/employeeProductivityReport" name="ProductivityReportdata"
+			parameter="parameter" type="com.centris.action.ProductivityReportAction"
+			scope="request">
+
+			<forward name="productivityreport" path="/jsp/ProductivityReport.jsp"></forward>
+
+		</action>
+
+		<!--<action path="/adddesignation" name="adddesignation" parameter="parameter" 
+			type="com.centris.action.AddDesignationAction" scope="request"> <forward 
+			name="DesignationMaster" path="DesignationMaster"></forward> <forward name="designationhome" 
+			path="adddesignation.do?parameter=addDesignation" redirect="true"></forward> 
+			</action> -->
+		<!-- chiru attendance audit -->
+
+		<action path="/timesheetreport" name="timesheetReportForm"
+			parameter="parameter" type="com.centris.action.TimeSheetReportAuditAction"
+			scope="request">
+						<forward name="getProductivityReporttimesheetreport" path="getProductivity_attendancetimesheetreport" />
+		</action>
+		<!-- chiru attendance audit -->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<action path="/productivity" name="productivityForm"
+			parameter="parameter" type="com.centris.action.productivityAction"
+			scope="request">
+			<forward name="getProductivityReporttimesheetreport" path="getProductivity_attendancetimesheetreport" />
+
+		</action>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		<action path="/breakupmaster" parameter="method"
+			type="com.centris.action.BreakupmasterAction" scope="request">
+			<forward name="breakupmaster" path="/jsp/BreakupMaster.jsp"></forward>
+
+		</action>
+		<action path="/shiftAmendment" name="shiftAmendmentForm"
+			parameter="method" type="com.centris.action.ShiftAmendmentAction"
+			scope="request">
+			<forward name="shiftAmendment" path="/jsp/ShiftAmendment.jsp"></forward>
+		</action>
+
+		<action path="/uploadEmpXSL" name="uploadEmpXSLForm" parameter="parameter"
+			type="com.centris.action.UploadEmpXSLAction" scope="request">
+			<forward name="UploadEmpXSL" path="/jsp/UploadEmpXSL.jsp"></forward>
+		</action>
+
+		<action path="/location" name="location" parameter="parameter"
+			type="com.centris.action.LocationMasterAction" scope="request">
+			<forward name="locationmaster" path="locationmaster"></forward>
+			<forward name="deactivelocatios" path="deactivelocatios"></forward>
+			<!-- <forward name="locationmasterhome" path="location.do?parameter=addlocation" 
+				redirect="true"></forward> -->
+
+		</action>
+
+		<action path="/user" parameter="parameter"
+			type="com.centris.action.UserMasterAction" scope="request">
+			<forward name="usermaster" path="usermaster"></forward>
+		</action>
+
+		<action path="/role" parameter="parameter"
+			type="com.centris.action.RoleMasterAction" scope="request" name="roleMasterForm">
+			<forward name="roleMaster" path="GetDetails.do?parameter=getRoles"
+				redirect="true"></forward>
+			<forward name="director_roleMaster" path="GetDetails.do?parameter=getRoles"
+				redirect="true"></forward>
+		</action>
+		<action path="/ContactUsMail" name="ContactUsMailForm"
+			parameter="method" type="com.centris.action.ContactUsMailAction"
+			scope="request">
+			<forward name="ContactUsMail"
+				path="/GetDetails.do?parameter=sendMailToCustomerSupport" redirect="true"></forward>
+
+		</action>
+
+
+		<action path="/shiftMaster" input="/jsp/ShiftMaster.jsp"
+			type="com.centris.action.ShiftMasterAction" parameter="method" scope="request">
+			<forward name="shiftmaster" path="shiftmaster" redirect="true" />
+		</action>
+
+
+		<action path="/attendanceReport" type="com.centris.action.AttendanceReportAction"
+			parameter="parameter">
+			<forward name="dayreport" path="dayreport"></forward>
+		</action>
+
+
+
+		<action path="/grouplocationmap" type="com.centris.action.GroupLocationMapAction"
+			parameter="parameter" scope="request">
+			<forward name="grouplocationmap" path="grouplocationmap"></forward>
+		</action>
+		<action path="/groupMaster" parameter="method"
+			type="com.centris.action.GroupMasterAction" scope="request">
+			<forward name="groupmaster" path="groupmaster"></forward>
+		</action>
+
+
+
+
+		<action path="/userPermission" type="com.centris.action.UserRolePermissionAction"
+			parameter="method" scope="request" name="UserRolePermissionForm">
+		</action>
+
+		<!-- For Removing Error Message in Session by Arul -->
+		<action path="/removeErrorMessage" scope="session"
+			type="com.centris.action.RemoveErrorMessageAction" parameter="method">
+		</action>
+
+		<action path="/reportreconcil" name="reportReconciliationform"
+			parameter="parameter" type="com.centris.action.ReportReconciliationAction">
+			<forward name="reconciliationDetails" path="/jsp/reportReconciliationDetails.jsp" />
+			<forward name="reportreconcil" path="reportreconcil" />
+		</action>
+
+		<action path="/RemoveEmployeeAction" name="RemoveEmployeeForm"
+			parameter="parameter" type="com.centris.action.RemoveEmployeeAction"
+			scope="request">
+			<forward name="removeemployee" path="removeEmployee" />
+		</action>
+
+		<action path="/consolidateDetailedMonthReport" name="ConsolidateDetailedMonthReportForm"
+			parameter="parameter" type="com.centris.action.ConsolidateDetailedMonthReportAction"
+			scope="request">
+			<forward name="consolidateDetailedMonthReport" path="consolidateDetailedMonthReport" />
+		</action>
+
+		<action path="/dayReportInfo" name="DayReportForm" parameter="parameter"
+			type="com.centris.action.DayReportAction" scope="session">
+			<forward name="dayReport" path="dayReport" />
+		</action>
+
+	
+
+		<action path="/monthlylagendreport" parameter="method"
+			type="com.centris.action.MonthlyLagendReportAction" name="monthlylagentreportform"
+			scope="request">
+			<forward name="monthlylagendreport" path="monthlylagendreport" />
+		</action>
+
+		<action path="/earlyTimeReport" name="LateCommersReportForm"
+			parameter="parameter" type="com.centris.action.EarlyTimeReportAction"
+			scope="session">
+			<forward name="earlytimeReport" path="earlytimeReport" />
+		</action>
+		<action path="/logReport" parameter="method"
+			type="com.centris.action.LogReportAction" name="LogReportForm" scope="request">
+			<forward name="logReport" path="logReport" />
+			<forward name="adminlogreport" path="adminlogreport" />
+			<forward name="directorlogreport" path="directorlogreport" />
+			<forward name="groupLogReportListDetails" path="groupLogReport" />
+		</action>
+
+
+		<action path="/logincheck" parameter="method"
+			type="com.centris.action.LoginCheckAction" name="LoginForm"
+			scope="request">
+		</action>
+
+		<action path="/locationView" parameter="parameter"
+			type="com.centris.action.LocationViewAction" name="location" scope="request">
+			<forward name="locationview" path="locationview"></forward>
+			<forward name="locationvieweditlocation" path="locationvieweditlocation"></forward>
+
+
+
+		</action>
+
+		<action path="/todayReport" name="TodayReportForm" parameter="parameter"
+			type="com.centris.action.TodayReportAction" scope="request">
+			<forward name="todayReport" path="todayReport" />
+		</action>
+
+		<action path="/dailylogreport" name="dailylogreportform"
+			parameter="parameter" type="com.centris.action.DailyLogReportAction"
+			scope="request">
+			<forward name="dailylogreport" path="dailylogreport" />
+		</action>
+
+		<action path="/yearlyReportinfo" name="YearlyReportForm"
+			parameter="parameter" type="com.centris.action.YearlyReportAction"
+			scope="request">
+			<forward name="yearlyReport" path="yearlyReport" />
+		</action>
+		<action path="/locationUpdateReport" name="LocationUpdateReportForm"
+			parameter="parameter" type="com.centris.action.LocationUpdateReportAction"
+			scope="request">
+			<forward name="locationUpdateReport" path="locationUpdateReport" />
+		</action>
+
+		<action path="/incorrectPunchReport" name="IncorrectPunchReportForm"
+			parameter="parameter" type="com.centris.action.IncorrectPunchReportAction"
+			scope="request">
+			<forward name="incorrectPunchReport" path="incorrectPunchReport" />
+		</action>
+
+		<action path="/lastThreeAbsentReport" name="LastThreeAbsentReportForm"
+			parameter="parameter" type="com.centris.action.LastThreeAbsentReportAction"
+			scope="request">
+			<forward name="lastThreeAbsentReport" path="lastThreeAbsentReport" />
+		</action>
+		<action path="/getRegistrationReportDetails" name="RegistrationReportDetails"
+			parameter="parameter" type="com.centris.action.RegistrationTimeReportAction"
+			scope="request">
+			<forward name="getRegistrationTime" path="getRegistrationTime" />
+		</action>
+		<action path="/manualAttendance" name="manualAttendanceform"
+			parameter="parameter" type="com.centris.action.ManualAttendanceAction"
+			scope="request">
+			<forward name="getManualAttendance" path="getManualAttendance" />
+		</action>
+
+		<action path="/machineStatusReport" name="MachineStatusReportform"
+			parameter="parameter" type="com.centris.action.MachineStatusReportAction"
+			scope="request">
+			<forward name="machineStatusReport" path="machineStatusReport"></forward>
+		</action>
+
+
+
+		<!-- For Tel India --><!-- For Tel India --><!-- For Tel India -->
+		<action path="/managerMenu" name="ManagerMenuForm" parameter="parameter"
+			input="/jsp/Manager/Home_Page.jsp" type="com.centris.action.ManagerMenuAction"
+			scope="session">
+			<forward name="manager_home" path="manager_home" />
+			<forward name="manager_changePassword" path="manager_changePassword" />
+			<forward name="manager_forgetPassword" path="manager_forgetPassword" />
+			<forward name="manager_leaveapproved" path="manager_leaveapproved" />
+			<forward name="attendanceNotApproved" path="attendanceNotApproved" />
+			<forward name="empDailyAllowance" path="empDailyAllowance" />
+			<forward name="getExpenseConsolidatedDetail" path="getExpenseConsolidatedDetail" />
+			<forward name="advanceSalaryRequest" path="advanceSalaryRequest" />
+			<forward name="getAllEmployeeResume" path="getAllEmployeeResume"></forward>
+			<forward name="getExpenseConsolidatedDetail_director" path="getExpenseConsolidatedDetail_director" />
+			<forward name="getExpenseConsolidatedDetail_admin" path="getExpenseConsolidatedDetail_admin" />
+	          <forward name="director_leaveapproved" path="director_leaveapproved"></forward>
+	               <forward name="moreExpenseDetailsInManager" path="moreExpenseDetailsInManager"></forward> 
+	          
+		</action>
+
+		<action path="/employeeMenu" name="EmployeeMenuForm" parameter="parameter"
+			input="/jsp/Employee/Home_Page.jsp" type="com.centris.action.EmployeeMenuAction"
+			scope="session">
+			<forward name="employee_home" path="employee_home" />
+			<forward name="employee_changePassword" path="employee_changePassword" />
+			<forward name="employee_postattendance" path="employee_postattendance" />
+			<forward name="employee_leavestatus" path="employee_leavestatus" />
+			<forward name="employee_getPersonalDetails" path="employee_getPersonalDetails"></forward>
+			<forward name="getexpenseDetails" path="getexpenseDetails" />
+			<forward name="leaveDetailsHome" path="leaveDetailsHome" />
+			<forward name="employeeResumeCreation" path="employeeResumeCreation" />
+
+		</action>
+
+		<action path="/employee" name="EmployeeForm" parameter="parameter"
+			type="com.centris.action.EmployeeAction" scope="request">
+			<forward name="employee_creation" path="employee_creation"></forward>
+			<forward name="employee_amendment" path="employee_amendment"></forward>
+			<forward name="employessSalaryDetails" path="employessSalaryDetails"></forward>
+			<forward name="director_employessSalaryDetails" path="director_employessSalaryDetails"></forward>
+
+			<forward name="director_employee_creation" path="director_employee_creation" />
+			<forward name="director_employee_amendment" path="director_employee_amendment" />
+			<forward name="director_GetEmployee" path="director_GetEmployee" />
+			
+			<forward name="GetEmployee" path="GetEmployee"></forward>
+			<forward name="director_GetEmployee" path="director_GetEmployee"></forward>
+			<forward name="getDeactiveEmployees" path="getDeactiveEmployees"></forward>
+			<forward name="director_getDeactiveEmployees" path="director_getDeactiveEmployees"></forward>
+			
+		</action>
+		<action path="/employeeAttendanceposting" name="EmployeeAttendancePostingForm"
+			parameter="parameter" type="com.centris.action.EmployeeAttendancePostingAction"
+			scope="request">
+			<forward name="employee_postattendance" path="employee_postattendance" />
+		</action>
+
+		<action path="/attendenceNotApproved" parameter="parameter"
+			type="com.centris.action.AttendenceNotApprovedAction" scope="request">
+			<forward name="attendanceNotApproved" path="attendanceNotApproved" />
+		</action>
+		<action path="/employeeDailyAllowance" parameter="method"
+			type="com.centris.action.EmployeeDailyAllowanceAction" scope="request"
+			name="EmployeeDailyAllowanceForm">
+			<forward name="employeeDailyAllowance" path="employeeDailyAllowance" />
+			<forward name="director_employeeDailyAllowance" path="director_employeeDailyAllowance"/>
+		</action>
+
+		<action path="/logincheck" parameter="method"
+			type="com.centris.action.LoginCheckAction" scope="session">
+			<forward name="adminLogin" path="admin" />
+			<forward name="managerLogin" path="manager" />
+			<forward name="employeeLogin" path="employee" />
+			<forward name="failure" path="/jsp/Login/login.jsp" />
+			<forward name="forgetPasswordRequest" path="forgetPasswordRequest" />
+			<forward name="directorhome" path="director" />
+
+		</action>
+
+		<!-- CENTRIS-HRMS PROJECT-MANAGER MAPPING START Created By Swathi -->
+
+		<action path="/projectManagerMapping" parameter="parameter"
+			type="com.centris.action.ProjectManagerMappingAction" scope="request">
+			<forward name="projectmanagerHome" path="projectmanagerHome"></forward>
+			<forward name="director_projectmanagerHome" path="director_projectmanagerHome"></forward>
+		</action>
+
+
+		<!-- CENTRIS-HRMS DesignationMaster START Created By Satish -->
+
+
+		<action path="/adddesignation" name="adddesignation" parameter="parameter"
+			type="com.centris.action.AddDesignationAction" scope="request">
+			<forward name="DesignationMaster" path="DesignationMaster"></forward>
+			<forward name="designationhome" path="adddesignation.do?parameter=addDesignation"
+				redirect="true"></forward>
+			<forward name="director_DesignationMaster" path="director_DesignationMaster"></forward>
+
+		</action>
+
+
+		<action name="ChangePasswordForm" path="/ChangePassword"
+			parameter="parameter" scope="request" type="com.centris.action.ChangePasswordAction">
+			<forward name="changePassword" path="afterPasswordChange"></forward>
+
+		</action>
+
+
+		<!-- CENTRIS-HRMS DepartMentMaster START Created By Satish -->
+
+
+
+
+		<action path="/departmentMaster" name="departmentMaster"
+			parameter="parameter" type="com.centris.action.DepartmentMasterAction"
+			scope="session">
+			<forward name="veiwDepartments" path="DepMaster"></forward>
+			<forward name="insertDepartments" path="DepMaster"></forward>
+			<forward name="deleteDepartments" path="DepMaster"></forward>
+			<forward name="director_DepMaster" path="director_DepMaster"></forward>
+		</action>
+
+		<!-- CENTRIS-HRMS DepartMentMaster END Created By Satish -->
+
+		<!-- CENTRIS-HRMS START Created By seshu -->
+
+
+		<action path="/projectmaster" name="projectmasterform"
+			parameter="parameter" type="com.centris.action.ProjectMasterAction"
+			scope="request">
+			<forward name="projectmaster" path="projectmaster"></forward>
+			<forward name="director_projectmaster" path="director_projectmaster"></forward>
+		</action>
+
+		<action path="/attendenceaprrovel" name="attendenceapprovelform"
+			parameter="parameter" type="com.centris.action.AttendenceApprovelAction"
+			scope="request">
+			<forward name="attendenceapprovel" path="attendenceapprovel"></forward>
+			<forward name="Adminattendenceapprovel" path="Adminattendenceapprovel"></forward>
+		</action>
+
+		<action path="/managerLeaveApprovedbydate" parameter="parameter"
+			type="com.centris.action.AttendanceApprovalByDateAction" scope="request"
+			name="attendanceapprovalbydate">
+			<forward name="attendenceapprovel_by_date" path="attendenceapprovel_by_date" />
+			<forward name="admin_attendenceapprovel_by_date" path="admin_attendenceapprovel_by_date"></forward>
+			<forward name="attendenceapprovel_by_director_date" path="attendenceapprovel_by_director_date"></forward>
+		</action>
+		<action path="/attendancetimesheetreport" parameter="parameter"
+			type="com.centris.action.TimeSheetReportAction" scope="request"
+			name="attendancetimesheetreport">
+			<forward name="attendancetimesheetreport" path="attendancetimesheetreport" />
+			<forward name="director_attendancetimesheetreport" path="director_attendancetimesheetreport" />
+		</action>
+
+		<action path="/leavedetailsreport" parameter="parameter"
+			type="com.centris.action.LeaveDetailsReportAction" scope="request"
+			name="leavedetailsform">
+			<forward name="leavedetails" path="leavedetails" />
+			<forward name="director_leavedetails" path="director_leavedetails" />
+		</action>
+
+		<action path="/generatepayroll" parameter="parameter"
+			type="com.centris.action.GeneratePayroll" scope="request" name="payrollform">
+
+			<forward name="getPayroll" path="getPayroll"></forward>
+			<forward name="createpayslipfilter" path="createpayslipfilter"></forward>
+			<forward name="director_getPayroll" path="director_getPayroll" />
+			<forward name="director_createpayslipfilter" path="director_createpayslipfilter"></forward>
+			
+		</action>
+
+		<action path="/createpayslip" parameter="parameter"
+			type="com.centris.action.CreatepayslipAction" scope="request" name="payslipform">
+			<forward name="createpayslipfilter" path="createpayslipfilter"></forward>
+			<forward name="director_createpayslipfilter" path="director_createpayslipfilter"></forward>
+		</action>
+
+
+
+
+
+
+		<!-- CENTRIS-HRMS END Created By seshu -->
+
+		<!-- chiru Attendance status Time -->
+
+
+		<action path="/GetAttendanceDetails" name="AttendanceStatusForm"
+			type="com.centris.action.AttendanceStatusTypeAction" parameter="parameter"
+			scope="session">
+			<forward name="AttendanceDetails" path="AttendanceDetails"></forward>
+			<forward name="director_AttendanceDetails" path="director_AttendanceDetails"></forward>
+			
+		</action>
+
+		<!-- chiru Attendance status Time -->
+
+
+
+
+
+		<!-- CENTRIS-HRMS Leave Bank Start Created By priya -->
+
+		<action path="/GetLeaves" name="GetLeavesform" parameter="parameter"
+			type="com.centris.action.LeaveBankAction" scope="request">
+			<forward name="GetLeaves" path="GetLeaves"></forward>
+			<forward name="director_GetLeaves" path="director_GetLeaves"></forward>
+		</action>
+
+
+		<!-- CENTRIS-HRMS Leave Bank END Created By priya -->
+
+
+
+		<!-- CENTRIS-HRMS Holiday Master START Created By swathi -->
+
+		<action path="/holidayMaster" parameter="parameter"
+			type="com.centris.action.HolidayMasterAction" name="holidayMaster"
+			scope="session">
+			<forward name="holidaymaster" path="holidaymaster"></forward>
+			<forward name="addgroup" path="addgroup"></forward>
+			<forward name="director_holidaymaster" path="director_holidaymaster"></forward>
+			<forward name="director_addgroup" path="director_addgroup"></forward>
+		</action>
+		<!-- CENTRIS-HRMS Holiday Master END Created By swathi -->
+
+		<!-- CENTRIS-HRMS Manager Master START Created By swathi -->
+
+		<action path="/managerMaster" parameter="parameter"
+			type="com.centris.action.ManagerMasterAction" name="managerMasterForm"
+			scope="request">
+			<forward name="managerHome" path="managerHome"></forward>
+
+		</action>
+
+		<!-- CENTRIS-HRMS Holiday Master END Created By swathi -->
+		<!-- CENTRIS-HRMS Manager ForgotPassword START Created By Satish -->
+
+		<action path="/managerForgetpassword" parameter="method"
+			type="com.centris.action.ManagerForgotPasswordAction" scope="request">
+			<forward name="manager_forgetPassword" path="manager_forgetPassword" />
+
+		</action>
+
+
+		<!-- CENTRIS-HRMS Employee Forgot Password START Created By swathi -->
+
+		<action path="/employeeforgotPassword" parameter="parameter"
+			type="com.centris.action.EmployeeForgotPassAction" name="" scope="request">
+			<forward name="employeeforgotpasswordHome" path="employeeforgotpasswordHome"></forward>
+
+		</action>
+
+		<!-- CENTRIS-HRMS Employee Forgot Password END Created By swathi -->
+
+		<!-- CENTRIS-HRMS Leave Request START Created By swathi -->
+
+		<action path="/leaverequest" parameter="parameter"
+			type="com.centris.action.EmployeeLeaveRequestAction" name="employeeleaverequestForm"
+			scope="request">
+			<forward name="employeeleaveRequestHome" path="employeeLeaveRequestHome"></forward>
+<forward name="employee_leavestatus" path="employee_leavestatus" />
+		</action>
+
+		<!-- CENTRIS-HRMS Leave Request END Created By swathi -->
+
+
+
+
+
+		<!-- CENTRIS-HRMS Leave Bank Start Created By priya -->
+
+		<action path="/GetLeaves" name="GetLeavesform" parameter="parameter"
+			type="com.centris.action.LeaveBankAction" scope="request">
+			<forward name="GetLeaves" path="GetLeaves"></forward>
+			<forward name="director_GetLeaves" path="director_GetLeaves"></forward>
+		</action>
+
+
+		<!-- CENTRIS-HRMS Leave Bank END Created By priya -->
+		<action path="/managerLeaveApproved" parameter="method"
+			type="com.centris.action.ManagerLeaveConfirmationAction" scope="request">
+			<forward name="manager_leaveapproved" path="manager_leaveapproved" />
+			<forward name="director_leaveapproved" path="director_leaveapproved"></forward>
+
+		</action>
+
+
+
+		<!-- CENTRIS-HRMS Employee Leave Status Start Created By Satish -->
+
+
+		<action path="/employeeLeaveStatus" parameter="method"
+			type="com.centris.action.EmployeeLeaveStatusAction" scope="request">
+			<forward name="employee_leavestatus" path="employee_leavestatus" />
+
+		</action>
+
+		<!-- CENTRIS-HRMS Employee Leave Status End Created By Satish -->
+
+
+
+		<!-- CENTRIS-HRMS Leave Request START Created By swathi -->
+
+		<action path="/adminMonthReport" parameter="parameter"
+			type="com.centris.action.AdminMonthReportAction" name="adminMonthReportForm"
+			scope="request">
+			<forward name="adminmonthreport" path="adminmonthreport"></forward>
+			<forward name="director_adminmonthreport" path="director_adminmonthreport"></forward>
+		</action>
+
+		<!-- CENTRIS-HRMS Leave Request END Created By swathi -->
+
+
+
+
+		<!-- CENTRIS-HRMS AdminDayReport Start Created By Satish -->
+
+
+		<!-- <action path="/adminDayReport" parameter="method"
+			type="com.centris.action.AdminDayReportAction" scope="request">
+			<forward name="adminDayReport" path="adminDayReport" />
+			<forward name="directorDayReport" path="directorDayReport" />
+			<forward name="director_admin_dayReport" path="director_admin_dayReport" /> 
+			
+		</action> -->
+
+		<!-- CENTRIS-HRMS AdminDayReport Start Created By Satish -->
+
+		<action path="/GetAllEmployees" name="GetEmployeeForm"
+			parameter="parameter" type="com.centris.action.GetAllEmployeeAction"
+			scope="request">
+			<forward name="GetEmployee" path="GetEmployee"></forward>
+			<forward name="modify_employee" path="modify_employee"></forward>
+			<forward name="director_employee_amendment" path="director_employee_amendment" />
+			<forward name="director_GetEmployee" path="director_GetEmployee" />
+		</action>
+		<!-- CENTRIS-HRMS AdminDayReport Start Created By Satish -->
+
+
+		<action path="/adminDayReport" parameter="method"
+			type="com.centris.action.AdminDayReportAction" scope="request"
+			name="AdminDayReportForm">
+			<forward name="director_admin_dayReport" path="director_admin_dayReport" /> 
+			<forward name="adminDayReport" path="adminDayReport" />
+
+		</action>
+
+		<action path="/getAllReports" parameter="method"
+			type="com.centris.action.ReportsAction" scope="request">
+
+		</action>
+
+		<action path="/getEmployeePersonalDetails" parameter="method"
+			type="com.centris.action.EmployeePersonalDetailsAction" scope="request"
+			name="EmployeePersonalDetailsForm">
+			<forward name="employee_getPersonalDetails" path="employee_getPersonalDetails" />
+		</action>
+		<action path="/empDailyAllowance" parameter="method"
+			type="com.centris.action.UploadDailyAllowanceByManagerAction" scope="request"
+			name="UploadDailyAllowanceByManagerForm">
+			<forward name="empDailyAllowance" path="empDailyAllowance" />
+		</action>
+
+		<action path="/empExpenseDetails" parameter="method"
+			type="com.centris.action.EmployeeExpenseDetailsAction" scope="request"
+			name="ExpenseDetailsForm">
+			<forward name="getexpenseDetails" path="getexpenseDetails" />
+		</action>
+
+		<action path="/managerExpenseDetails" parameter="method"
+			type="com.centris.action.ManagerExpenseDetailsAction" scope="request"
+			name="ManagerExpenseDetailsForm">
+			<forward name="getExpenseConsolidatedDetail" path="getExpenseConsolidatedDetail" />
+			<forward name="getExpenseConsolidatedDetail_director" path="getExpenseConsolidatedDetail_director" />
+			<forward name="getExpenseConsolidatedDetail_admin" path="getExpenseConsolidatedDetail_admin" />
+		</action>
+
+
+		<action path="/employeeSalaryDetailsAction" parameter="method"
+			type="com.centris.action.EmployeeSalaryDetailsAction" scope="request"
+			name="employeesalarydetailsform">
+
+			<forward name="employee_creation" path="employee_creation"></forward>
+			<forward name="director_employee_creation" path="director_employee_creation"></forward>
+		</action>
+
+
+
+		<action path="/projeccreationbymanager" name="projectmasterform"
+			parameter="parameter" type="com.centris.action.ProjectCreationByMangerAction"
+			scope="request">
+			<forward name="projectcreationByManager" path="projectcreationByManager"></forward>
+			<forward name="director_projectmaster" path="director_projectmaster"></forward>
+			<forward name="projectmaster" path="projectmaster"></forward>
+		</action>
+
+<action path="/advancedSalaryRequest" name="advanceSalaryConsolidateReportForm" parameter="parameter" 
+			type="com.centris.action.AdvanceSalaryRequestAction" scope="request">
+			<forward name="advanceSalaryConsolidateReport" path="advanceSalaryConsolidateReport"></forward>
+			
+
+		</action>
+
+		<action path="/employeeDashboard" name="employeeDashBoardform"
+			parameter="method" type="com.centris.action.EmployeeDashboardAction"
+			scope="request">
+			<forward name="allEmployeesUnderManager" path="allEmployeesUnderManager"></forward>
+			<forward name="employeeDashboard" path="employeeDashboard"></forward>
+			<forward name="employeeDailyAllowancesView" path="employeeDailyAllowancesView"></forward>
+
+		    <forward name="dailyAllowanceViewInManager" path="dailyAllowanceViewInManager"></forward>
+		    <forward name="expencesView" path="expencesView"></forward>
+		     <forward name="MoreTravelallowanceDetails" path="MoreTravelallowanceDetails"></forward>
+			  <forward name="moreTravelAllowaceInManger" path="moreTravelAllowaceInManger"></forward>
+			
+
+
+		</action>
+
+		<action path="/departmentMapping" name="" parameter="method"
+			type="com.centris.action.DepartmentMappingAction" scope="request">
+			<forward name="departmentMap" path="departmentMap"></forward>
+			<forward name="director_departmentMap" path="director_departmentMap"></forward>
+			
+		</action>
+
+		<action path="/weekOffSetting" name="weekoffSettingForm"
+			parameter="method" type="com.centris.action.WeekOffSettingAction"
+			scope="request">
+			<forward name="weekOffSetting" path="weekOffSetting"></forward>
+			<forward name="director_weekOffSetting" path="director_weekOffSetting"></forward>
+			
+		</action>
+
+		<action path="/clientMasterPath" parameter="method"
+			type="com.centris.action.ClientMasterAction" scope="request" name="clientMasterForm">
+			<forward name="clientMaster" path="clientMaster"></forward>
+			<forward name="director_clientMaster" path="director_clientMaster"></forward>
+		</action>
+
+		<action path="/employeeMangerMapping" name="" parameter="method"
+			type="com.centris.action.EmployeeManagerMappingAction" scope="request">
+			<forward name="employeeMangerMap" path="employeeMangerMap"></forward>
+			<forward name="director_employeeMangerMap" path="director_employeeMangerMap"></forward>
+		</action>
+
+		<action path="/EmpDashBoardInManager" parameter="method"
+			type="com.centris.action.EmpDashBoardInManagerAction" scope="request"
+			name="employeeDashBoardform">
+			<forward name="employeeDashboardinmgr" path="employeeDashboardinmgr"></forward>
+			<forward name="allEmployeesUnderManager" path="allEmployeesUnderManager"></forward>
+			<forward name="employeeadvancesalarydetails" path="employeeadvancesalarydetails"></forward>
+			<forward name="employeedashboardadvancesalarydetails" path="employeedashboardadvancesalarydetails"></forward>
+		    <forward name="moreExpenseDetailsInManager" path="moreExpenseDetailsInManager"></forward>
+	
+		</action>
+
+
+
+		<action path="/employeeAllowances" parameter="method"
+			type="com.centris.action.AllowancesClaimByManagerAction" scope="request"
+			name="">
+			<forward name="employeeAllowanceClaimByManager" path="employeeAllowanceClaimByManager"></forward>
+			<forward name="claimedallowancesview" path="claimedallowancesview"></forward>
+			<forward name="viewMoreAllowances" path="viewMoreAllowances"></forward>
+			
+		</action>
+
+		<action path="/EmpAllowAprroveByDirectorAction" parameter="method"
+			type="com.centris.action.EmpAllowAprroveByDirectorAction" scope="request"
+			name="allowanceApproveform">
+			<forward name="getdailsallowances" path="getdailsallowances"></forward>
+			<forward name="director_getdailsallowances" path="director_getdailsallowances" />
+		</action>
+
+		<action path="/resumeCreationPath" parameter="method"
+			type="com.centris.action.EmployeeResumeCreationAction" scope="request"
+			name="clientMasterForm">
+			<!-- <forward name="resumeCreation" path="resumeCreation"></forward> -->
+		</action>
+
+		<action path="/usermanagement" parameter="method"
+			type="com.centris.action.UserManagementAction" scope="request"
+			name="usermangementform">
+			<forward name="usermanagement" path="usermanagement"></forward>
+			<forward name="director_usermanagement" path="director_usermanagement"></forward>
+
+		</action>
+
+
+
+		<action path="/travelBooked" parameter="method"
+			type="com.centris.action.TravelBookedDetailsAction" scope="request"
+			name="travelBookedform">
+			<forward name="travelBookedDetails" path="travelBookedDetails"></forward>
+		</action>
+		
+		
+			<action path="/approveTravelBooked" parameter="method"
+			type="com.centris.action.ApproveTravelBookingAction" scope="request"
+			name="approveTravelBookedform">
+			<forward name="gettravelbooking" path="gettravelbooking"></forward>
+			<forward name="director_travelbooking" path="director_travelbooking"></forward>
+		</action>
+		
+			<action path="/mangerDirectorMapping" name="" parameter="method"
+			type="com.centris.action.ManagerDirectorMappingAction" scope="request">
+			<forward name="managerDirectorMapping" path="managerDirectorMapping"></forward>
+		</action>
+		
+		
+		<action path="/empAllowanceReport" name="empAlloeanceReportform" parameter="method"
+			type="com.centris.action.EmployeeAllowanceReportAction" scope="request">
+			<forward name="employeeAllowanceReport" path="employeeAllowanceReport"></forward>
+		</action>
+		
+		<action path="/travelAllowanceReport" name="travelAllowanceReportform" parameter="method"
+			type="com.centris.action.TravelAllowancesReportAction" scope="request">
+			<forward name="travelAllowanceReport" path="travelAllowanceReport"></forward>
+		</action>
+		
+		<action path="/expensesReport" name="expenseReportform" parameter="method"
+			type="com.centris.action.ExpenseReportAction" scope="request">
+			<forward name="expenseReport" path="expenseReport"></forward>
+		</action>
+
+	  <action path="/letterHead" name="letterheadform" parameter="method"
+			type="com.centris.action.LetterHeadAction" scope="request">
+			<forward name="letterHead" path="letterHead"></forward>
+		</action>
+		
+		  <action path="/dayReportAjax"  parameter="method"
+			type="com.centris.action.ReportsAjaxAction" scope="request">
+			
+		</action>
+		
+		
+		
+
+        <action path="/attendaceReconcil" parameter="parameter"
+			type="com.centris.action.AttendanceReConcilationAction" scope="request">
+			<forward name="success" path="/jsp/EmpolyeeGroupMonthReport.jsp"></forward>
+			<forward name="attendancereconcilation" path="attendancereconcilation"></forward>
+
+		</action>
+
+	    <action path="/timesheetReconcil" name="TimesheetReconciliationForm"
+			parameter="parameter" type="com.centris.action.TimesheetReconciliationAction"
+			scope="request">
+			<forward name="timesheetReconcil" path="timesheetReconcil" />
+		</action>
+		
+		  <action path="/displayDeactiveEmployees"  parameter="parameter" type="com.centris.action.DisplayDeactiveEmployeeDetailsAction" scope="request">
+			<forward name="DisplayDeactiveEmployees" path="DisplayDeactiveEmployees" />
+			<forward name="DisplayDeactiveEmployeesInDirector" path="DisplayDeactiveEmployeesInDirector"></forward>
+		</action>
+		
+		 <action path="/viewAttendanceDetails" name="AttendanceDetailaViewInEmployeeForm"
+			parameter="parameter" type="com.centris.action.AttendanceDetailaViewInEmployeeAction"
+			scope="request">
+			<forward name="MoreattendanceDetails" path="MoreattendanceDetails" />
+		</action>
+		
+		<action path="/kendoReport"  parameter="parameter" type="com.centris.action.KendoReportAction" scope="request" >
+	        </action>
+		
+
+	</action-mappings>
+	
+	
+
+<controller processorClass="org.apache.struts.tiles.TilesRequestProcessor" />
+
+	<message-resources parameter="com/centris/properties/CENTRIS-HRMS" />
+	<!-- <message-resources parameter="com/centris/form/ApplicationResource"/> -->
+
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+		<set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+		<set-property property="moduleAware" value="true" />
+	</plug-in>
+
+
+
+	<!-- ========================= Validator plugin ================================= -->
+
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames"
+			value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+	</plug-in>
+
+</struts-config>

@@ -1,0 +1,2743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ManagerExpenseDetailed" pageWidth="667" pageHeight="842" columnWidth="627" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="164"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Local Conveyance">
+		<parameter name="loc_empid" class="java.lang.String"/>
+		<parameter name="loc_year" class="java.lang.String"/>
+		<parameter name="loc_month" class="java.lang.String"/>
+		<queryString language="SQL">
+			<![CDATA[select la.LC_DATE,la.Location,la.LC_From,la.LC_To,la.Remarks,la.LC_MODE,la.AMOUNT
+from hrms_monthly_local_convenyance la
+join hrms_monthly_expense me on me.MEXP_CODE=la.MEXP_CODE and me.EMPID = la.EMPID
+where la.EMPID=$P{loc_empid} and me.year=$P{loc_year} and me.month=$P{loc_month}]]>
+		</queryString>
+		<field name="LC_DATE" class="java.sql.Date"/>
+		<field name="Location" class="java.lang.String"/>
+		<field name="LC_From" class="java.lang.String"/>
+		<field name="LC_To" class="java.lang.String"/>
+		<field name="Remarks" class="java.lang.String"/>
+		<field name="LC_MODE" class="java.lang.String"/>
+		<field name="AMOUNT" class="java.lang.Double"/>
+		<variable name="loc_total" class="java.lang.Number" calculation="Sum">
+			<variableExpression><![CDATA[$F{AMOUNT}]]></variableExpression>
+		</variable>
+	</subDataset>
+	<subDataset name="Travel Expense">
+		<parameter name="tr_empiD" class="java.lang.String"/>
+		<parameter name="tr_year" class="java.lang.String"/>
+		<parameter name="tr_month" class="java.lang.String"/>
+		<queryString language="SQL">
+			<![CDATA[select tr.TE_DATE,tr.Location,tr.TE_From,tr.TE_To,tr.Remarks,tr.TE_Mode,tr.AMOUNT
+from hrms_monthly_travel_expense tr
+join hrms_monthly_expense me on me.MEXP_CODE=tr.MEXP_CODE and me.EMPID = tr.EMPID
+where tr.EMPID=$P{tr_empiD} and me.year=$P{tr_year} and me.month=$P{tr_month}]]>
+		</queryString>
+		<field name="TE_DATE" class="java.sql.Date"/>
+		<field name="Location" class="java.lang.String"/>
+		<field name="TE_From" class="java.lang.String"/>
+		<field name="TE_To" class="java.lang.String"/>
+		<field name="Remarks" class="java.lang.String"/>
+		<field name="TE_Mode" class="java.lang.String"/>
+		<field name="AMOUNT" class="java.lang.Double"/>
+		<variable name="tr_total" class="java.lang.Number" calculation="Sum">
+			<variableExpression><![CDATA[$F{AMOUNT}]]></variableExpression>
+		</variable>
+	</subDataset>
+	<subDataset name="Staff Welfare">
+		<parameter name="st_empID" class="java.lang.String"/>
+		<parameter name="st_year" class="java.lang.String"/>
+		<parameter name="st_month" class="java.lang.String"/>
+		<queryString>
+			<![CDATA[select tr.Location,tr.Date_From,tr.Date_to,tr.No_Of_Days,tr.AsSingle_Team,tr.Allowance,tr.amount
+from hrms_monthly_staffwelfare tr
+join hrms_monthly_expense me on me.MEXP_CODE=tr.MEXP_CODE and me.EMPID = tr.EMPID
+where tr.EMPID=$P{st_empID} and me.year=$P{st_year} and me.month=$P{st_month}]]>
+		</queryString>
+		<field name="Location" class="java.lang.String"/>
+		<field name="Date_From" class="java.sql.Date"/>
+		<field name="Date_to" class="java.sql.Date"/>
+		<field name="No_Of_Days" class="java.lang.Double"/>
+		<field name="AsSingle_Team" class="java.lang.String"/>
+		<field name="Allowance" class="java.lang.String"/>
+		<field name="amount" class="java.lang.Double"/>
+		<variable name="staff_total" class="java.lang.Number" calculation="Sum">
+			<variableExpression><![CDATA[$F{amount}]]></variableExpression>
+		</variable>
+	</subDataset>
+	<subDataset name="Telephone">
+		<parameter name="tl_empid" class="java.lang.String"/>
+		<parameter name="tl_year" class="java.lang.String"/>
+		<parameter name="tl_month" class="java.lang.String"/>
+		<queryString language="SQL">
+			<![CDATA[select tr.MT_DATE,tr.Telephone_no,tr.Location,tr.AMOUNT
+from hrms_monthly_telephone tr
+join hrms_monthly_expense me on me.MEXP_CODE=tr.MEXP_CODE and me.EMPID = tr.EMPID
+where tr.EMPID=$P{tl_empid} and me.year=$P{tl_year} and me.month=$P{tl_month}]]>
+		</queryString>
+		<field name="MT_DATE" class="java.sql.Date"/>
+		<field name="Telephone_no" class="java.lang.String"/>
+		<field name="Location" class="java.lang.String"/>
+		<field name="AMOUNT" class="java.lang.Double"/>
+		<variable name="ph_total" class="java.lang.Number" calculation="Sum">
+			<variableExpression><![CDATA[$F{AMOUNT}]]></variableExpression>
+		</variable>
+	</subDataset>
+	<subDataset name="Purchase">
+		<parameter name="pr_empid" class="java.lang.String"/>
+		<parameter name="pr_year" class="java.lang.String"/>
+		<parameter name="pr_month" class="java.lang.String"/>
+		<queryString language="SQL">
+			<![CDATA[select tr.MP_DATE,tr.Bill_No,tr.Particulars,tr.AMOUNT
+from hrms_monthly_purchases tr
+join hrms_monthly_expense me on me.MEXP_CODE=tr.MEXP_CODE and me.EMPID = tr.EMPID
+where tr.EMPID=$P{pr_empid} and me.year=$P{pr_year} and me.month=$P{pr_month}]]>
+		</queryString>
+		<field name="MP_DATE" class="java.sql.Date"/>
+		<field name="Bill_No" class="java.lang.String"/>
+		<field name="Particulars" class="java.lang.String"/>
+		<field name="AMOUNT" class="java.lang.Double"/>
+		<variable name="pr_total" class="java.lang.Number" calculation="Sum">
+			<variableExpression><![CDATA[$F{AMOUNT}]]></variableExpression>
+		</variable>
+	</subDataset>
+	<subDataset name="Other">
+		<parameter name="oth_empid" class="java.lang.String"/>
+		<parameter name="oth_year" class="java.lang.String"/>
+		<parameter name="other_month" class="java.lang.String"/>
+		<queryString language="SQL">
+			<![CDATA[select tr.MO_DATE,tr.Description,tr.AMOUNT
+from hrms_monthly_otherworkexpenses tr
+join hrms_monthly_expense me on me.MEXP_CODE=tr.MEXP_CODE and me.EMPID = tr.EMPID
+where tr.EMPID=$P{oth_empid} and me.year=$P{oth_year} and me.month=$P{other_month}]]>
+		</queryString>
+		<field name="MO_DATE" class="java.sql.Date"/>
+		<field name="Description" class="java.lang.String"/>
+		<field name="AMOUNT" class="java.lang.Double"/>
+		<variable name="ot_total" class="java.lang.Number" calculation="Sum">
+			<variableExpression><![CDATA[$F{AMOUNT}]]></variableExpression>
+		</variable>
+	</subDataset>
+	<subDataset name="Miscellaneous">
+		<parameter name="ms_empid" class="java.lang.String"/>
+		<parameter name="ms_year" class="java.lang.String"/>
+		<parameter name="ms_month" class="java.lang.String"/>
+		<queryString language="SQL">
+			<![CDATA[select tr.MM_DATE,tr.Description,tr.AMOUNT
+from hrms_monthly_miscellaneous tr
+join hrms_monthly_expense me on me.MEXP_CODE=tr.MEXP_CODE and me.EMPID = tr.EMPID
+where tr.EMPID=$P{ms_empid} and me.year=$P{ms_year} and me.month=$P{ms_month}]]>
+		</queryString>
+		<field name="MM_DATE" class="java.sql.Date"/>
+		<field name="Description" class="java.lang.String"/>
+		<field name="AMOUNT" class="java.lang.Double"/>
+		<variable name="miss_total" class="java.lang.Number" calculation="Sum">
+			<variableExpression><![CDATA[$F{AMOUNT}]]></variableExpression>
+		</variable>
+	</subDataset>
+	<parameter name="month" class="java.lang.String"/>
+	<parameter name="year" class="java.lang.String"/>
+	<parameter name="managerCode" class="java.lang.String"/>
+	<parameter name="empCode" class="java.lang.String"/>
+	<parameter name="monthn" class="java.lang.String"/>
+	<parameter name="LOGO_DIR" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select emp.EMPID,emp.bioid,emp.First_Name,des.designationName,emp.Mobile_Number,emp.Official_Email_ID,hrm.FirstName as ManagerName,
+case when expe.Local_conveyance is null then '0' else expe.Local_conveyance end Local_conveyance,
+case when expe.Travel_expenses is null then '0' else expe.Travel_expenses end Travel_expenses,
+case when expe.Staff_welfare is null then '0' else expe.Staff_welfare end Staff_welfare,
+case when expe.Telephone_expenses is null then '0' else expe.Telephone_expenses end Telephone_expenses,
+case when expe.Purchases is null then '0' else expe.Purchases end Purchases,
+case when expe.other_work_expenses is null then '0' else expe.other_work_expenses end other_work_expenses,
+case when expe.Miscellaneous is null then '0' else expe.Miscellaneous end Miscellaneous,
+case when expe.Total_amount_claimed is null then '0' else expe.Total_amount_claimed end Total_amount_claimed,
+case when expe.Total_amount_approved is null then '0' else expe.Total_amount_approved end Total_amount_approved,
+case when expe.Advance_paid is null then '0' else expe.Advance_paid end Total_advance_paid,
+case when expe.Balance is null then '0' else expe.Balance end Total_balance
+from hrms_employee emp
+left join hrms_monthly_expense expe on expe.EMPID=emp.EMPID
+join hrms_designation des on des.DesignationCode=emp.DesignationCode
+join hrms_manager hrm on hrm.ManagerCode=expe.ManagerCode
+where expe.year=$P{year} and expe.month=$P{month} and expe.ManagerCode=$P{managerCode}  and emp.EMPID=$P{empCode}]]>
+	</queryString>
+	<field name="EMPID" class="java.lang.String"/>
+	<field name="bioid" class="java.lang.Integer"/>
+	<field name="First_Name" class="java.lang.String"/>
+	<field name="designationName" class="java.lang.String"/>
+	<field name="Mobile_Number" class="java.lang.String"/>
+	<field name="Official_Email_ID" class="java.lang.String"/>
+	<field name="ManagerName" class="java.lang.String"/>
+	<field name="Local_conveyance" class="java.lang.String"/>
+	<field name="Travel_expenses" class="java.lang.String"/>
+	<field name="Staff_welfare" class="java.lang.String"/>
+	<field name="Telephone_expenses" class="java.lang.String"/>
+	<field name="Purchases" class="java.lang.String"/>
+	<field name="other_work_expenses" class="java.lang.String"/>
+	<field name="Miscellaneous" class="java.lang.String"/>
+	<field name="Total_amount_claimed" class="java.lang.String"/>
+	<field name="Total_amount_approved" class="java.lang.String"/>
+	<field name="Total_advance_paid" class="java.lang.String"/>
+	<field name="Total_balance" class="java.lang.String"/>
+	<variable name="slno" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$F{EMPID}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="452" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="620" height="25" forecolor="#000000"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Segoe UI" size="14" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[MONTHLY EXPENSE STATEMENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="172" width="320" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Travel Expenses - Totl of B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="187" width="320" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Staff Welfare - Total of C]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="262" width="320" height="18"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Total Amount Claimed]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="202" width="320" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Telephone Expenses - Total of D]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="217" width="320" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Purchases (Material / Tool) - Total of E]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="139" width="320" height="18"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Particulars]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="139" width="150" height="18"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Total Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="139" width="150" height="18"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Remarks If Any]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="320" y="157" width="150" height="15" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Local_conveyance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="172" width="150" height="15" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Travel_expenses}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="187" width="150" height="15" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Staff_welfare}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="202" width="150" height="15" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Telephone_expenses}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="217" width="150" height="15" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Purchases}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="232" width="150" height="15" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{other_work_expenses}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="247" width="150" height="15" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Miscellaneous}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="262" width="150" height="18"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Total_amount_claimed}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="247" width="320" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Miscellaneous (Xerox, Courier etc) - Total of G]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="157" width="320" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Local Conveyance - Total of A]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="232" width="320" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Other Work Expenses - Total of F]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="157" width="150" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="172" width="150" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="187" width="150" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="202" width="150" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="217" width="150" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="232" width="150" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="247" width="150" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="262" width="150" height="18"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="280" width="620" height="18"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[For Office Use Only]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="298" width="320" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Total Amount Approved]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="313" width="320" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Advance Paid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="328" width="320" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Balance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="298" width="150" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="313" width="150" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="298" width="150" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="328" width="150" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="313" width="150" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="328" width="150" height="15"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="51" width="130" height="18"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<topPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="0.0" lineColor="#CCCCCC"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Employee Name / ID                  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="68" width="130" height="18"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<topPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="0.0" lineColor="#CCCCCC"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Month & Year]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="85" width="130" height="18"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<topPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="0.0" lineColor="#CCCCCC"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Designation                                ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="102" width="130" height="18"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<topPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="0.0" lineColor="#CCCCCC"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Contact Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="69" width="90" height="20"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<topPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="0.0" lineColor="#CCCCCC"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Email ID                                   ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="52" width="90" height="18"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<topPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="0.0" lineColor="#CCCCCC"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Proj Manag Name                   ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="52" width="160" height="18"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<topPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="0.0" lineColor="#CCCCCC"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{First_Name} + "/"+$F{bioid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="69" width="160" height="18"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<topPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="0.0" lineColor="#CCCCCC"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{monthn}+ " - "+$P{year}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="86" width="160" height="18"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<topPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="0.0" lineColor="#CCCCCC"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{designationName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="103" width="160" height="18"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<topPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="0.0" lineColor="#CCCCCC"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Mobile_Number}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="403" width="160" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Employee's Sign]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="162" y="403" width="160" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Approval by PM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="403" width="150" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Approval by HR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="472" y="403" width="150" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Approval by Project Head]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="445" y="52" width="178" height="18"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<topPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="0.0" lineColor="#CCCCCC"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ManagerName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="69" width="178" height="20"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<topPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="0.0" lineColor="#CCCCCC"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Official_Email_ID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="410" y="52" width="35" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="70" width="35" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="129" y="52" width="31" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="69" width="31" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="86" width="31" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="103" width="31" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="320" y="298" width="150" height="15" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Total_amount_approved}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="313" width="150" height="15" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Total_advance_paid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="328" width="150" height="15" forecolor="#333333"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Total_balance}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="1" y="0" width="100" height="50"/>
+				<imageExpression><![CDATA[$P{LOGO_DIR}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="24"/>
+	</pageHeader>
+	<detail>
+		<band height="636">
+			<staticText>
+				<reportElement x="0" y="221" width="620" height="20"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(B) TRAVEL EXPENSE - Attach the Tickets]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement key="table 1" style="table 1" x="1" y="241" width="626" height="30"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Travel Expense">
+						<datasetParameter name="tr_empiD">
+							<datasetParameterExpression><![CDATA[$P{empCode}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="tr_year">
+							<datasetParameterExpression><![CDATA[$P{year}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="tr_month">
+							<datasetParameterExpression><![CDATA[$P{month}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="80">
+						<jr:columnHeader style="table 1_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="80" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Date]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 1_TD" height="16" rowSpan="1">
+							<textField pattern="dd/MM/yyyy">
+								<reportElement x="0" y="0" width="80" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{TE_DATE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80">
+						<jr:columnHeader style="table 1_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="80" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Location]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 1_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Location}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80">
+						<jr:columnHeader style="table 1_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="80" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[From]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 1_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{TE_From}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80">
+						<jr:columnHeader style="table 1_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="80" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[To]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 1_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{TE_To}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100">
+						<jr:columnHeader style="table 1_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Remarks]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 1_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Remarks}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="101">
+						<jr:columnHeader style="table 1_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[MODE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</jr:columnFooter>
+						<jr:detailCell style="table 1_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{TE_Mode}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="99">
+						<jr:columnHeader style="table 1_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="99" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[AMOUNT]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="20" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="99" height="20" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="false" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{tr_total}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="table 1_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="99" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{AMOUNT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement x="3" y="409" width="620" height="20"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(C)STAFF WELFARE (Lodging + Food) - Attach the Bills]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement key="table 2" style="table 2" x="2" y="429" width="626" height="39"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Staff Welfare">
+						<datasetParameter name="st_empID">
+							<datasetParameterExpression><![CDATA[$P{empCode}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="st_year">
+							<datasetParameterExpression><![CDATA[$P{year}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="st_month">
+							<datasetParameterExpression><![CDATA[$P{month}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="80">
+						<jr:columnHeader style="table 2_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="80" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Location]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Location}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80">
+						<jr:columnHeader style="table 2_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="80" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Date from]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="16" rowSpan="1">
+							<textField pattern="dd/MM/yyyy">
+								<reportElement x="0" y="0" width="80" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Date_From}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80">
+						<jr:columnHeader style="table 2_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="80" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Date to]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="16" rowSpan="1">
+							<textField pattern="dd/MM/yyyy">
+								<reportElement x="0" y="0" width="80" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Date_to}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80">
+						<jr:columnHeader style="table 2_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="80" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[No. Of Days]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{No_Of_Days}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100">
+						<jr:columnHeader style="table 2_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[As Single / Team]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{AsSingle_Team}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100">
+						<jr:columnHeader style="table 2_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Allowance]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 2_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</jr:columnFooter>
+						<jr:detailCell style="table 2_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Allowance}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100">
+						<jr:columnHeader style="table 2_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Amount]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 2_CH" height="20" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{staff_total}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="table 2_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement x="1" y="2" width="620" height="20"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(A) LOCAL CONVEYANCE - Attach the Tickets]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement key="table" style="table" x="1" y="22" width="627" height="57"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Local Conveyance">
+						<datasetParameter name="loc_empid">
+							<datasetParameterExpression><![CDATA[$P{empCode}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="loc_year">
+							<datasetParameterExpression><![CDATA[$P{year}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="loc_month">
+							<datasetParameterExpression><![CDATA[$P{month}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="80">
+						<jr:columnHeader style="table_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="80" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Date]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="16" rowSpan="1">
+							<textField pattern="dd/MM/yyyy">
+								<reportElement x="0" y="0" width="80" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{LC_DATE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80">
+						<jr:columnHeader style="table_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="80" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Location]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Location}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80">
+						<jr:columnHeader style="table_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="80" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[From]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{LC_From}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80">
+						<jr:columnHeader style="table_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="80" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[To]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{LC_To}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100">
+						<jr:columnHeader style="table_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Remarks]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Remarks}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100">
+						<jr:columnHeader style="table_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[MODE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333" backcolor="#FFFFFF"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</jr:columnFooter>
+						<jr:detailCell style="table_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{LC_MODE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100">
+						<jr:columnHeader style="table_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[AMOUNT]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="20" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333" backcolor="#FFFFFF"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="10" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{loc_total}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="table_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<topPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<leftPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
+									<rightPen lineWidth="0.5" lineColor="#CCCCCC"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{AMOUNT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<summary>
+		<band height="783">
+			<staticText>
+				<reportElement x="-1" y="189" width="620" height="20"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(E) PURCHASES (Material / Tools)- Attach the Bills]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement key="table 4" style="table 4" x="-2" y="209" width="628" height="47"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Purchase">
+						<datasetParameter name="pr_empid">
+							<datasetParameterExpression><![CDATA[$P{empCode}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="pr_year">
+							<datasetParameterExpression><![CDATA[$P{year}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="pr_month">
+							<datasetParameterExpression><![CDATA[$P{month}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="80">
+						<jr:columnHeader style="table 4_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="80" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[DATE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 4_TD" height="16" rowSpan="1">
+							<textField pattern="dd/MM/yyyy">
+								<reportElement mode="Opaque" x="0" y="0" width="80" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{MP_DATE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="160">
+						<jr:columnHeader style="table 4_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="160" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Bill No]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 4_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="160" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Bill_No}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="280">
+						<jr:columnHeader style="table 4_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="280" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[PARTICULARS]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 4_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="280" height="20" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</jr:columnFooter>
+						<jr:detailCell style="table 4_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="280" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Particulars}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100">
+						<jr:columnHeader style="table 4_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[AMOUNT]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 4_CH" height="20" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{pr_total}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="table 4_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{AMOUNT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement x="4" y="391" width="620" height="20"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(F) OTHER WORK EXPENSES (Labour, Labour Food, Transport)- Attach the Bills]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement key="table 5" style="table 5" x="3" y="411" width="628" height="34"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Other">
+						<datasetParameter name="oth_empid">
+							<datasetParameterExpression><![CDATA[$P{empCode}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="oth_year">
+							<datasetParameterExpression><![CDATA[$P{year}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="other_month">
+							<datasetParameterExpression><![CDATA[$P{month}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="80">
+						<jr:columnHeader style="table 5_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="80" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[DATE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 5_TD" height="16" rowSpan="1">
+							<textField pattern="dd/MM/yyyy">
+								<reportElement mode="Opaque" x="0" y="0" width="80" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{MO_DATE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="440">
+						<jr:columnHeader style="table 5_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="440" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Description]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 5_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="440" height="20" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</jr:columnFooter>
+						<jr:detailCell style="table 5_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="440" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Description}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100">
+						<jr:columnHeader style="table 5_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[AMOUNT]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 5_CH" height="20" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{ot_total}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="table 5_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{AMOUNT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement x="4" y="581" width="620" height="20"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(G) MISCELLANEOUS (Xerox,Courier,Etc.)- Attach the Bills]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement key="table 6" style="table 6" x="4" y="601" width="627" height="51"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Miscellaneous">
+						<datasetParameter name="ms_empid">
+							<datasetParameterExpression><![CDATA[$P{empCode}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="ms_year">
+							<datasetParameterExpression><![CDATA[$P{year}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="ms_month">
+							<datasetParameterExpression><![CDATA[$P{month}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="90">
+						<jr:columnHeader style="table 6_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="90" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[DATE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 6_TD" height="16" rowSpan="1">
+							<textField pattern="dd/MM/yyyy">
+								<reportElement mode="Opaque" x="0" y="0" width="90" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{MM_DATE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="440">
+						<jr:columnHeader style="table 6_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="440" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[DESCRIPTION]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 6_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="440" height="20" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</jr:columnFooter>
+						<jr:detailCell style="table 6_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="440" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Description}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100">
+						<jr:columnHeader style="table 6_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[AMOUNT]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 6_CH" height="20" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{miss_total}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="table 6_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{AMOUNT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement x="1" y="0" width="620" height="20"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(D) TELEPHONE - Attach the Bills]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement key="table 3" style="table 3" x="0" y="20" width="628" height="41" forecolor="#333333"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Telephone">
+						<datasetParameter name="tl_empid">
+							<datasetParameterExpression><![CDATA[$P{empCode}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="tl_year">
+							<datasetParameterExpression><![CDATA[$P{year}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="tl_month">
+							<datasetParameterExpression><![CDATA[$P{month}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="80">
+						<jr:columnHeader style="table 3_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="80" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[MT_DATE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="16" rowSpan="1">
+							<textField pattern="dd/MM/yyyy">
+								<reportElement x="0" y="0" width="80" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{MT_DATE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="160">
+						<jr:columnHeader style="table 3_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="160" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Telephone_no]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="160" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Telephone_no}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="280">
+						<jr:columnHeader style="table 3_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="280" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Location]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 3_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="280" height="20"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</jr:columnFooter>
+						<jr:detailCell style="table 3_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="280" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Location}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100">
+						<jr:columnHeader style="table 3_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#333333" backcolor="#CCCCCC"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isBold="true" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[AMOUNT]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 3_CH" height="20" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="100" height="20"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{ph_total}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="table 3_TD" height="16" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="16" forecolor="#333333"/>
+								<box>
+									<pen lineWidth="0.5" lineColor="#333333"/>
+									<topPen lineWidth="0.5" lineColor="#333333"/>
+									<leftPen lineWidth="0.5" lineColor="#333333"/>
+									<bottomPen lineWidth="0.5" lineColor="#333333"/>
+									<rightPen lineWidth="0.5" lineColor="#333333"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Segoe UI" size="9" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{AMOUNT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,88 @@
+10
+
+dir
+121
+https://devlopment/svn/CENTRIS-HRMS/CENTRIS-HRMS/WebContent
+https://devlopment/svn/CENTRIS-HRMS
+
+
+
+2015-10-15T05:36:13.640625Z
+121
+chiru
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a6ac2415-9a61-7943-843d-74491bf16445
+
+JQUERY
+dir
+
+LAYOUT
+dir
+
+LeaveFileUploads
+dir
+
+META-INF
+dir
+
+MonthReports
+dir
+
+Project
+dir
+
+Reports
+dir
+
+TimesheetReport
+dir
+
+UploadedImage
+dir
+
+WEB-INF
+dir
+
+css
+dir
+
+fonts
+dir
+
+images
+dir
+
+js
+dir
+
+jsp
+dir
+
+kendoCss
+dir
+
+kendoImages
+dir
+
+kendoJs
+dir
+
+menuicons
+dir
+
+script
+dir
+

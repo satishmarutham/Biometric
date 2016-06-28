@@ -1,0 +1,55 @@
+.even {
+	background-color: #72B0E4;
+	font-size: 15px;
+	font-color: #FFF;
+	text-align: center;
+	font-family: Segoe UI Semibold;
+	padding: 6px;
+}
+
+.odd {
+	background-color: #BCD1E1;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-color: #FFF;
+	text-align: center;
+	font-family: Segoe UI Semibold;
+	padding: 6px;
+}
+
+#A {
+	color: red;
+}
+
+#N {
+	color: yellow;
+}
+
+#P {
+	color: green;
+}
+
+#W {
+	color: blue;
+}
+
+table#tbl {
+	width: 90%;
+}
+
+table#tbl tr:nth-child(even) {
+	background-color: #BCD1E1;
+	padding: 5px;
+}
+
+table#tbl tr:nth-child(odd) {
+	background-color: #E4EAF0;
+	padding: 5px;
+}
+
+#one {
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	font-family: Segoe UI Semibold;
+}

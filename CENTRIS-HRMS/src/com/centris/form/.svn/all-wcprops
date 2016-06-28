@@ -1,0 +1,455 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/CENTRIS-HRMS/!svn/ver/115/CENTRIS-HRMS/src/com/centris/form
+END
+MonthlyLagendReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/MonthlyLagendReportForm.java
+END
+AttendenceApprovelForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/AttendenceApprovelForm.java
+END
+ShiftPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/ShiftPojo.java
+END
+AdminDayReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/AdminDayReportForm.java
+END
+AttendanceDetailaViewInEmployeeForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/AttendanceDetailaViewInEmployeeForm.java
+END
+LeaveDetailsReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/LeaveDetailsReportForm.java
+END
+ReportFormData.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/ReportFormData.java
+END
+ProjectMasterForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/ProjectMasterForm.java
+END
+WeekOffForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/WeekOffForm.java
+END
+RegistrationTimeReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/RegistrationTimeReportForm.java
+END
+ManagerExpenseDetailsForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/ManagerExpenseDetailsForm.java
+END
+WeekoffSettingForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/WeekoffSettingForm.java
+END
+LastThreeAbsentReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/LastThreeAbsentReportForm.java
+END
+Allemploeedata.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/Allemploeedata.java
+END
+GeneratePayrollForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/GeneratePayrollForm.java
+END
+DayReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/DayReportForm.java
+END
+UserManagementForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/UserManagementForm.java
+END
+EmployeeDailyAllowanceForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/EmployeeDailyAllowanceForm.java
+END
+CreatepayslipForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/CreatepayslipForm.java
+END
+AttendenceNotApprovedForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/AttendenceNotApprovedForm.java
+END
+TravelBookedDetailsForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/TravelBookedDetailsForm.java
+END
+DailyLogReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/DailyLogReportForm.java
+END
+YearlyReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/YearlyReportForm.java
+END
+EmployeeExpenseDetailsForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/EmployeeExpenseDetailsForm.java
+END
+LocationMasterForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/LocationMasterForm.java
+END
+EmployeePersonalDetailsForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/EmployeePersonalDetailsForm.java
+END
+RemoveEmployeeForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/RemoveEmployeeForm.java
+END
+ProductivityForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/115/CENTRIS-HRMS/src/com/centris/form/ProductivityForm.java
+END
+UserRolePermissionForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/UserRolePermissionForm.java
+END
+EmployeeMenuForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/EmployeeMenuForm.java
+END
+GetDetailsForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/GetDetailsForm.java
+END
+ChangePasswordForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/ChangePasswordForm.java
+END
+EmployeeSalaryDetailsForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/EmployeeSalaryDetailsForm.java
+END
+TravelAllowancesReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/TravelAllowancesReportForm.java
+END
+LoginForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/CENTRIS-HRMS/!svn/ver/20/CENTRIS-HRMS/src/com/centris/form/LoginForm.java
+END
+ModifyEmployeeForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/ModifyEmployeeForm.java
+END
+EmpWorkingLessThan8hrsReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/EmpWorkingLessThan8hrsReportForm.java
+END
+ShiftForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/ShiftForm.java
+END
+IncorrectPunchReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/IncorrectPunchReportForm.java
+END
+RoleMasterForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/RoleMasterForm.java
+END
+TodayReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/TodayReportForm.java
+END
+AttendanceStatusTypeForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/AttendanceStatusTypeForm.java
+END
+AddDesignation.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/AddDesignation.java
+END
+LocationUpdateReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/LocationUpdateReportForm.java
+END
+GetLeavesform.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/GetLeavesform.java
+END
+AdvanceSalaryConsolidateReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/AdvanceSalaryConsolidateReportForm.java
+END
+EmpAllowAprroveByDirectorForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/EmpAllowAprroveByDirectorForm.java
+END
+AttendanceApprovalByDateForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/AttendanceApprovalByDateForm.java
+END
+ManualAttendanceForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/ManualAttendanceForm.java
+END
+EmployeeForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/EmployeeForm.java
+END
+UserMasterForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/UserMasterForm.java
+END
+ClientMasterForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/ClientMasterForm.java
+END
+ManagerMenuForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/ManagerMenuForm.java
+END
+ExpenseReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/ExpenseReportForm.java
+END
+EmployeeAttendancePostingForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/EmployeeAttendancePostingForm.java
+END
+LateCommersReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/LateCommersReportForm.java
+END
+LetterHeadForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/LetterHeadForm.java
+END
+EmployeeLeaveRequestForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/EmployeeLeaveRequestForm.java
+END
+TimeSheetReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/TimeSheetReportForm.java
+END
+EmployeeDashBoardForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/EmployeeDashBoardForm.java
+END
+AdminMonthReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/AdminMonthReportForm.java
+END
+GetEmployeeForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/GetEmployeeForm.java
+END
+EmployeeAllowanceReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/EmployeeAllowanceReportForm.java
+END
+AttendanceTimeSheetReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/AttendanceTimeSheetReportForm.java
+END
+ConsolidateDetailedMonthReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/ConsolidateDetailedMonthReportForm.java
+END
+HolidayMasterForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/HolidayMasterForm.java
+END
+LogReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/LogReportForm.java
+END
+UploadDailyAllowanceByManagerForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/UploadDailyAllowanceByManagerForm.java
+END
+TimesheetReconciliationForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/TimesheetReconciliationForm.java
+END
+ContactUsMailForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/ContactUsMailForm.java
+END
+DepartmentMasterForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/DepartmentMasterForm.java
+END
+ApproveTravelBookingForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/ApproveTravelBookingForm.java
+END
+ManagerMasterForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/ManagerMasterForm.java
+END
+AddEmployeeForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/AddEmployeeForm.java
+END
+MachineStatusReportForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CENTRIS-HRMS/!svn/ver/2/CENTRIS-HRMS/src/com/centris/form/MachineStatusReportForm.java
+END
